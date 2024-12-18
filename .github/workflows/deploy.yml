@@ -39,6 +39,10 @@ jobs:
                   hugo-version: "latest"
                   extended: true
 
+            - name: Update baseurl for deployment
+              run: |
+                  sed -i 's#baseurl="/"#baseurl="https://game1991.github.io/CodeImp"#' config/_default/config.toml
+
             - name: Build
               run: hugo --minify --gc
 

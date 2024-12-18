@@ -1,18 +1,19 @@
 # Change baseurl before deploy
-baseurl = "https://game1991.github.io/CodeEcho"
-languageCode = "zh-cn"
-title = "CodeEcho"
+baseurl="/"
+# baseurl = "https://game1991.github.io/CodeImp"
+languageCode="zh-cn"
+title       ="编程无限可能"
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
-defaultContentLanguage = "zh-cn"
+defaultContentLanguage="zh-cn"
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage = true
+hasCJKLanguage=true
 
 # Change it to your Disqus shortname before using
-disqusShortname = "TechSphere"
+disqusShortname="TechSphere"
 
 [pagination]
-pagerSize = 5
+    pagerSize=5
