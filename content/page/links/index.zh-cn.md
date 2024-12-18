@@ -5,6 +5,10 @@ links: # 链接配置开始
     description: GitHub 是世界上最大的软件开发平台
     website: https://github.com
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: 微信
+    description: 微信公众号
+    website: https://github.com
+    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
 menu: # 菜单配置
   main:
     weight: 4
@@ -33,3 +37,6 @@ links:
 
 `image` 字段接受本地和外部图片。
 -->
+
+- Github
+- 微信
