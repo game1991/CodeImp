@@ -8,17 +8,33 @@
 #newtab = true
 
 [[social]]
-identifier = "github"
-name = "GitHub"
-url = "https://github.com/game1991"
-
-[social.params]
-icon = "brand-github"
+    identifier="wechat"
+    name      ="微信"
+    url       ="/wechat/1734600678477.jpg"
+    weight    =1
+    [social.params]
+        icon="brand-wechat"
 
 [[social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com"
+    identifier="github"
+    name      ="GitHub"
+    url       ="https://github.com/game1991"
+    weight    =2
+    [social.params]
+        icon="brand-github"
 
-[social.params]
-icon = "brand-twitter"
+[[social]]
+    identifier="mail"
+    name      ="Email"
+    url       ="mailto:game199le@gmail.com"
+    weight    =3
+    [social.params]
+        icon="brand-gmail"
+
+[[social]]
+    identifier="twitter"
+    name      ="Twitter"
+    url       ="https://twitter.com"
+    weight    =4
+    [social.params]
+        icon="brand-twitter"
