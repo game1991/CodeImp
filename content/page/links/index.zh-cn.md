@@ -3,12 +3,12 @@ title: 友情链接 # 页面标题
 links: # 链接配置开始
   - title: GitHub
     description: GitHub 是世界上最大的软件开发平台
-    website: https://github.com
+    website: https://github.com/game1991
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
   - title: 微信
     description: 微信公众号
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+    website: /wechat/1734600678477.jpg
+    image: /wechat/wechat_link.jpg
 menu: # 菜单配置
   main:
     weight: 4
@@ -37,6 +37,3 @@ links:
 
 `image` 字段接受本地和外部图片。
 -->
-
-- Github
-- 微信

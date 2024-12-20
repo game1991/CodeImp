@@ -3,6 +3,8 @@ title: 图片画廊
 description: 使用Markdown创建美丽的互动图片画廊
 date: 2023-08-26 00:00:00+0000
 image: 2.jpg
+categories:
+  - 画廊
 ---
 
 Hugo主题Stack支持使用Markdown创建互动图片画廊。它由[PhotoSwipe](https://photoswipe.com/)提供支持，其语法灵感来自[Typlog](https://typlog.com/)。

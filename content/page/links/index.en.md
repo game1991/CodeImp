@@ -1,15 +1,19 @@
 ---
 title: Links # Page Title
 links: # Links Configuration
-    - title: GitHub
-      description: GitHub is the world's largest software development platform.
-      website: https://github.com
-      image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: GitHub
+    description: GitHub is the world's largest software development platform.
+    website: https://github.com
+    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: WeChat
+    description: WeChat Official Account
+    website: /wechat/1734600678477.jpg
+    image: /wechat/wechat_link.jpg
 menu: # Menu Configuration
-    main:
-        weight: 4
-        params:
-            icon: link
+  main:
+    weight: 4
+    params:
+      icon: link
 
 comments: false # Enable/Disable Comments
 ---
@@ -33,6 +37,3 @@ links:
 
 `image` field accepts both local and external images.
 -->
-
-- Github
-- Wechat

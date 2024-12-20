@@ -3,6 +3,9 @@ title: 短代码
 description: 可以在Markdown中使用的有用短代码
 date: 2023-08-25 00:00:00+0000
 image: cover.jpg
+categories:
+  - 短代码
+
 ---
 
 有关更多详细信息，请查看[文档](https://stack.jimmycai.com/writing/shortcodes)。

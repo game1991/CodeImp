@@ -1,150 +1,150 @@
 # Pages placed under these sections will be shown on homepage and archive page.
-mainSections = ["post"]
+mainSections=["post"]
 # Output page's full content in RSS.
-rssFullContent = true
-favicon = "/favicon.png"
+favicon       ="/favicon.png"
+rssFullContent=true
 
 [footer]
-since = 2024
-customText = ""
+    customText=""
+    since     =2024
 
 [dateFormat]
-published = "Jan 02, 2006"
-lastUpdated = "Jan 02, 2006 15:04 MST"
+    lastUpdated="Jan 02, 2006 15:04 MST"
+    published  ="Jan 02, 2006"
 
 [sidebar]
-emoji = "🍥"
-subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    emoji   ="🍥"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
-[sidebar.avatar]
-enabled = true
-local = true
-src = "img/avatar.png"
+    [sidebar.avatar]
+        enabled=true
+        local  =true
+        src    ="img/avatar.png"
 
 [article]
-headingAnchor = false
-math = false
-readingTime = true
+    headingAnchor=false
+    math         =false
+    readingTime  =true
 
-[article.license]
-enabled = true
-default = "Licensed under CC BY-NC-SA 4.0"
+    [article.license]
+        default="Licensed under CC BY-NC-SA 4.0"
+        enabled=true
 
 ## Widgets
 [[widgets.homepage]]
-type = "search"
+    type="search"
 
 [[widgets.homepage]]
-type = "archives"
+    type="archives"
 
-[widgets.homepage.params]
-limit = 5
-
-[[widgets.homepage]]
-type = "categories"
-
-[widgets.homepage.params]
-limit = 10
+    [widgets.homepage.params]
+        limit=5
 
 [[widgets.homepage]]
-type = "tag-cloud"
+    type="categories"
 
-[widgets.homepage.params]
-limit = 10
+    [widgets.homepage.params]
+        limit=10
+
+[[widgets.homepage]]
+    type="tag-cloud"
+
+    [widgets.homepage.params]
+        limit=10
 
 [[widgets.page]]
-type = "toc"
+    type="toc"
 
 [opengraph.twitter]
-site = ""
-card = "summary_large_image"
+    card="summary_large_image"
+    site=""
 
 [defaultImage.opengraph]
-enabled = false
-local = false
-src = ""
+    enabled=false
+    local  =false
+    src    =""
 
 [colorScheme]
-toggle = true
-default = "auto"
+    default="auto"
+    toggle =true
 
 [imageProcessing.cover]
-enabled = true
+    enabled=true
 
 [imageProcessing.content]
-enabled = true
+    enabled=true
 
 ## Comments
 [comments]
-enabled = true
-provider = "disqus"
+    enabled =true
+    provider="disqus"
 
-[comments.disqusjs]
-shortname = ""
-apiUrl = ""
-apiKey = ""
-admin = ""
-adminLabel = ""
+    [comments.disqusjs]
+        admin     =""
+        adminLabel=""
+        apiKey    =""
+        apiUrl    =""
+        shortname =""
 
-[comments.utterances]
-repo = ""
-issueTerm = "pathname"
-label = ""
+    [comments.utterances]
+        issueTerm="pathname"
+        label    =""
+        repo     =""
 
-[comments.remark42]
-host = ""
-site = ""
-locale = ""
+    [comments.remark42]
+        host  =""
+        locale=""
+        site  =""
 
-[comments.vssue]
-platform = ""
-owner = ""
-repo = ""
-clientId = ""
-clientSecret = ""
-autoCreateIssue = false
+    [comments.vssue]
+        autoCreateIssue=false
+        clientId       =""
+        clientSecret   =""
+        owner          =""
+        platform       =""
+        repo           =""
 
-[comments.waline]
-serverURL = ""
-lang = ""
-visitor = ""
-avatar = ""
-emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
-requiredMeta = ["name", "email", "url"]
-placeholder = ""
+    [comments.waline]
+        avatar      =""
+        emoji       =["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
+        lang        =""
+        placeholder =""
+        requiredMeta=["email", "name", "url"]
+        serverURL   =""
+        visitor     =""
 
-[comments.waline.locale]
-admin = "Admin"
+        [comments.waline.locale]
+            admin="Admin"
 
-[comments.twikoo]
-envId = ""
-region = ""
-path = ""
-lang = ""
+    [comments.twikoo]
+        envId =""
+        lang  =""
+        path  =""
+        region=""
 
-[comments.cactus]
-defaultHomeserverUrl = "https://matrix.cactus.chat:8448"
-serverName = "cactus.chat"
-siteName = ""
+    [comments.cactus]
+        defaultHomeserverUrl="https://matrix.cactus.chat:8448"
+        serverName          ="cactus.chat"
+        siteName            =""
 
-[comments.giscus]
-repo = ""
-repoID = ""
-category = ""
-categoryID = ""
-mapping = ""
-lightTheme = ""
-darkTheme = ""
-reactionsEnabled = 1
-emitMetadata = 0
+    [comments.giscus]
+        category        =""
+        categoryID      =""
+        darkTheme       =""
+        emitMetadata    =0
+        lightTheme      =""
+        mapping         =""
+        reactionsEnabled=1
+        repo            =""
+        repoID          =""
 
-[comments.gitalk]
-owner = ""
-admin = ""
-repo = ""
-clientID = ""
-clientSecret = ""
+    [comments.gitalk]
+        admin       =""
+        clientID    =""
+        clientSecret=""
+        owner       =""
+        repo        =""
 
-[comments.cusdis]
-host = ""
-id = ""
+    [comments.cusdis]
+        host=""
+        id  =""

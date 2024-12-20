@@ -3,6 +3,10 @@ title: 数学排版
 description: 使用KaTeX进行数学排版
 date: 2023-08-24 00:00:00+0000
 math: true
+categories:
+  - 数学公式
+  - LaTeX排版
+
 ---
 
 Stack内置支持使用[KaTeX](https://katex.org/)进行数学排版。

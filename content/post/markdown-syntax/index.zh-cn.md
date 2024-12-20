@@ -8,8 +8,7 @@ tags:
     - html
     - themes
 categories:
-    - themes
-    - syntax
+    - Markdown语法
 ---
 
 本文提供了可以在Hugo内容文件中使用的基本Markdown语法示例，同时展示了基本HTML元素在Hugo主题中是否装饰了CSS。
