@@ -13,9 +13,9 @@ rssFullContent=true
     published  ="Jan 02, 2006"
 
 [sidebar]
-    emoji   ="🍥"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-
+    emoji="🍥"
+    # subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    subtitle="The road is endless and distant, yet I shall search with all my might, both high and low, for the truth that lies hidden."
     [sidebar.avatar]
         enabled=true
         local  =true

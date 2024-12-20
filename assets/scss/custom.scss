@@ -3,22 +3,32 @@
 */
 
 /* custom.scss */
-h1 {
-    color: #3498db; /* 改变标题颜色 */
-    font-size: 2.5em; /* 改变标题字体大小 */
-    text-align: center; /* 中心对齐 */
-}
+// h1 {
+//     color: #3498db;
+//     /* 改变标题颜色 */
+//     font-size: 2.5em;
+//     /* 改变标题字体大小 */
+//     text-align: center;
+//     /* 中心对齐 */
+// }
 
 /* 添加一个按钮样式 */
 .my-button {
-    background-color: #e74c3c; /* 按钮背景色 */
-    color: white; /* 按钮文字颜色 */
-    padding: 10px 20px; /* 内边距 */
-    border: none; /* 去掉边框 */
-    border-radius: 5px; /* 圆角 */
-    cursor: pointer; /* 鼠标悬停时显示手型 */
+    background-color: #e74c3c;
+    /* 按钮背景色 */
+    color: white;
+    /* 按钮文字颜色 */
+    padding: 10px 20px;
+    /* 内边距 */
+    border: none;
+    /* 去掉边框 */
+    border-radius: 5px;
+    /* 圆角 */
+    cursor: pointer;
+    /* 鼠标悬停时显示手型 */
 }
 
 .my-button:hover {
-    background-color: #c0392b; /* 悬停时改变背景色 */
+    background-color: #c0392b;
+    /* 悬停时改变背景色 */
 }
