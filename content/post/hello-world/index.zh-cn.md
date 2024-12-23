@@ -5,11 +5,11 @@ slug: hello-world
 date: 2022-03-06 00:00:00+0000
 image: cover.jpg
 categories:
-  - 示例分类
-  - Go编程
+  - go
+  - python
 tags:
   - 示例标签
-  - Go
+  - go语言
 weight: 1
 ---
 
@@ -21,6 +21,8 @@ weight: 1
 
 > 图片来自 [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski) 在 [Unsplash](https://unsplash.com/)
 
+go：
+
 ```go
 package main
 
@@ -28,4 +30,11 @@ func main() {
     print("Hello World!")
 }
 
+```
+
+python：
+
+```python
+#!/usr/bin/env python3
+  print("Hello World!")
 ```

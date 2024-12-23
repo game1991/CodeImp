@@ -1,6 +1,6 @@
 ---
-title: Go编程
-description: go语言编程之旅
+title: Python编程
+description: Python语言编程之旅
 image:
 
 # Badge style

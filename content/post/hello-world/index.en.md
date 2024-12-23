@@ -5,11 +5,11 @@ slug: hello-world
 date: 2022-03-06 00:00:00+0000
 image: cover.jpg
 categories:
-  - Example Category
-  - Golang
+  - go
+  - python
 tags:
-  - Example Tag
-  - Go
+  - example tag
+  - golang
 weight: 1
 ---
 
@@ -21,6 +21,7 @@ Want a site like this? Check out [hugo-theme-stack-stater](https://github.com/Ca
 
 > Photo by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
 
+go：
 
 ```go
 package main
@@ -29,4 +30,11 @@ func main() {
     print("Hello World!")
 }
 
+```
+
+python：
+
+```python
+#!/usr/bin/env python3
+  print("Hello World!")
 ```
