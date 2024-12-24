@@ -1,9 +1,10 @@
 ---
 title: 你好，世界
-hidden: true
+hidden: false
+license: false
 description: 欢迎使用 Hugo Theme Stack
 slug: hello-world
-date: 2022-03-06 00:00:00+0000
+date: 2022-03-06T00:00:00+08:00
 image: cover.jpg
 categories:
   - go

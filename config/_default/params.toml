@@ -8,9 +8,9 @@ rssFullContent=true
     customText=""
     since     =2024
 
-[dateFormat]
-    lastUpdated="Jan 02, 2006 15:04 MST"
-    published  ="Jan 02, 2006"
+# [dateFormat]
+#     lastUpdated="Jan 02, 2006 15:04 MST"
+#     published  ="Jan 02, 2006"
 
 [sidebar]
     emoji="🍥"
@@ -26,9 +26,9 @@ rssFullContent=true
     math         =false
     readingTime  =true
 
-    [article.license]
-        default="Licensed under CC BY-NC-SA 4.0"
-        enabled=true
+    # [article.license]
+    #     default="Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+    #     enabled=true
 
 ## Widgets
 [[widgets.homepage]]

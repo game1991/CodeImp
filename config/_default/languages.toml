@@ -3,15 +3,30 @@
 [zh-cn]
     languageName     ="简体中文"
     languagedirection="ltr"
-    title            ="代码无界限"
-    weight           =1
+    #timeZone         ="Asia/Shanghai"
+    title ="代码无界限"
+    weight=1
     [zh-cn.params.sidebar]
         subtitle="心之所向，皆是可能"
+    [zh-cn.params.article.license]
+        default="开源协议=>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+        enabled=true
+    [zh-cn.params.dateFormat]
+        lastUpdated="2006-01-02 15:04:05"
+        published  ="2006-01-02"
+
 
 [en]
     languageName     ="English"
     languagedirection="ltr"
-    title            ="CodeImp"
-    weight           =2
+    #timeZone         ="UTC"
+    title ="CodeImp"
+    weight=2
     [en.params.sidebar]
         subtitle="Where the heart yearns, possibilities unfurl."
+    [en.params.article.license]
+        default="Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+        enabled=true
+    [en.params.dateFormat]
+        lastUpdated="Jan 02, 2006 15:04:05"
+        published  ="Jan 02, 2006"
