@@ -16,7 +16,6 @@ rssFullContent=true
     emoji="🍥"
     # subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     # subtitle="The road is endless and distant, yet I shall search with all my might, both high and low, for the truth that lies hidden."
-    subtitle="心之所向，皆是可能"
     [sidebar.avatar]
         enabled=true
         local  =true

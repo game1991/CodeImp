@@ -5,9 +5,13 @@
     languagedirection="ltr"
     title            ="代码无界限"
     weight           =1
+    [zh-cn.params.sidebar]
+        subtitle="心之所向，皆是可能"
 
 [en]
     languageName     ="English"
     languagedirection="ltr"
     title            ="CodeImp"
     weight           =2
+    [en.params.sidebar]
+        subtitle="Where the heart yearns, possibilities unfurl."
