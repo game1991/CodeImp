@@ -1,0 +1,8 @@
+<footer>
+    <!-- 其他页脚内容 -->
+
+    <!-- 根据不同语言插入不同的页脚模板 -->
+    {{ partial (printf "footer/%s/footer.html" .Language.Lang) . }}
+
+    <!-- 其他页脚内容 -->
+</footer>
