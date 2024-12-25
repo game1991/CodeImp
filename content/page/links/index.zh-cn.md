@@ -16,6 +16,8 @@ menu: # 菜单配置
       icon: link
 
 comments: false # 是否开启评论
+license: false # 是否开启许可证
+lastmod: false # 是否开启最后更新时间
 ---
 
 <!--

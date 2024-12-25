@@ -8,12 +8,13 @@ rssFullContent=true
     customText=""
     since     =2024
 
-# [dateFormat]
-#     lastUpdated="Jan 02, 2006 15:04 MST"
-#     published  ="Jan 02, 2006"
+    # [dateFormat]
+    #     lastUpdated="Jan 02, 2006 15:04 MST"
+    #     published  ="Jan 02, 2006"
 
 [sidebar]
-    emoji="🍥"
+    #emoji="🍥"
+    emoji="😎"
     # subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     # subtitle="The road is endless and distant, yet I shall search with all my might, both high and low, for the truth that lies hidden."
     [sidebar.avatar]

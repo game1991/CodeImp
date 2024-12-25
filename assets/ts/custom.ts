@@ -7,13 +7,13 @@ const getStyle = (el, attr) => {
         return window.getComputedStyle
             ? window.getComputedStyle(el)[attr]
             : el.currentStyle[attr];
-    } catch (e) { }
+    } catch (e) {}
     return "";
 };
 
 class Cursor {
     constructor() {
-        this.pos = { curr: null, prev: null };
+        this.pos = {curr: null, prev: null};
         this.pt = [];
         this.create();
         this.init();
@@ -47,7 +47,7 @@ class Cursor {
         this.scr.remove();
         this.cursor.classList.remove("hover");
         this.cursor.classList.remove("active");
-        this.pos = { curr: null, prev: null };
+        this.pos = {curr: null, prev: null};
         this.pt = [];
 
         this.create();
@@ -56,13 +56,13 @@ class Cursor {
     }
 
     init() {
-        document.onmouseover = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");
-        document.onmouseout = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");
-        document.onmousemove = e => { (this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = { x: e.clientX - 8, y: e.clientY - 8 }; this.cursor.classList.remove("hidden"); };
+        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");
+        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");
+        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};
         document.onmouseenter = e => this.cursor.classList.remove("hidden");
         document.onmouseleave = e => this.cursor.classList.add("hidden");
-        document.onmousedown = e => this.cursor.classList.add("active");
-        document.onmouseup = e => this.cursor.classList.remove("active");
+        document.onmousedown  = e => this.cursor.classList.add("active");
+        document.onmouseup    = e => this.cursor.classList.remove("active");
     }
 
     render() {
