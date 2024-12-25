@@ -17,7 +17,7 @@ weight: 1
 
 欢迎使用 Hugo Theme Stack。这是你的第一篇文章。编辑或删除它，然后开始写作！
 
-要了解更多关于这个主题的信息，请查看文档：https://stack.jimmycai.com/
+要了解更多关于这个主题的信息，请查看文档：[Stack 文档](https://stack.jimmycai.com/)
 
 想要一个这样的网站？查看 [hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter)
 
