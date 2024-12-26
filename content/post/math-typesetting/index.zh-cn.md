@@ -4,8 +4,8 @@ description: 使用KaTeX进行数学排版
 date: 2023-08-24 00:00:00+0000
 math: true
 categories:
-  - 数学公式
-  - LaTeX排版
+  - math
+  - latex
 
 ---
 
@@ -26,13 +26,13 @@ varphi = rac{1+	ext{sqrt}5}{2}= 1.6180339887…$
 ## 块数学
 
 $$
-    
+
 varphi = 1+rac{1} {1+rac{1} {1+rac{1} {1+	ext{cdots}} } }
 $$
 
 ```markdown
 $$
-    
+
 varphi = 1+rac{1} {1+rac{1} {1+rac{1} {1+	ext{cdots}} } }
 $$
 ```
