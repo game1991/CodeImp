@@ -470,13 +470,30 @@ html {
 }
 
 
-//首页欢迎板块样式
+// .welcome {
+//     color: var(--card-text-color-main);
+//     background: var(--card-background);
+//     box-shadow: var(--shadow-l2);
+//     border-radius: 30px;
+//     display: flex; /* 更改为 flex */
+//     justify-content: center; /* 水平居中 */
+//     align-items: center; /* 垂直居中 */
+//     text-align: center; /* 文本居中 */
+// }
+
 .welcome {
     color: var(--card-text-color-main);
     background: var(--card-background);
     box-shadow: var(--shadow-l2);
     border-radius: 30px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 800px; /* 设置最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+    padding: 0.2px; /* 添加内边距，增加一些空间 */
+    line-height: 0.1; /* 调整行高 */
 }
 
 // 👋emoji实现摆动效果
