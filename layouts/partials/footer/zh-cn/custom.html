@@ -54,6 +54,23 @@
     setInterval(createtime, 250);
 </script>
 
+</br>
+<!-- 站点页脚旅行者 -->
+<span id="voyager">载入旅行者一号离地球距离信息...</span>
+<script language="javascript">
+    var now = new Date();
+    function createtime() {
+        // 当前时间
+        now.setTime(now.getTime() + 250);
+        var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间
+        var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
+        var unit = (dis / 149600000).toFixed(6);  // 天文单位
+
+        document.getElementById("voyager").innerHTML = "旅行者 1 号当前距离地球 " + dis + " 千米，约为 " + unit + " 个天文单位 🚀"
+    }
+    setInterval("createtime()", 250);
+</script>
+
 <!-- 热力图 -->
 <div id="heatmap" style="
   max-width: 600px;
@@ -218,20 +235,4 @@
             window.open(link, '_blank').focus();
         }
     });
-</script>
-
-<!-- 站点页脚旅行者 -->
-<span id="voyager">载入旅行者一号离地球距离信息...</span>
-<script language="javascript">
-    var now = new Date();
-    function createtime() {
-        // 当前时间
-        now.setTime(now.getTime() + 250);
-        var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间
-        var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
-        var unit = (dis / 149600000).toFixed(6);  // 天文单位
-
-        document.getElementById("voyager").innerHTML = "旅行者 1 号当前距离地球 " + dis + " 千米，约为 " + unit + " 个天文单位 🚀"
-    }
-    setInterval("createtime()", 250);
 </script>

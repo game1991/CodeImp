@@ -51,6 +51,23 @@
     setInterval(createtime, 250);
 </script>
 
+</br>
+<!-- Voyager Distance from Earth -->
+<span id="voyager">Loading Voyager 1 distance information from Earth...</span>
+<script language="javascript">
+    var now = new Date();
+    function createtime() {
+        // Current time
+        now.setTime(now.getTime() + 250);
+        var start = new Date("08/01/2022 00:00:00"); // Time when calculations for Voyager 1 began
+        var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // Distance = seconds * speed (remember to convert milliseconds)
+        var unit = (dis / 149600000).toFixed(6);  // Astronomical units
+
+        document.getElementById("voyager").innerHTML = "Voyager 1 is currently " + dis + " kilometers from Earth, which is approximately " + unit + " astronomical units 🚀";
+    }
+    setInterval("createtime()", 250);
+</script>
+
 <!-- 热力图 -->
 <div id="heatmap" style="
   max-width: 600px;
@@ -211,20 +228,4 @@
             window.open(link, '_blank').focus();
         }
     });
-</script>
-
-<!-- Voyager Distance from Earth -->
-<span id="voyager">Loading Voyager 1 distance information from Earth...</span>
-<script language="javascript">
-    var now = new Date();
-    function createtime() {
-        // Current time
-        now.setTime(now.getTime() + 250);
-        var start = new Date("08/01/2022 00:00:00"); // Time when calculations for Voyager 1 began
-        var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // Distance = seconds * speed (remember to convert milliseconds)
-        var unit = (dis / 149600000).toFixed(6);  // Astronomical units
-
-        document.getElementById("voyager").innerHTML = "Voyager 1 is currently " + dis + " kilometers from Earth, which is approximately " + unit + " astronomical units 🚀";
-    }
-    setInterval("createtime()", 250);
 </script>
