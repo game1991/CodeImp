@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on CodeImp</title><link>https://game1991.github.io/CodeImp/en/page/</link><description>Recent content in Pages on CodeImp</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 20 Dec 2024 20:18:01 +0800</lastBuildDate><atom:link href="https://game1991.github.io/CodeImp/en/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives</title><link>https://game1991.github.io/CodeImp/en/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/archives/</guid><description/></item><item><title>About</title><link>https://game1991.github.io/CodeImp/en/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/about/</guid><description>&lt;img src="https://game1991.github.io/CodeImp/%E5%85%B3%E4%BA%8E/cover.png" alt="Featured image of post About" />&lt;hr>
+&lt;p>Welcome to CodeImp, a platform dedicated to exploring the boundaries of technology and sharing the passion for life. Here, we believe that technology is not just cold code; it is a bridge connecting reality and dreams, a tool for enhancing the quality of life. We love life and are passionate about transforming complex technical concepts into easily understandable language. CodeImp aims to provide a community for every technology enthusiast to exchange ideas and share insights, whether you are a programming novice or a seasoned expert. Let us together paint the future with code and ignite the spark of innovation with our enthusiasm!&lt;/p>
+&lt;hr></description></item><item><title>Links</title><link>https://game1991.github.io/CodeImp/en/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/links/</guid><description>&lt;!--
+To use this feature, add `links` section to frontmatter.
+This page's frontmatter:
+```yaml
+links:
+- title: GitHub
+description: GitHub is the world's largest software development platform.
+website: https://github.com
+image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+- title: TypeScript
+description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+website: https://www.typescriptlang.org
+image: ts-logo-128.jpg
+```
+`image` field accepts both local and external images.
+--></description></item><item><title>Search</title><link>https://game1991.github.io/CodeImp/en/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/search/</guid><description/></item></channel></rss>

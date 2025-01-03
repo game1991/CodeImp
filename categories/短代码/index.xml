@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短代码 on 代码无界限</title><link>https://game1991.github.io/CodeImp/categories/%E7%9F%AD%E4%BB%A3%E7%A0%81/</link><description>Recent content in 短代码 on 代码无界限</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 20 Dec 2024 16:56:12 +0800</lastBuildDate><atom:link href="https://game1991.github.io/CodeImp/categories/%E7%9F%AD%E4%BB%A3%E7%A0%81/index.xml" rel="self" type="application/rss+xml"/><item><title>短代码</title><link>https://game1991.github.io/CodeImp/2023/%E7%9F%AD%E4%BB%A3%E7%A0%81/</link><pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/2023/%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid><description>&lt;img src="https://game1991.github.io/CodeImp/2023/%E7%9F%AD%E4%BB%A3%E7%A0%81/cover.jpg" alt="Featured image of post 短代码" />&lt;p>有关更多详细信息，请查看&lt;a class="link" href="https://stack.jimmycai.com/writing/shortcodes" target="_blank" rel="noopener"
+>文档&lt;/a>。&lt;/p>
+&lt;h2 id="bilibili-视频">Bilibili 视频
+&lt;/h2>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1d4411N7zD"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h2 id="腾讯视频">腾讯视频
+&lt;/h2>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://v.qq.com/txp/iframe/player.html?vid=g0014r3khdw&amp;auto=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h2 id="youtube-视频">YouTube 视频
+&lt;/h2>&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/0qwALOOvUik"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h2 id="通用视频文件">通用视频文件
+&lt;/h2>&lt;div class="video-wrapper">
+&lt;video
+controls
+src="https://www.w3schools.com/tags/movie.mp4"
+>
+&lt;p>
+Your browser doesn't support HTML5 video. Here is a
+&lt;a href="https://www.w3schools.com/tags/movie.mp4">link to the video&lt;/a> instead.
+&lt;/p>
+&lt;/video>
+&lt;/div>
+&lt;h2 id="gist">Gist
+&lt;/h2>&lt;script src="https://gist.github.com/CaiJimmy/e2751a943de10b2a5b3a8a6c2120cb86.js">&lt;/script>
+&lt;h2 id="gitlab">GitLab
+&lt;/h2>&lt;script
+type="application/javascript"
+src="https://gitlab.com/-/snippets/2589724.js"
+>&lt;/script>
+&lt;h2 id="引用">引用
+&lt;/h2>&lt;blockquote>
+&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>一位著名人物, &lt;/span>&lt;a href="https://en.wikipedia.org/wiki/Book">&lt;cite>他们所著的书&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
+&lt;hr>
+&lt;blockquote>
+&lt;p>图片由&lt;a class="link" href="https://unsplash.com/@codioful" target="_blank" rel="noopener"
+>Codioful&lt;/a>在&lt;a class="link" href="https://unsplash.com/photos/WDSN62Qdxuk" target="_blank" rel="noopener"
+>Unsplash&lt;/a>上提供。&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
