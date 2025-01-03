@@ -7,8 +7,8 @@ links: # 链接配置开始
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
   - title: 微信
     description: 微信公众号
-    website: /wechat/1734600678477.jpg
-    image: /wechat/wechat_link.jpg
+    website: ../wechat/1734600678477.jpg
+    image: ../wechat/wechat_link.jpg
 menu: # 菜单配置
   main:
     weight: 4
