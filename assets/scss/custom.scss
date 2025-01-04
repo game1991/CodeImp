@@ -642,3 +642,70 @@ kbd {
 .sidebar header .site-avatar .site-logo:hover {
     transform: rotate(360deg); // 旋转角度为360度
 }
+
+/* 站点页脚样式 */
+section.copyright {
+    font-size: 14px;
+    color: #333; /* 深色文本，提高可读性 */
+    text-align: left; /* 左对齐 */
+}
+
+section.powerby {
+    font-size: 14px;
+    color: #555; /* 略深的文本颜色 */
+    text-align: left; /* 左对齐 */
+    margin: 10px 0; /* 适当的外边距 */
+}
+
+section.powerby b {
+    color: #000; /* 加粗文本颜色 */
+}
+
+section.powerby a {
+    color: #007BFF; /* 链接颜色 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section.powerby a:hover {
+    color: #0056b3; /* 鼠标悬停时的链接颜色 */
+    text-decoration: underline;
+}
+
+/* 网站运行时间样式 */
+section.runtime-info {
+    color: #4CAF50; /* 绿色突出显示 */
+    text-align: left; /* 左对齐 */
+    display: inline-block; /* 改为inline-block，以便更好地控制宽度 */
+    white-space: nowrap; /* 防止文本换行 */
+    width: 100%; /* 确保有足够的宽度 */
+    box-sizing: border-box; /* 包括内边距和边框在内的宽度计算 */
+}
+
+/* 站点页脚旅行者样式 */
+#voyager {
+    color: #2196F3; /* 蓝色 */
+    text-align: left; /* 左对齐 */
+    display: block; /* 使元素占满整行 */
+}
+
+/* 热力图容器样式 */
+#heatmap {
+    width: 100%; /* 宽度填满父容器 */
+    max-width: 600px; /* 最大宽度限制 */
+    height: 180px;
+    padding: 2px;
+    text-align: center;
+    margin: 20px auto; /* 水平居中 */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box; /* 包括内边距和边框在内的宽度计算 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #heatmap {
+        max-width: 100%; /* 在小屏幕上，热力图宽度为100% */
+    }
+}
