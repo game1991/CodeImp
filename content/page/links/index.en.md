@@ -7,8 +7,8 @@ links: # Links Configuration
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
   - title: WeChat
     description: WeChat Official Account
-    website: /wechat/1734600678477.jpg
-    image: /wechat/wechat_link.jpg
+    website: ../wechat/1734600678477.jpg
+    image: ../wechat/wechat_link.jpg
 menu: # Menu Configuration
   main:
     weight: 4
