@@ -1,4 +1,4 @@
-<section class="copyright">© {{ now.Format "2006" }} Code Impossible</section>
+<section class="copyright"> {{ now.Format "2006" }} Code Impossible</section>
 <section class="powerby">
     <!-- Built with
         <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo. </a> -->
@@ -13,6 +13,22 @@
         <b>☆LuckyStar★</b>
     </a>
 </section>
+
+<!-- Word Count -->
+<div class="word-stats">
+    <a href="/" class="word-count" title="Click to view all posts">
+        <span class="site-stats">
+            {{$scratch := newScratch}}
+            {{ range (where .Site.RegularPages "Type" "post") }}
+                {{$scratch.Add "total" .WordCount}}
+            {{ end }}
+            <span class="stat-item">Total {{$scratch.Get "total"}} words</span>
+            <span class="stat-divider">·</span>
+            <span class="stat-item">{{len (where .Site.RegularPages "Type" "post")}} posts</span>
+        </span>
+        <div class="book-comparison">{{.Scratch.Get "wowBook" | safeHTML}}</div>
+    </a>
+</div>
 
 <!-- Website Uptime -->
 <section class="runtime-info">
@@ -66,12 +82,12 @@
         var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // Distance = seconds * speed (remember to convert milliseconds)
         var unit = (dis / 149600000).toFixed(6);  // Astronomical units
 
-        document.getElementById("voyager").innerHTML = "Voyager 1 is currently " + dis + " kilometers from Earth, which is approximately " + unit + " astronomical units 🚀";
+        document.getElementById("voyager").innerHTML = "Voyager 1 is currently " + dis + " kilometers from Earth, which is approximately " + unit + " astronomical units ";
     }
     setInterval("createtime()", 250);
 </script>
 
-<!-- 热力图 -->
+<!-- -->
 <div id="heatmap" style="
   height: 180px;
   padding: 2px;
@@ -84,12 +100,12 @@
         myChart.resize();
     };
 
-    // 检测暗色模式
+    // 
     const isDarkMode = document.documentElement.getAttribute('data-scheme') === 'dark';
     const textColor = isDarkMode ? '#ffffff' : '#333333';
     const tooltipBgColor = isDarkMode ? '#1a1a1a' : '#ffffff';
-    const calendarBgColor = isDarkMode ? '#242424' : '#ffffff';  // 改为纯白背景
-    const borderColor = isDarkMode ? '#333333' : '#cccccc';      // 边框改为更深的灰色
+    const calendarBgColor = isDarkMode ? '#242424' : '#ffffff';  // 
+    const borderColor = isDarkMode ? '#333333' : '#cccccc';      // 
 
     var option;
 
@@ -194,7 +210,7 @@
                         var link = post.link;
                         var title = post.title;
                         var wordCount = (post.wordCount / 1000).toFixed(1);
-                        content += `<a href="${link}" target="_blank" style="color: ${isDarkMode ? '#7AA874' : '#4CAF50'}; display: block; padding: 4px 0;">${title} | ${wordCount} 千字</a>`;
+                        content += `<a href="${link}" target="_blank" style="color: ${isDarkMode ? '#7AA874' : '#4CAF50'}; display: block; padding: 4px 0;">${title} | ${wordCount} </a>`;
                     }
                     return content;
                 }
@@ -211,7 +227,7 @@
             color: ['#7aa8744c', '#7AA874']
         },
         splitNumber: 4,
-        text: ['千字', ''],
+        text: ['', ''],
         showLabel: true,
         itemGap: 20,
         textStyle: {
@@ -227,7 +243,7 @@
         range: getRangeArr(),
         itemStyle: {
             color: calendarBgColor,
-            borderWidth: 1,                    // 减小边框宽度
+            borderWidth: 1,                    // 
             borderColor: borderColor
         },
         yearLabel: { show: false },
@@ -252,8 +268,8 @@
         splitLine: {
             show: true,
             lineStyle: {
-                color: isDarkMode ? '#333333' : '#cccccc',  // 分割线也用相同的颜色
-                width: 1,                                    // 统一线条宽度
+                color: isDarkMode ? '#333333' : '#cccccc',  // 
+                width: 1,                                    // 
                 type: 'solid'
             }
         }
@@ -265,13 +281,13 @@
         }
     };
 
-    // 监听主题变化
+    // 
     const observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
             if (mutation.attributeName === 'data-scheme') {
                 const newIsDarkMode = document.documentElement.getAttribute('data-scheme') === 'dark';
                 if (newIsDarkMode !== isDarkMode) {
-                    location.reload(); // 重新加载以更新主题
+                    location.reload(); // 
                 }
             }
         });

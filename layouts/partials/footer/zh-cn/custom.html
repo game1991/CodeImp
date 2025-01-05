@@ -1,6 +1,6 @@
 <!--站点页脚 -->
 
-<section class="copyright">© {{ now.Format "2006" }} 代码无界限</section>
+<section class="copyright">  {{ now.Format "2006" }}  代码无界限</section>
 <section class="powerby">
     <!-- 使用
         <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
@@ -12,10 +12,26 @@
     未经授权禁止<b>转载</b>
     ---由
     <a href="/wechat/1734600678477.jpg" target="_blank" rel="noopener">
-        <b>☆LuckyStar★</b>
+        <b>LuckyStar</b>
     </a>
     设计
 </section>
+
+<!-- 字数统计 -->
+<div class="word-stats">
+    <a href="/" class="word-count" title="点击查看所有文章">
+        <span class="site-stats">
+            {{$scratch := newScratch}}
+            {{ range (where .Site.RegularPages "Type" "post") }}
+                {{$scratch.Add "total" .WordCount}}
+            {{ end }}
+            <span class="stat-item">共 {{$scratch.Get "total"}} 字</span>
+            <span class="stat-divider">·</span>
+            <span class="stat-item">{{len (where .Site.RegularPages "Type" "post")}} 篇文章</span>
+        </span>
+        <div class="book-comparison">{{.Scratch.Get "wowBook" | safeHTML}}</div>
+    </a>
+</div>
 
 <!-- 网站运行时间 -->
 <section class="runtime-info">
@@ -68,16 +84,13 @@
         var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
         var unit = (dis / 149600000).toFixed(6);  // 天文单位
 
-        document.getElementById("voyager").innerHTML = "旅行者 1 号当前距离地球 " + dis + " 千米，约为 " + unit + " 个天文单位 🚀"
+        document.getElementById("voyager").innerHTML = "旅行者 1 号当前距离地球 " + dis + " 千米，约为 " + unit + " 个天文单位 "
     }
     setInterval("createtime()", 250);
 </script>
 
 <!-- 热力图 -->
-<div id="heatmap" style="
-  height: 180px;
-  padding: 2px;
-  text-align: center;"></div>
+<div id="heatmap" style="height: 180px; padding: 2px; text-align: center;"></div>
 <script src="https://npm.elemecdn.com/echarts@5.3.0/dist/echarts.min.js"></script>
 <script type="text/javascript">
     var chartDom = document.getElementById('heatmap');
