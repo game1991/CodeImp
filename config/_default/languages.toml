@@ -14,6 +14,8 @@
     [zh-cn.params.dateFormat]
         lastUpdated="2006-01-02 15:04:05"
         published  ="2006-01-02"
+    [zh-cn.params]
+        heatmapTitle="日产三万亩"
 
 
 [en]
@@ -30,3 +32,5 @@
     [en.params.dateFormat]
         lastUpdated="Jan 02, 2006 15:04:05"
         published  ="Jan 02, 2006"
+    [en.params]
+        heatmapTitle="Daily production of 3,000 hectares"

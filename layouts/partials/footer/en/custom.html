@@ -15,7 +15,9 @@
 </section>
 
 <!-- Website Uptime -->
+<section class="runtime-info">
 <span id="timeDate">Loading days...</span><span id="times">Loading hours, minutes, and seconds...</span>
+</section>
 <script language="javascript">
     var now = new Date();
 
@@ -51,6 +53,7 @@
     setInterval(createtime, 250);
 </script>
 
+
 </br>
 <!-- Voyager Distance from Earth -->
 <span id="voyager">Loading Voyager 1 distance information from Earth...</span>
@@ -70,11 +73,9 @@
 
 <!-- 热力图 -->
 <div id="heatmap" style="
-  max-width: 600px;
   height: 180px;
   padding: 2px;
-  text-align: center;
-  margin: auto"></div>
+  text-align: center;"></div>
 <script src="https://npm.elemecdn.com/echarts@5.3.0/dist/echarts.min.js"></script>
 <script type="text/javascript">
     var chartDom = document.getElementById('heatmap');
@@ -82,14 +83,22 @@
     window.onresize = function () {
         myChart.resize();
     };
+
+    // 检测暗色模式
+    const isDarkMode = document.documentElement.getAttribute('data-scheme') === 'dark';
+    const textColor = isDarkMode ? '#ffffff' : '#333333';
+    const tooltipBgColor = isDarkMode ? '#1a1a1a' : '#ffffff';
+    const calendarBgColor = isDarkMode ? '#242424' : '#ffffff';  // 改为纯白背景
+    const borderColor = isDarkMode ? '#333333' : '#cccccc';      // 边框改为更深的灰色
+
     var option;
 
-    // ECharts heatmap data seems to only support two-element tuples
-    // It doesn't render when each item has 3 values
-    // It also only passes the first 2 elements when reading event parameters
-    // So here we build a map to store additional metadata like link and title
-    // Map format: {date: [{wordCount, link, title}]}
-    // For more information see https://blog.douchi.space/hugo-blog-heatmap
+    // echart heatmap data seems to only support two elements tuple
+    // it doesn't render when each item has 3 value
+    // it also only pass first 2 elements when reading event param
+    // so here we build a map to store additional metadata like link and title
+    // map format {date: [{wordcount, link, title}]}
+    // for more information see https://blog.douchi.space/hugo-blog-heatmap
     var dataMap = new Map();
     {{ range where .Site.RegularPages "Type" "post" }}
     var key = {{ .Date.Format "2006-01-02" }};
@@ -98,7 +107,7 @@
     var link = {{ .RelPermalink }};
     var title = {{ .Title }};
 
-    // Multiple posts on the same day
+    // multiple posts in same day
     if (value == null) {
         dataMap.set(key, [{ wordCount, link, title }]);
     } else {
@@ -107,7 +116,7 @@
     {{ end }}
 
     var data = [];
-    // Sum up the word count
+    // sum up the word count
     for (const [key, value] of dataMap.entries()) {
         var sum = 0;
         for (const v of value) {
@@ -125,7 +134,7 @@
     startDate = echarts.format.formatTime('yyyy-MM-dd', startDate);
     endDate = echarts.format.formatTime('yyyy-MM-dd', endDate);
 
-    // Change date range according to the months we want to render
+    // change date range according to months we want to render
     function heatmap_width(months) {
         var startDate = new Date();
         var mill = startDate.setMonth((startDate.getMonth() - months));
@@ -140,7 +149,7 @@
             startDate,
             endDate
         ]);
-        return showmonth;
+        return showmonth
     };
 
     function getRangeArr() {
@@ -158,71 +167,125 @@
         title: {
             top: 0,
             left: 'center',
-            text: 'Blog Word Count Output'
-        },
-        tooltip: {
-            hideDelay: 1000,
-            enterable: true,
-            formatter: function (p) {
-                const date = p.data[0];
-                const posts = dataMap.get(date);
-                var content = `${date}`;
-                for (const [i, post] of posts.entries()) {
-                    content += "<br>";
-                    var link = post.link;
-                    var title = post.title;
-                    var wordCount = (post.wordCount / 1000).toFixed(1);
-                    content += `<a href="${link}" target="_blank">${title} | ${wordCount} K words</a>`;
-                }
-                return content;
+            text: {{ .Site.Params.heatmapTitle | default "Blog waste words" }},
+            textStyle: {
+                color: textColor,
+                fontFamily: 'MiSans, sans-serif',
+                fontSize: 18,
+                fontWeight: 'bold'
             }
         },
-        visualMap: {
-            min: 0,
-            max: 10,
-            type: 'piecewise',
-            orient: 'horizontal',
-            left: 'center',
-            top: 30,
-
-            inRange: {
-                // [floor color, ceiling color]
-                color: ['#7aa8744c', '#7AA874']
+    tooltip: {
+        hideDelay: 1000,
+        enterable: true,
+        backgroundColor: tooltipBgColor,
+            borderColor: isDarkMode ? '#404040' : '#e0e0e0',
+            borderWidth: 1,
+            textStyle: {
+                color: textColor,
+                fontFamily: 'MiSans, sans-serif'
             },
-            splitNumber: 4,
-            text: ['K words', ''],
-            showLabel: true,
-            itemGap: 20,
-        },
-        calendar: {
-            top: 80,
-            left: 20,
-            right: 4,
-            cellSize: ['auto', 12],
-            range: getRangeArr(),
-            itemStyle: {
-                color: '#F1F1F1',
-                borderWidth: 2.5,
-                borderColor: '#fff',
-            },
-            yearLabel: { show: false },
-            // The split line between months. Set to transparent for now.
-            splitLine: {
-                lineStyle: {
-                    color: 'rgba(0, 0, 0, 0.0)',
+        formatter: function (p) {
+                    const date = p.data[0];
+                    const posts = dataMap.get(date);
+                    var content = `<div style="color: ${textColor};font-weight: bold; margin-bottom: 8px;">${date}</div>`;
+                    for (const [i, post] of posts.entries()) {
+                        content += "<br>";
+                        var link = post.link;
+                        var title = post.title;
+                        var wordCount = (post.wordCount / 1000).toFixed(1);
+                        content += `<a href="${link}" target="_blank" style="color: ${isDarkMode ? '#7AA874' : '#4CAF50'}; display: block; padding: 4px 0;">${title} | ${wordCount} 千字</a>`;
+                    }
+                    return content;
                 }
+    },
+    visualMap: {
+        min: 0,
+        max: 10,
+        type: 'piecewise',
+        orient: 'horizontal',
+        left: 'center',
+        top: 30,
+        inRange: {
+            //  [floor color, ceiling color]
+            color: ['#7aa8744c', '#7AA874']
+        },
+        splitNumber: 4,
+        text: ['千字', ''],
+        showLabel: true,
+        itemGap: 20,
+        textStyle: {
+                color: textColor,
+                fontFamily: 'MiSans, sans-serif'
             }
         },
-        series: {
-            type: 'heatmap',
+    calendar: {
+        top: 80,
+        left: 20,
+        right: 4,
+        cellSize: ['auto', 12],
+        range: getRangeArr(),
+        itemStyle: {
+            color: calendarBgColor,
+            borderWidth: 1,                    // 减小边框宽度
+            borderColor: borderColor
+        },
+        yearLabel: { show: false },
+        dayLabel: {
+            color: textColor,
+            fontFamily: 'MiSans, sans-serif'
+        },
+        monthLabel: {
+            color: textColor,
+            fontFamily: 'MiSans, sans-serif'
+        },
+        // the splitline between months. set to transparent for now.
+        // splitLine: {
+        //     lineStyle: {
+        //         color: 'rgba(0, 0, 0, 0.0)',
+        //             // shadowColor: 'rgba(0, 0, 0, 0.5)',
+        //             // shadowBlur: 5,
+        //             // width: 0.5,
+        //             // type: 'dashed',
+        //         }
+        // }
+        splitLine: {
+            show: true,
+            lineStyle: {
+                color: isDarkMode ? '#333333' : '#cccccc',  // 分割线也用相同的颜色
+                width: 1,                                    // 统一线条宽度
+                type: 'solid'
+            }
+        }
+    },
+    series: {
+        type: 'heatmap',
             coordinateSystem: 'calendar',
-            data: data,
+                data: data,
         }
     };
+
+    // 监听主题变化
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.attributeName === 'data-scheme') {
+                const newIsDarkMode = document.documentElement.getAttribute('data-scheme') === 'dark';
+                if (newIsDarkMode !== isDarkMode) {
+                    location.reload(); // 重新加载以更新主题
+                }
+            }
+        });
+    });
+
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-scheme']
+    });
+
     myChart.setOption(option);
     myChart.on('click', function (params) {
         if (params.componentType === 'series') {
-            // Open the first post on the day
+            // open the first post on the day
             const post = dataMap.get(params.data[0])[0];
             const link = window.location.origin + post.link;
             window.open(link, '_blank').focus();

@@ -19,41 +19,41 @@
 
 <!-- 网站运行时间 -->
 <section class="runtime-info">
-<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-<script language="javascript">
-    var now = new Date();
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    <script language="javascript">
+        var now = new Date();
 
-    function createtime() {
-        now.setTime(now.getTime() + 250); // 当前时间
-        var grt = new Date("2020/01/01 00:00:00"); // 网站诞生时间（请替换为实际的时间）
+        function createtime() {
+            now.setTime(now.getTime() + 250); // 当前时间
+            var grt = new Date("2020/01/01 00:00:00"); // 网站诞生时间（请替换为实际的时间）
 
-        // 计算天数
-        days = (now - grt) / 1000 / 60 / 60 / 24;
-        dnum = Math.floor(days);
+            // 计算天数
+            days = (now - grt) / 1000 / 60 / 60 / 24;
+            dnum = Math.floor(days);
 
-        // 计算小时
-        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
-        hnum = Math.floor(hours);
-        if (String(hnum).length == 1) { hnum = "0" + hnum; }
+            // 计算小时
+            hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+            hnum = Math.floor(hours);
+            if (String(hnum).length == 1) { hnum = "0" + hnum; }
 
-        // 计算分钟
-        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
-        mnum = Math.floor(minutes);
-        if (String(mnum).length == 1) { mnum = "0" + mnum; }
+            // 计算分钟
+            minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes);
+            if (String(mnum).length == 1) { mnum = "0" + mnum; }
 
-        // 计算秒数
-        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-        snum = Math.round(seconds);
-        if (String(snum).length == 1) { snum = "0" + snum; }
+            // 计算秒数
+            seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds);
+            if (String(snum).length == 1) { snum = "0" + snum; }
 
-        // 更新页面内容
-        document.getElementById("timeDate").innerHTML = "本站已稳定运行 " + dnum + " 天 ";
-        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-    }
+            // 更新页面内容
+            document.getElementById("timeDate").innerHTML = "本站已稳定运行 " + dnum + " 天 ";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
 
-    // 使用函数引用
-    setInterval(createtime, 250);
-</script>
+        // 使用函数引用
+        setInterval(createtime, 250);
+    </script>
 </section>
 
 </br>
@@ -75,11 +75,9 @@
 
 <!-- 热力图 -->
 <div id="heatmap" style="
-  max-width: 600px;
   height: 180px;
   padding: 2px;
-  text-align: center;
-  margin: auto"></div>
+  text-align: center;"></div>
 <script src="https://npm.elemecdn.com/echarts@5.3.0/dist/echarts.min.js"></script>
 <script type="text/javascript">
     var chartDom = document.getElementById('heatmap');
@@ -87,6 +85,14 @@
     window.onresize = function () {
         myChart.resize();
     };
+
+    // 检测暗色模式
+    const isDarkMode = document.documentElement.getAttribute('data-scheme') === 'dark';
+    const textColor = isDarkMode ? '#ffffff' : '#333333';
+    const tooltipBgColor = isDarkMode ? '#1a1a1a' : '#ffffff';
+    const calendarBgColor = isDarkMode ? '#242424' : '#ffffff';  // 改为纯白背景
+    const borderColor = isDarkMode ? '#333333' : '#cccccc';      // 边框改为更深的灰色
+
     var option;
 
     // echart heatmap data seems to only support two elements tuple
@@ -163,71 +169,121 @@
         title: {
             top: 0,
             left: 'center',
-            text: '博客废话产量'
-        },
-        tooltip: {
-            hideDelay: 1000,
-            enterable: true,
-            formatter: function (p) {
-                const date = p.data[0];
-                const posts = dataMap.get(date);
-                var content = `${date}`;
-                for (const [i, post] of posts.entries()) {
-                    content += "<br>";
-                    var link = post.link;
-                    var title = post.title;
-                    var wordCount = (post.wordCount / 1000).toFixed(1);
-                    content += `<a href="${link}" target="_blank">${title} | ${wordCount} 千字</a>`
-                }
-                return content;
+            text: {{ .Site.Params.heatmapTitle | default "博客废话产量" }},
+            textStyle: {
+                color: textColor,
+                fontFamily: 'MiSans, sans-serif',
+                fontSize: 18,
+                fontWeight: 'bold'
             }
         },
-        visualMap: {
-            min: 0,
-            max: 10,
-            type: 'piecewise',
-            orient: 'horizontal',
-            left: 'center',
-            top: 30,
-
-            inRange: {
-                //  [floor color, ceiling color]
-                color: ['#7aa8744c', '#7AA874']
+    tooltip: {
+        hideDelay: 1000,
+        enterable: true,
+        backgroundColor: tooltipBgColor,
+            borderColor: isDarkMode ? '#404040' : '#e0e0e0',
+            borderWidth: 1,
+            textStyle: {
+                color: textColor,
+                fontFamily: 'MiSans, sans-serif'
             },
-            splitNumber: 4,
-            text: ['千字', ''],
-            showLabel: true,
-            itemGap: 20,
-        },
-        calendar: {
-            top: 80,
-            left: 20,
-            right: 4,
-            cellSize: ['auto', 12],
-            range: getRangeArr(),
-            itemStyle: {
-                color: '#F1F1F1',
-                borderWidth: 2.5,
-                borderColor: '#fff',
-            },
-            yearLabel: { show: false },
-            // the splitline between months. set to transparent for now.
-            splitLine: {
-                lineStyle: {
-                    color: 'rgba(0, 0, 0, 0.0)',
-                    // shadowColor: 'rgba(0, 0, 0, 0.5)',
-                    // shadowBlur: 5,
-                    // width: 0.5,
-                    // type: 'dashed',
+        formatter: function (p) {
+                    const date = p.data[0];
+                    const posts = dataMap.get(date);
+                    var content = `<div style="color: ${textColor};font-weight: bold; margin-bottom: 8px;">${date}</div>`;
+                    for (const [i, post] of posts.entries()) {
+                        content += "<br>";
+                        var link = post.link;
+                        var title = post.title;
+                        var wordCount = (post.wordCount / 1000).toFixed(1);
+                        content += `<a href="${link}" target="_blank" style="color: ${isDarkMode ? '#7AA874' : '#4CAF50'}; display: block; padding: 4px 0;">${title} | ${wordCount} 千字</a>`;
+                    }
+                    return content;
                 }
+    },
+    visualMap: {
+        min: 0,
+        max: 10,
+        type: 'piecewise',
+        orient: 'horizontal',
+        left: 'center',
+        top: 30,
+        inRange: {
+            //  [floor color, ceiling color]
+            color: ['#7aa8744c', '#7AA874']
+        },
+        splitNumber: 4,
+        text: ['千字', ''],
+        showLabel: true,
+        itemGap: 20,
+        textStyle: {
+                color: textColor,
+                fontFamily: 'MiSans, sans-serif'
             }
         },
-        series: {
-            type: 'heatmap',
+    calendar: {
+        top: 80,
+        left: 20,
+        right: 4,
+        cellSize: ['auto', 12],
+        range: getRangeArr(),
+        itemStyle: {
+            color: calendarBgColor,
+            borderWidth: 1,                    // 减小边框宽度
+            borderColor: borderColor
+        },
+        yearLabel: { show: false },
+        dayLabel: {
+            color: textColor,
+            fontFamily: 'MiSans, sans-serif'
+        },
+        monthLabel: {
+            color: textColor,
+            fontFamily: 'MiSans, sans-serif'
+        },
+        // the splitline between months. set to transparent for now.
+        // splitLine: {
+        //     lineStyle: {
+        //         color: 'rgba(0, 0, 0, 0.0)',
+        //             // shadowColor: 'rgba(0, 0, 0, 0.5)',
+        //             // shadowBlur: 5,
+        //             // width: 0.5,
+        //             // type: 'dashed',
+        //         }
+        // }
+        splitLine: {
+            show: true,
+            lineStyle: {
+                color: isDarkMode ? '#333333' : '#cccccc',  // 分割线也用相同的颜色
+                width: 1,                                    // 统一线条宽度
+                type: 'solid'
+            }
+        }
+    },
+    series: {
+        type: 'heatmap',
             coordinateSystem: 'calendar',
-            data: data,
+                data: data,
         }
     };
+
+    // 监听主题变化
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.attributeName === 'data-scheme') {
+                const newIsDarkMode = document.documentElement.getAttribute('data-scheme') === 'dark';
+                if (newIsDarkMode !== isDarkMode) {
+                    location.reload(); // 重新加载以更新主题
+                }
+            }
+        });
+    });
+
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-scheme']
+    });
+
     myChart.setOption(option);
     myChart.on('click', function (params) {
         if (params.componentType === 'series') {
