@@ -37,8 +37,23 @@
     }
 }
 
+// 页脚统一配置
+.footer {
+    font-size: 1.4rem;
+    text-align: left;
+    color: var(--card-text-color-main); // 设置统一的字体颜色
+
+    // 确保所有直接子元素的颜色也保持一致
+    a,
+    b,
+    span {
+        color: inherit; // 继承父元素的颜色
+    }
+}
+
 // 字体
-body, .article-content {
+body,
+.article-content {
     font-family: "MiSans", sans-serif;
 }
 
@@ -495,10 +510,14 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 800px; /* 设置最大宽度 */
-    margin: 0 auto; /* 水平居中 */
-    padding: 0.2px; /* 添加内边距，增加一些空间 */
-    line-height: 0.1; /* 调整行高 */
+    max-width: 800px;
+    /* 设置最大宽度 */
+    margin: 0 auto;
+    /* 水平居中 */
+    padding: 0.2px;
+    /* 添加内边距，增加一些空间 */
+    line-height: 0.1;
+    /* 调整行高 */
 }
 
 // 👋emoji实现摆动效果
@@ -627,7 +646,7 @@ html {
 // 键盘样式 <kbd>CTRL</kbd> + <kbd>C</kbd>
 kbd {
     margin: 0 .1em;
-    padding: .1em .6em;
+    padding: 0.1em .6em;
     font-size: .8em;
     color: #242729;
     background: #fff;
@@ -650,45 +669,61 @@ kbd {
 
 /* 站点页脚样式 */
 section.copyright {
-    font-size: 14px;
-    color: var(--card-text-color-main);  // 使用主文本颜色变量
+    font-weight: bold;
     text-align: left;
     margin: 0;
     padding: 0;
     line-height: 1.2;
-    font-weight: 500;  // 稍微加粗
-    letter-spacing: 0.3px;  // 增加字间距
-    transition: color 0.3s ease;  // 添加颜色过渡效果
+    letter-spacing: 0.3px; // 增加字间距
+    // transition: color 0.3s ease; // 添加颜色过渡效果
+    background: linear-gradient(90deg, #FF69B4, #FF1493, #9370DB, #4169E1, #00BFFF, #00FF7F, #FFD700); // 渐变颜色
+    background-size: 200% auto; // 背景大小
+    background-clip: text; // 背景裁剪为文本
+    -webkit-background-clip: text; // Safari 支持
+    color: transparent; // 文字颜色设为透明
+    animation: gradient 3s linear infinite; // 添加动画效果（可选）
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); // 设置阴影的偏移和颜色
+
+    // 暗黑模式下的样式
+    [data-scheme="dark"] & {
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); // 设置更轻的白色透明阴影
+    }
 
     &:hover {
-        color: var(--accent-color);  // 悬浮时使用强调色
+        color: var(--accent-color); // 悬浮时使用强调色
     }
 }
 
 section.powerby {
-    font-size: 14px;
-    color: #555; /* 略深的文本颜色 */
-    text-align: left; /* 左对齐 */
-    margin: 0;  // 移除外边距
+    // font-size: 14px;
+    // color: #555;
+    // /* 略深的文本颜色 */
+    color: var(--card-text-color-main); // 使用主文本颜色变量
+    text-align: left;
+    /* 左对齐 */
+    margin: 0; // 移除外边距
     padding: 0; // 移除内边距
     line-height: 1.2;
 }
 
 section.powerby b {
-    font-size: 14px;
-    color: #000; /* 加粗文本颜色 */
+    // font-size: 14px;
+    color: var(--card-text-color-main); // 使用主文本颜色变量
+    /* 加粗文本颜色 */
 }
 
 section.powerby a {
-    font-size: 14px;
-    color: #007BFF; /* 链接颜色 */
+    // font-size: 14px;
+    color: #2576e9;
+    /* 链接颜色 */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 section.powerby a:hover {
-    font-size: 14px;
-    color: #0056b3; /* 鼠标悬停时的链接颜色 */
+    // font-size: 14px;
+    color: #0056b3;
+    /* 鼠标悬停时的链接颜色 */
     text-decoration: underline;
 }
 
@@ -696,31 +731,39 @@ section.powerby a:hover {
 section.runtime-info {
     margin-top: 2px; // 减小与字数统计的间距
     line-height: 1.2; // 减小行高
-    font-size: 14px;
+    // font-size: 14px;
     font-weight: bold;
-    color: #4CAF50; /* 绿色突出显示 */
-    text-align: left; /* 左对齐 */
-    display: inline-block; /* 改为inline-block，以便更好地控制宽度 */
-    white-space: nowrap; /* 防止文本换行 */
-    width: 100%; /* 确保有足够的宽度 */
-    box-sizing: border-box; /* 包括内边距和边框在内的宽度计算 */
+    color: #4CAF50;
+    /* 绿色突出显示 */
+    text-align: left;
+    /* 左对齐 */
+    display: inline-block;
+    /* 改为inline-block，以便更好地控制宽度 */
+    white-space: nowrap;
+    /* 防止文本换行 */
+    width: 100%;
+    /* 确保有足够的宽度 */
+    box-sizing: border-box;
+    /* 包括内边距和边框在内的宽度计算 */
 }
 
 /* 站点页脚旅行者样式 */
 #voyager {
-    font-size: 14px;
+    // font-size: 14px;
     font-weight: bold;
-    color: #2196F3; /* 蓝色 */
-    text-align: left; /* 左对齐 */
-    display: block; /* 使元素占满整行 */
+    color: #2196F3;
+    /* 蓝色 */
+    text-align: left;
+    /* 左对齐 */
+    display: block;
+    /* 使元素占满整行 */
 }
 
 // 字数统计模块
 .word-stats {
-    text-align: left;
     opacity: 0.8;
     transition: opacity 0.3s ease;
-    margin: 0;  // 移除外边距
+    margin: 0; // 移除外边距
     padding: 0; // 移除内边距
     line-height: 1; // 减小行高
 
@@ -732,8 +775,6 @@ section.runtime-info {
 // 字数统计
 .word-count {
     display: inline-block;
-    font-size: 14px;
-    color: var(--card-text-color-secondary);
     position: relative;
     cursor: pointer;
     margin: 0;
@@ -756,7 +797,14 @@ section.runtime-info {
         display: inline-block;
 
         .stat-item {
-            font-weight: normal;
+            display: inline-block;
+            font-weight: bold;
+            background: linear-gradient(90deg, #FF69B4, #FF1493, #9370DB, #4169E1, #00BFFF, #00FF7F, #FFD700); // 渐变颜色
+            background-size: 200% auto; // 背景大小
+            background-clip: text; // 背景裁剪为文本
+            -webkit-background-clip: text; // Safari 支持
+            color: transparent; // 文字颜色设为透明
+            animation: gradient 3s linear infinite; // 添加动画效果（可选）
         }
 
         .stat-divider {
@@ -797,5 +845,76 @@ section.runtime-info {
 
     &:active {
         transform: translateY(1px);
+    }
+}
+
+// 渐变文字效果
+.gradient-text {
+    display: inline-block;
+    padding: 0 8px;
+    background: linear-gradient(92deg,
+            #FF1493, // 深粉红
+            #9370DB, // 中紫色
+            #4169E1, // 皇家蓝
+            #00BFFF, // 深天蓝
+            #32CD32, // 酸橙绿
+            #FFD700, // 金色
+            #FF1493 // 回到深粉红
+        );
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    animation: gradient 4s linear infinite;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+
+    &:hover {
+        transform: translateY(-3px);
+        transition: transform 0.2s ease;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: -200% center;
+    }
+}
+
+// 七彩渐变文字效果
+.rainbow-text {
+    background: linear-gradient(to right,
+            #ff0000, // 红
+            #ff8000, // 橙
+            #ffff00, // 黄
+            #00ff00, // 绿
+            #00ffff, // 青
+            #0000ff, // 蓝
+            #8000ff // 紫
+        );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 8s linear infinite;
+    background-size: 200% 100%;
+    margin: 0 4px;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }
