@@ -27,6 +27,18 @@
     --code-background-color: #f8f8f8;
     // 行内代码前景色
     --code-text-color: #e96900;
+    // 欢迎页特制 - 七彩霓虹效果
+    --welcome-color1: #ff0055; // 玫红
+    --welcome-color2: #ff3300; // 红橙
+    --welcome-color3: #ffaa00; // 金黄
+    --welcome-color4: #33ff00; // 翠绿
+    --welcome-color5: #00ffcc; // 青绿
+    --welcome-color6: #0099ff; // 天蓝
+    --welcome-color7: #6600ff; // 紫罗兰
+    --welcome-color8: #ff00cc; // 粉紫
+    --welcome-text-shadow: rgba(255, 0, 85, 0.3);
+    --welcome-glow: rgba(255, 0, 85, 0.5);
+    --welcome-neon: rgba(255, 0, 85, 0.8);
 
     // 暗色模式下样式
     &[data-scheme="dark"] {
@@ -34,6 +46,18 @@
         --code-background-color: #ff6d1b17;
         // 行内代码前景色
         --code-text-color: #e96900;
+        // 暗色模式下加强霓虹效果
+        --welcome-color1: #ff1a6b;
+        --welcome-color2: #ff4d1a;
+        --welcome-color3: #ffbb1a;
+        --welcome-color4: #4dff1a;
+        --welcome-color5: #1affd9;
+        --welcome-color6: #1aadff;
+        --welcome-color7: #7a1aff;
+        --welcome-color8: #ff1ad9;
+        --welcome-text-shadow: rgba(255, 26, 107, 0.5);
+        --welcome-glow: rgba(255, 26, 107, 0.7);
+        --welcome-neon: rgba(255, 26, 107, 1);
     }
 }
 
@@ -65,6 +89,21 @@ a {
 
 code {
     word-break: break-all;
+}
+
+// 文章封面高度
+.article-list article .article-image img {
+    width: 100%;
+    height: 200px !important;
+    object-fit: cover;
+
+    @include respond(md) {
+        height: 250px !important;
+    }
+
+    @include respond(xl) {
+        height: 285px !important;
+    }
 }
 
 //---------------------------------------------------
@@ -861,12 +900,12 @@ section.runtime-info {
             #FFD700, // 金色
             #FF1493 // 回到深粉红
         );
-    background-size: 200% auto;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    animation: gradient 4s linear infinite;
+    background-size: 200% auto; // 背景大小
+    color: transparent; // 文字颜色设为透明
+    -webkit-background-clip: text; // Safari 支持
+    background-clip: text; // 背景裁剪为文本
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); // 设置阴影的偏移和颜色
+    animation: gradient 4s linear infinite; // 添加动画效果（可选）
     letter-spacing: 0.5px;
     font-weight: 600;
 
