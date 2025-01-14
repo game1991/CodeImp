@@ -39,6 +39,10 @@
     --welcome-text-shadow: rgba(255, 0, 85, 0.2);
     --welcome-glow: rgba(255, 0, 85, 0.3);
     --welcome-neon: rgba(255, 0, 85, 0.4);
+    // 边栏
+    --sidebar-bg-light: rgba(245, 245, 245, 0.8);
+    --sidebar-text-light: #333;
+    --sidebar-hover-light: rgba(0, 0, 0, 0.05);
 
     // 暗色模式下样式
     &[data-scheme="dark"] {
@@ -58,6 +62,10 @@
         --welcome-text-shadow: rgba(255, 255, 255, 0.2);
         --welcome-glow: rgba(255, 255, 255, 0.3);
         --welcome-neon: rgba(255, 255, 255, 0.4);
+        // 边栏
+        --sidebar-bg-dark: rgba(30, 30, 30, 0.8);
+        --sidebar-text-dark: #e0e0e0;
+        --sidebar-hover-dark: rgba(255, 255, 255, 0.1);
     }
 }
 
@@ -231,14 +239,35 @@ a {
     margin-left: auto;
     margin-right: auto;
 
+    .left-sidebar, .right-sidebar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;     /* Firefox */
+        &::-webkit-scrollbar {     /* Chrome, Safari and Opera */
+            display: none;
+            width: 0;
+        }
+    }
+
     .left-sidebar {
         order: -3;
         max-width: var(--left-sidebar-max-width);
+        &::-webkit-scrollbar {
+            display: none;
+            width: 0;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     .right-sidebar {
         order: -1;
         max-width: var(--right-sidebar-max-width);
+        &::-webkit-scrollbar {
+            display: none;
+            width: 0;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
 
         /// Display right sidebar when min-width: lg
         @include respond(lg) {
@@ -373,8 +402,18 @@ a {
     }
 }
 
-//将滚动条修改为圆角样式
-//菜单滚动条美化
+// 隐藏菜单栏滚动条
+.menu-bottom-section, .menu {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+    }
+}
+
+// 将滚动条修改为圆角样式
+// 菜单滚动条美化
 .menu::-webkit-scrollbar {
     display: none;
 }
@@ -674,7 +713,7 @@ html {
     .highlight:before {
         content: '';
         display: block;
-        background: url(/code-header.svg);
+        background: url(../code-header.svg);
         height: 32px;
         width: 100%;
         background-size: 57px;
@@ -840,7 +879,15 @@ section.runtime-info {
         .stat-item {
             display: inline-block;
             font-weight: bold;
-            background: linear-gradient(90deg, #FF69B4, #FF1493, #9370DB, #4169E1, #00BFFF, #00FF7F, #FFD700); // 渐变颜色
+            background: linear-gradient(90deg,
+                    #FF69B4, // 红
+                    #FF1493, // 粉
+                    #9370DB, // 紫
+                    #4169E1, // 蓝
+                    #00BFFF, // 天蓝
+                    #00FF7F, // 绿
+                    #FFD700 // 金
+                );
             background-size: 200% auto; // 背景大小
             background-clip: text; // 背景裁剪为文本
             -webkit-background-clip: text; // Safari 支持
@@ -967,15 +1014,41 @@ section.runtime-info {
 }
 
 // 跳动动画延迟
-.jump-text1 { animation-delay: 0.1s; }
-.jump-text2 { animation-delay: 0.2s; }
-.jump-text3 { animation-delay: 0.3s; }
-.jump-text4 { animation-delay: 0.4s; }
-.jump-text5 { animation-delay: 0.5s; }
-.jump-text6 { animation-delay: 0.6s; }
-.jump-text7 { animation-delay: 0.7s; }
-.jump-text8 { animation-delay: 0.8s; }
-.jump-text9 { animation-delay: 0.9s; }
+.jump-text1 {
+    animation-delay: 0.1s;
+}
+
+.jump-text2 {
+    animation-delay: 0.2s;
+}
+
+.jump-text3 {
+    animation-delay: 0.3s;
+}
+
+.jump-text4 {
+    animation-delay: 0.4s;
+}
+
+.jump-text5 {
+    animation-delay: 0.5s;
+}
+
+.jump-text6 {
+    animation-delay: 0.6s;
+}
+
+.jump-text7 {
+    animation-delay: 0.7s;
+}
+
+.jump-text8 {
+    animation-delay: 0.8s;
+}
+
+.jump-text9 {
+    animation-delay: 0.9s;
+}
 
 // 添加悬浮效果 - 修改选择器以修复悬浮问题
 .welcome p [class^="jump-text"]:hover {
@@ -983,23 +1056,32 @@ section.runtime-info {
 }
 
 @keyframes jump {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 // 霓虹文字基础样式
 .text-3d {
     position: relative;
     text-shadow: 0 0 3px var(--welcome-text-shadow),
-                0 0 6px var(--welcome-glow),
-                0 0 9px var(--welcome-neon);
+        0 0 6px var(--welcome-glow),
+        0 0 9px var(--welcome-neon);
 }
 
 // 单独的渐变动画容器
 .welcome p span {
     position: relative;
     display: inline-block;
+
     &::before {
         content: attr(data-text);
         position: absolute;
@@ -1007,14 +1089,12 @@ section.runtime-info {
         top: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(
-            90deg,
-            var(--welcome-color1),
-            var(--welcome-color3),
-            var(--welcome-color5),
-            var(--welcome-color7),
-            var(--welcome-color1)
-        );
+        background: linear-gradient(90deg,
+                var(--welcome-color1),
+                var(--welcome-color3),
+                var(--welcome-color5),
+                var(--welcome-color7),
+                var(--welcome-color1));
         background-size: 200% auto;
         -webkit-background-clip: text;
         background-clip: text;
