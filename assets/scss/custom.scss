@@ -239,10 +239,15 @@ a {
     margin-left: auto;
     margin-right: auto;
 
-    .left-sidebar, .right-sidebar {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;     /* Firefox */
-        &::-webkit-scrollbar {     /* Chrome, Safari and Opera */
+    .left-sidebar,
+    .right-sidebar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+
+        /* Firefox */
+        &::-webkit-scrollbar {
+            /* Chrome, Safari and Opera */
             display: none;
             width: 0;
         }
@@ -251,10 +256,12 @@ a {
     .left-sidebar {
         order: -3;
         max-width: var(--left-sidebar-max-width);
+
         &::-webkit-scrollbar {
             display: none;
             width: 0;
         }
+
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
@@ -262,10 +269,12 @@ a {
     .right-sidebar {
         order: -1;
         max-width: var(--right-sidebar-max-width);
+
         &::-webkit-scrollbar {
             display: none;
             width: 0;
         }
+
         -ms-overflow-style: none;
         scrollbar-width: none;
 
@@ -403,9 +412,11 @@ a {
 }
 
 // 隐藏菜单栏滚动条
-.menu-bottom-section, .menu {
+.menu-bottom-section,
+.menu {
     -ms-overflow-style: none;
     scrollbar-width: none;
+
     &::-webkit-scrollbar {
         display: none;
         width: 0;
@@ -713,13 +724,13 @@ html {
     .highlight:before {
         content: '';
         display: block;
-        background: url(../code-header.svg);
-        height: 32px;
+        background: url(/code-header.svg);
+        height: 25px;
         width: 100%;
-        background-size: 57px;
+        background-size: 52px;
         background-repeat: no-repeat;
-        margin-bottom: 5px;
-        background-position: -1px 2px;
+        margin-top: -10px;
+        margin-bottom: 0;
     }
 }
 
