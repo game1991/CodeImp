@@ -1,26 +1,39 @@
 # Markdown renderer configuration
 [goldmark.renderer]
-unsafe = true
+    unsafe=true
 
-[goldmark.extensions.passthrough]
-enable = true
+[goldmark.parser]
+    autoHeadingID    =true     # 自动为标题生成 ID
+    autoHeadingIDType="github" # 使用 GitHub 风格的标题 ID
 
-# LaTeX math support
-# https://gohugo.io/content-management/mathematics/
-[goldmark.extensions.passthrough.delimiters]
-block = [['\[', '\]'], ['$$', '$$']]
-inline = [['\(', '\)']]
+[goldmark.extensions]
+    definitionList=true # 支持定义列表
+    footnote      =true # 支持脚注
+    linkify       =true # 自动将 URL 文本转换为链接
+    strikethrough =true # 支持删除线 ~~文本~~
+    table         =true # 支持表格
+    taskList      =true # 支持任务列表 [ ] [x]
+    typographer   =true # 支持智能标点符号
+
+    [goldmark.extensions.passthrough]
+        enable=true
+
+        # LaTeX math support
+        # https://gohugo.io/content-management/mathematics/
+        [goldmark.extensions.passthrough.delimiters]
+            block =[['$$', '$$'], ['\[', '\]']]
+            inline=[['\(', '\)']]
 
 [tableOfContents]
-endLevel = 4
-ordered = true
-startLevel = 2
+    endLevel  =4
+    ordered   =true
+    startLevel=2
 
 [highlight]
-noClasses = false
-codeFences = true
-guessSyntax = true
-lineNoStart = 1
-lineNos = true
-lineNumbersInTable = true
-tabWidth = 4
+    codeFences        =true
+    guessSyntax       =true
+    lineNoStart       =1
+    lineNos           =true
+    lineNumbersInTable=true
+    noClasses         =false
+    tabWidth          =4
