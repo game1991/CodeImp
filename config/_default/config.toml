@@ -20,4 +20,4 @@ hasCJKLanguage=true
 disqusShortname="TechSphere"
 
 [pagination]
-    pagerSize=5
+  pagerSize=5

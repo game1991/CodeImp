@@ -19,7 +19,7 @@ resources:
     src: "images/code.png"
     title: "代码示例"
 
-categories: ["编程语言"]
+categories: ["go"]
 tags: ["Golang", "后端开发", "教程"]
 
 # 文章设置
@@ -64,19 +64,48 @@ go version
 
 ## 项目架构
 
-下面是项目的整体架构：
-
+下面是项目的大致结构：
 ```mermaid
-flowchart TB
-    Client[客户端] --> Gateway[网关层]
-    Gateway --> Auth[认证服务]
-    Gateway --> API[API服务]
-    API --> Cache[Redis缓存]
-    API --> DB[(数据库)]
-    
-    style Client fill:#f9f,stroke:#333,stroke-width:2px
-    style Gateway fill:#bbf,stroke:#333,stroke-width:2px
-    style API fill:#bfb,stroke:#333,stroke-width:2px
+flowchart LR
+    main[main.go] --> config[config.go]
+    main --> router[router.go]
+    main --> middleware[middleware.go]
+    main --> controller[controller.go]
+    main --> model[model.go]
+    main --> service[service.go]
+    main --> dao[dao.go]
+    main --> util[util.go]
+    main --> constant[constant.go]
+    main --> error_code[error_code.go]
+    main --> config[config.go]
+    config --> logger[logger.go]
+    config --> database[database.go]
+    config --> redis[redis.go]
+    config --> rabbitmq[rabbitmq.go]
+    config --> jwt[jwt.go]
+    config --> swagger[swagger.go]
+    router --> middleware
+    router --> controller
+    controller --> service
+    controller --> model
+    service --> dao
+    service --> util
+    service --> constant
+    service --> error_code
+    dao --> database
+    dao --> redis
+    dao --> logger
+    dao --> constant
+    util --> logger
+    util --> constant
+    util --> error_code
+    util --> jwt
+    util --> database
+    util --> redis
+    util --> rabbitmq
+    util --> logger
+    util --> constant
+    util --> error_code
 ```
 
 ### 系统架构图
@@ -88,7 +117,7 @@ flowchart TB
     Gateway --> API[API服务]
     API --> Cache[Redis缓存]
     API --> DB[(数据库)]
-    
+
     style Client fill:#f9f,stroke:#333,stroke-width:2px
     style Gateway fill:#bbf,stroke:#333,stroke-width:2px
     style API fill:#bfb,stroke:#333,stroke-width:2px
@@ -102,7 +131,7 @@ sequenceDiagram
     participant G as 网关
     participant A as 认证服务
     participant D as 数据库
-    
+
     C->>G: 1. 发送登录请求
     G->>A: 2. 转发认证请求
     A->>D: 3. 查询用户信息
@@ -166,6 +195,42 @@ if err != nil {
 Go 的 goroutine 和 channel 示例：
 
 ![并发编程示例](images/code.png "Go并发编程示例")
+
+```go
+package main
+
+import (
+    "fmt"
+    "time"
+)
+
+func worker(id int, jobs <-chan int, results chan<- int) {
+    for j := range jobs {
+        fmt.Printf("worker:%d start job:%d\n", id, j)
+        time.Sleep(time.Second)
+        fmt.Printf("worker:%d finished job:%d\n", id, j)
+        results <- j * 2
+    }
+}
+
+func main() {
+    jobs := make(chan int, 100)
+    results := make(chan int, 100)
+
+    go worker(1, jobs, results)
+    go worker(2, jobs, results)
+
+    for i := 1; i <= 5; i++ {
+        jobs <- i
+    }
+    close(jobs)
+
+    for i := 1; i <= 5; i++ {
+        fmt.Println(<-results)
+    }
+}
+
+```
 
 ## 项目实战
 
