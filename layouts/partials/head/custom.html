@@ -23,7 +23,7 @@
 </div>
 
 <!--增加阅读进度条-->
-{{ if gt (len (findRE `^/\d{4}/` .RelPermalink)) 0 }}
+{{ if and (eq .Type "post") (gt (len (findRE `/\d{4}/` .RelPermalink)) 0) }}
 <div class="top-scroll-bar"></div>
 <style>
     .top-scroll-bar {
