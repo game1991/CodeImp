@@ -1178,7 +1178,7 @@ section.runtime-info {
         transition: all 0.2s ease;
         font-size: 1.25rem;
         text-decoration: none;
-        
+
         &:hover:not(.disabled *) {
             color: var(--accent-color);
             transform: translateY(-1px);
@@ -1229,24 +1229,45 @@ section.runtime-info {
     .pagination {
         .page-link {
             background: var(--card-background);
-            
+
             &:hover:not(.disabled *) {
                 background: var(--card-background-selected);
             }
         }
-        
+
         .active .page-link {
             background: var(--accent-color);
             color: #000;
-            
+
             &:hover {
                 background: var(--accent-color);
             }
         }
-        
+
         .disabled .page-link {
             background: var(--card-background-selected);
             color: var(--card-text-color-tertiary);
         }
+    }
+}
+
+// 回到顶部
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+
+#rocket-icon {
+    width: 80px; /* 你可以调整大小 */
+    transition: transform 0.5s ease;
+}
+
+@keyframes launch {
+    to {
+        transform: translateY(-150vh);
     }
 }

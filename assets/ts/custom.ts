@@ -81,3 +81,47 @@ class Cursor {
     CURSOR = new Cursor();
     // 需要重新获取列表时，使用 CURSOR.refresh()
 })();
+
+// 回到顶部
+document.addEventListener('DOMContentLoaded', function() {
+    const rocket = document.getElementById('scroll-to-top');
+    const rocketIcon = document.getElementById('rocket-icon');
+
+    window.addEventListener('scroll', function() {
+        if (document.documentElement.scrollTop > 200) {
+            rocket.style.display = 'block';
+        } else {
+            rocket.style.display = 'none';
+        }
+    });
+
+    rocket.addEventListener('click', function() {
+        // 触发火箭发射动画
+        rocketIcon.style.animation = 'launch 1s linear forwards';
+        
+        // 平滑滚动到顶部
+        const scrollDuration = 1000; // 与动画时间一致
+        const startTime = performance.now();
+        const startScroll = window.pageYOffset;
+
+        function scrollToTop(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / scrollDuration, 1);
+            const easeInOutCubic = progress < 0.5 
+                ? 4 * progress ** 3 
+                : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+            window.scrollTo(0, startScroll * (1 - easeInOutCubic));
+
+            if (elapsed < scrollDuration) {
+                requestAnimationFrame(scrollToTop);
+            } else {
+                // 动画结束后重置
+                rocketIcon.style.animation = ''; // 重置动画
+                rocket.style.display = 'none';
+            }
+        }
+
+        requestAnimationFrame(scrollToTop);
+    });
+});

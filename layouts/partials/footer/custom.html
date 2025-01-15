@@ -1,72 +1,8 @@
 <!--返回顶部按钮 -->
-<a href="#" id="back-to-top" title="返回顶部"></a>
-
-<!--返回顶部CSS -->
-<style>
-    #back-to-top {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 55px;
-        width: 55px;
-        height: 55px;
-        border-radius: 10px;
-        background: var(--card-background);
-        box-shadow: var(--shadow-l2);
-        color: var(--card-text-color-main);
-        cursor: pointer;
-        text-decoration: none;
-        transition: all 0.25s ease-in-out;
-    }
-
-    #back-to-top::after {
-        content: '↑';
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 55px;
-        text-align: center;
-        display: block;
-    }
-
-    #back-to-top:hover {
-        background: var(--card-background);
-        color: var(--accent-color);
-    }
-</style>
-
-<!--返回顶部JS -->
-<script>
-    // 返回顶部
-    function backToTop() {
-        let topTimer = setInterval(function () {
-            let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            let speed = Math.floor(-scrollTop / 5);
-            if (scrollTop === 0) {
-                clearInterval(topTimer);
-            }
-            document.documentElement.scrollTop = document.body.scrollTop = scrollTop + speed;
-        }, 20);
-    }
-
-    // 页面加载完成后
-    window.onload = function () {
-        let backToTopButton = document.getElementById('back-to-top');
-        backToTopButton.onclick = function () {
-            backToTop();
-            return false;
-        };
-    };
-
-    // 监听滚动事件
-    window.onscroll = function () {
-        let backToTopButton = document.getElementById('back-to-top');
-        if (document.documentElement.scrollTop >= 200) {
-            backToTopButton.style.display = 'block';
-        } else {
-            backToTopButton.style.display = 'none';
-        }
-    };
-</script>
+<div id="scroll-to-top" style="display: none;">
+    <img src="/rocket-icon.png" alt="回到顶部" id="rocket-icon">
+    <div id="rocket-fire"></div>
+</div>
 
 <!--加载进度条-->
 <script src="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.js" crossorigin="anonymous"></script>
@@ -107,3 +43,62 @@
     });
 </script>
 {{ end }}
+
+<!-- Fancybox 图片灯箱 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.23/dist/fancybox/fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.23/dist/fancybox/fancybox.umd.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            // 配置选项
+            animated: true,
+            showClass: "fancybox-zoomInUp",
+            hideClass: "fancybox-zoomOutDown",
+            dragToClose: true,
+            placeFocusBack: false,
+
+            // 自定义工具栏
+            Toolbar: {
+                display: {
+                    left: ["prev", "next"],
+                    middle: ["zoomIn", "zoomOut", "toggle1to1", "rotateCCW", "rotateCW"],
+                    right: ["close"]
+                }
+            },
+
+            // 缩放和拖拽
+            Panzoom: {
+                maxScale: 3,
+                minScale: 0.5,
+                friction: 0.6,
+                decelFriction: 0.88
+            }
+        });
+    });
+</script>
+
+<style>
+/* Fancybox 自定义样式 */
+.fancybox-container {
+    z-index: 9999;
+}
+
+.fancybox-slide {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.fancybox-button.is-close {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* 图片悬停效果 */
+.post-img-view img {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.post-img-view img:hover {
+    transform: scale(1.02);
+}
+</style>

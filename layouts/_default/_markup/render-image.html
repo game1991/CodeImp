@@ -1,4 +1,10 @@
-<p class="md_image">
+<!-- <p class="md_image">
     <img loading='lazy' src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}" {{ end
         }} />
-</p>
+</p> -->
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="{{ .Destination | safeURL }}">
+        <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+    </a>
+</div>
