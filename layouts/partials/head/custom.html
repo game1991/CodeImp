@@ -1,16 +1,5 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/misans@3.1.1/lib/misans-400-regular.min.css" />
 
-<!-- 进度条加载 -->
-<script src="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.css" crossorigin="anonymous" />
-<script>
-    NProgress.start();
-    document.addEventListener("readystatechange", () => {
-        if (document.readyState === "interactive") NProgress.inc(0.8);
-        if (document.readyState === "complete") NProgress.done();
-    });
-</script>
-
 <!-- 首页欢迎字幅 -->
 <div class="welcome">
     <p style="font-size: 2rem; text-align: center; font-weight: bold">
@@ -72,4 +61,15 @@
         updateScrollBar();
     });
 </script>
+{{ end }}
+
+<!-- 增加搜索引擎验证信息 -->
+{{ if .Site.Params.google_site_verification }}
+<meta name="google-site-verification" content="{{ .Site.Params.google_site_verification }}" />
+{{ end }}
+{{ if .Site.Params.bing_site_verification }}
+<meta name="msvalidate.01" content="{{ .Site.Params.bing_site_verification }}" />
+{{ end }}
+{{ if .Site.Params.baidu_site_verification }}
+<meta name="baidu-site-verification" content="{{ .Site.Params.baidu_site_verification }}" />
 {{ end }}

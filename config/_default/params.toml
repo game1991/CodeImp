@@ -3,6 +3,10 @@ mainSections=["post"]
 # Output page's full content in RSS.
 favicon       ="favicon.png"
 rssFullContent=true
+# Search
+baidu_site_verification="7f0f0e0e-c0a0-4a0c-8a0c-8a0c8a0c8a0c"
+bing_site_verification  ="52887756F31A52CE52521155F2768A99"
+google_site_verification="qPSEJ9kycTMQ8jNdjZdKmASgVkcznvy2PAQIUDx2ZiU"
 [footer]
     # customText=""
     # since     =2024
