@@ -1,6 +1,6 @@
 ---
 title: "Hugo 博客项目"
-date: 2025-01-15T23:39:46+08:00
+date: 2025-01-16T16:25:41+08:00
 draft: false
 
 # 项目摘要
@@ -28,21 +28,23 @@ metrics:
 
 # 链接
 links:
-  homepage: 
+  homepage:
     url: ""
     external: true
-  github: 
+  github:
     url: "https://github.com/yourusername/hugo-blog"
     external: true
-  demo: 
+  demo:
     url: ""
     external: true
-  documentation: 
+  documentation:
     url: ""
     external: true
 ---
 
-# 项目详细描述
+## 项目简介
+
+这是一个使用Hugo搭建的个人博客项目。
 
 ## 背景
 个人技术博客是程序员记录学习和分享知识的重要方式。本项目旨在构建一个现代化、易于维护的技术博客系统。

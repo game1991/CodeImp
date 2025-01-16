@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "{{ replace .Name \"-\" \" \" | title }}"
 description: "" # 文章描述，显示在列表页面和 SEO 中
 date: {{ .Date }}
 lastmod: {{ .Date }}

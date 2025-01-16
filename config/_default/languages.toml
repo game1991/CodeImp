@@ -17,17 +17,6 @@
     [zh-cn.params]
         heatmapTitle="日产三万亩"
 
-    # 菜单
-    [zh-cn.menu]
-        [[zh-cn.menu.main]]
-            identifier="projects"
-            name      ="项目"
-            url       ="/projects/"
-            weight    =2
-            [zh-cn.menu.main.params]
-                icon  ="brand-notion" # 项目工程图标
-                newtab=false
-
 
 [en]
     languageName     ="English"
@@ -45,14 +34,3 @@
         published  ="Jan 02, 2006"
     [en.params]
         heatmapTitle="Daily production of 3,000 hectares"
-
-    # 菜单翻译
-    [en.menu]
-        [[en.menu.main]]
-            identifier="projects"
-            name      ="Projects"
-            url       ="/en/projects/"
-            weight    =2
-            [en.menu.main.params]
-                icon  ="brand-notion"
-                newtab=false

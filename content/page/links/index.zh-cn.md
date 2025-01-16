@@ -11,7 +11,7 @@ links: # 链接配置开始
     image: ../wechat/wechat_link.jpg
 menu: # 菜单配置
   main:
-    weight: 4
+    weight: 5
     params:
       icon: link
 

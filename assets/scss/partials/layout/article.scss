@@ -99,12 +99,13 @@
 
     #TableOfContents {
         overflow-x: auto;
-        max-height: 75vh;
+        max-height: 65vh;
 
         ol,
         ul {
-            margin: 0;
-            padding: 0;
+            // margin: 0;
+            // padding: 0;
+            list-style-type: none;
         }
 
         ol {
@@ -124,8 +125,9 @@
         }
 
         li {
-            margin: 15px 0 15px 20px;
-            padding: 5px;
+            // margin: 15px 0 15px 20px;
+            // padding: 5px;
+            margin: 10px 10px;
 
             &>ol,
             &>ul {

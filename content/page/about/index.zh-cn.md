@@ -4,7 +4,7 @@ image: cover.png
 layout: "about"
 menu:
   main:
-    weight: 5
+    weight: 6
     params:
       icon: user
 ---

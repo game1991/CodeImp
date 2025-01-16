@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "{{ replace .Name \"-\" \" \" | title }}"
 date: {{ .Date }}
 draft: false
 
@@ -29,16 +29,16 @@ metrics:
 
 # 链接
 links:
-  homepage: 
+  homepage:
     url: ""
     external: true
-  github: 
+  github:
     url: ""
     external: true
-  demo: 
+  demo:
     url: ""
     external: true
-  documentation: 
+  documentation:
     url: ""
     external: true
 
