@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name \"-\" \" \" | title }}"
-date: {{ .Date }}
+title: '{{ replace .Name "-" " " | title }}'
+date: { { .Date } }
 draft: false
 
 # 项目摘要
@@ -24,7 +24,7 @@ tech:
 metrics:
   stars: 0
   contributors: 1
-  last_updated: {{ .Date }}
+  last_updated: { { .Date } }
   version: "0.1.0"
 
 # 链接
@@ -41,35 +41,45 @@ links:
   documentation:
     url: ""
     external: true
+---
 
 # 项目详细描述
+
 ## 背景
+
 背景介绍：为什么要开发这个项目？解决了什么问题？
 
 ## 功能特性
-1. 特性1
-2. 特性2
-3. 特性3
+
+1. 特性 1
+2. 特性 2
+3. 特性 3
 
 ## 技术亮点
-- 技术难点1
-- 技术难点2
+
+- 技术难点 1
+- 技术难点 2
 
 ## 架构设计
+
 [可以插入架构图]
 
 ## 未来规划
-- 计划1
-- 计划2
+
+- 计划 1
+- 计划 2
 
 ## 项目截图
+
 ![项目截图](screenshot.png)
 
 ## 安装与使用
+
 ```bash
 # 安装命令
 # 运行命令
 ```
 
 ## 许可证
+
 MIT 许可证

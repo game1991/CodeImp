@@ -12,7 +12,15 @@
 </div>
 
 <!--增加阅读进度条-->
-{{ if and (eq .Type "post") (gt (len (findRE `/\d{4}/` .RelPermalink)) 0) }}
+{{ $isShowTopScrollBar := false }}
+{{ if or
+    (and (eq .Type "post") (gt (len (findRE `/\d{4}/` .RelPermalink)) 0))
+    (eq .Type "projects")
+}}
+    {{ $isShowTopScrollBar = true }}
+{{ end }}
+
+{{ if $isShowTopScrollBar }}
 <div class="top-scroll-bar"></div>
 <style>
     .top-scroll-bar {
@@ -21,8 +29,9 @@
         left: 0;
         z-index: 9999;
         width: 0;
-        height: 3px;
+        height: 4px;
         background: #ef3982;
+        /* background-color: #4a90e2; */
         transition: width 0.2s ease;
     }
 </style>

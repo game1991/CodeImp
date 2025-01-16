@@ -43,6 +43,9 @@
     --sidebar-bg-light: rgba(245, 245, 245, 0.8);
     --sidebar-text-light: #333;
     --sidebar-hover-light: rgba(0, 0, 0, 0.05);
+    // 浅色模式背景色
+    --background-primary: #F1E9D2;  // 牛皮纸色
+    --text-primary: #333333;        // 深灰色文字，保证可读性
 
     // 暗色模式下样式
     &[data-scheme="dark"] {
@@ -67,6 +70,28 @@
         --sidebar-text-dark: #e0e0e0;
         --sidebar-hover-dark: rgba(255, 255, 255, 0.1);
     }
+}
+
+html[data-scheme="light"],
+body[data-scheme="light"] {
+    --background-primary: #F1E9D2;
+    --text-primary: #333333;
+    background-color: #F1E9D2 !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E") !important;
+    background-repeat: repeat !important;
+}
+
+// 深色模式
+html[data-scheme="dark"],
+body[data-scheme="dark"] {
+    --background-primary: #2C2C2C;
+    --text-primary: #E0E0E0;
+    background-color: #2C2C2C !important;
+}
+
+body {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
 }
 
 // 页脚统一配置
