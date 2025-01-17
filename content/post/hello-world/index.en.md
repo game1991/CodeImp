@@ -1,7 +1,7 @@
 ---
 title: Hello World
-license: false
 hidden: false
+license: false
 description: Welcome to Hugo Theme Stack
 slug: hello-world
 date: 2022-03-06T00:00:00Z

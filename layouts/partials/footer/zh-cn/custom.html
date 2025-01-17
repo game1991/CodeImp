@@ -1,6 +1,6 @@
 <!--站点页脚 -->
 
-<section class="copyright"> © {{ now.Format "2006" }}  代码无界限</section>
+<section class="copyright"> © {{ now.Format "2006" }} 代码无界限</section>
 <section class="powerby">
     <!-- 使用
         <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
@@ -23,7 +23,7 @@
         <span class="site-stats">
             {{$scratch := newScratch}}
             {{ range (where .Site.RegularPages "Type" "post") }}
-                {{$scratch.Add "total" .WordCount}}
+            {{$scratch.Add "total" .WordCount}}
             {{ end }}
             <span class="stat-item">共 {{$scratch.Get "total"}} 字</span>
             <span class="stat-divider">·</span>
@@ -183,76 +183,77 @@
             top: 0,
             left: 'center',
             text: {{ .Site.Params.heatmapTitle | default "博客废话产量" }},
-            textStyle: {
-                color: textColor,
-                fontFamily: 'MiSans, sans-serif',
+    textStyle: {
+        color: textColor,
+            fontFamily: 'MiSans, sans-serif',
                 fontSize: 18,
-                fontWeight: 'bold'
-            }
+                    fontWeight: 'bold'
+    }
         },
     tooltip: {
         hideDelay: 1000,
-        enterable: true,
-        backgroundColor: tooltipBgColor,
-            borderColor: isDarkMode ? '#404040' : '#e0e0e0',
-            borderWidth: 1,
-            textStyle: {
-                color: textColor,
+            enterable: true,
+                backgroundColor: tooltipBgColor,
+                    borderColor: isDarkMode ? '#404040' : '#e0e0e0',
+                        borderWidth: 1,
+                            textStyle: {
+            color: textColor,
                 fontFamily: 'MiSans, sans-serif'
-            },
+        },
         formatter: function (p) {
-                    const date = p.data[0];
-                    const posts = dataMap.get(date);
-                    var content = `<div style="color: ${textColor};font-weight: bold; margin-bottom: 8px;">${date}</div>`;
-                    for (const [i, post] of posts.entries()) {
-                        content += "<br>";
-                        var link = post.link;
-                        var title = post.title;
-                        var wordCount = (post.wordCount / 1000).toFixed(1);
-                        content += `<a href="${link}" target="_blank" style="color: ${isDarkMode ? '#7AA874' : '#4CAF50'}; display: block; padding: 4px 0;">${title} | ${wordCount} 千字</a>`;
-                    }
-                    return content;
-                }
+            const date = p.data[0];
+            const posts = dataMap.get(date);
+            var content = `<div style="color: ${textColor};font-weight: bold; margin-bottom: 8px;">${date}</div>`;
+            for (const [i, post] of posts.entries()) {
+                content += "<br>";
+                var link = post.link;
+                var title = post.title;
+                var wordCount = (post.wordCount / 1000).toFixed(1);
+                content += `<a href="${link}" target="_blank" style="color: ${isDarkMode ? '#7AA874' : '#4CAF50'}; display: block; padding: 4px 0;">${title} | ${wordCount} 千字</a>`;
+            }
+            return content;
+        }
     },
     visualMap: {
         min: 0,
-        max: 10,
-        type: 'piecewise',
-        orient: 'horizontal',
-        left: 'center',
-        top: 30,
-        inRange: {
+            max: 10,
+                type: 'piecewise',
+                    orient: 'horizontal',
+                        left: 'center',
+                            top: 30,
+                                inRange: {
             //  [floor color, ceiling color]
-            color: ['#7aa8744c', '#7AA874']
+            // color: ['#7aa8744c', '#7AA874']
+            color: ['#90EE90', '#2E8B57']  // 使用亮绿色(LightGreen)到深海绿
         },
         splitNumber: 4,
-        text: ['千字', ''],
-        showLabel: true,
-        itemGap: 20,
-        textStyle: {
-                color: textColor,
+            text: ['千字', ''],
+                showLabel: true,
+                    itemGap: 20,
+                        textStyle: {
+            color: textColor,
                 fontFamily: 'MiSans, sans-serif'
-            }
-        },
+        }
+    },
     calendar: {
         top: 80,
-        left: 20,
-        right: 4,
-        cellSize: ['auto', 12],
-        range: getRangeArr(),
-        itemStyle: {
+            left: 20,
+                right: 4,
+                    cellSize: ['auto', 12],
+                        range: getRangeArr(),
+                            itemStyle: {
             color: calendarBgColor,
-            borderWidth: 1,                    // 减小边框宽度
-            borderColor: borderColor
+                borderWidth: 1,                    // 减小边框宽度
+                    borderColor: borderColor
         },
         yearLabel: { show: false },
         dayLabel: {
             color: textColor,
-            fontFamily: 'MiSans, sans-serif'
+                fontFamily: 'MiSans, sans-serif'
         },
         monthLabel: {
             color: textColor,
-            fontFamily: 'MiSans, sans-serif'
+                fontFamily: 'MiSans, sans-serif'
         },
         // the splitline between months. set to transparent for now.
         // splitLine: {
@@ -266,10 +267,10 @@
         // }
         splitLine: {
             show: true,
-            lineStyle: {
+                lineStyle: {
                 color: isDarkMode ? '#333333' : '#cccccc',  // 分割线也用相同的颜色
-                width: 1,                                    // 统一线条宽度
-                type: 'solid'
+                    width: 1,                                    // 统一线条宽度
+                        type: 'solid'
             }
         }
     },
@@ -281,8 +282,8 @@
     };
 
     // 监听主题变化
-    const observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
+    const observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
             if (mutation.attributeName === 'data-scheme') {
                 const newIsDarkMode = document.documentElement.getAttribute('data-scheme') === 'dark';
                 if (newIsDarkMode !== isDarkMode) {
