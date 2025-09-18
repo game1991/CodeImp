@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>分类 on 代码无界限</title><link>https://game1991.github.io/CodeImp/categories/</link><description>Recent content in 分类 on 代码无界限</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://game1991.github.io/CodeImp/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown</title><link>https://game1991.github.io/CodeImp/categories/markdown/</link><pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/categories/markdown/</guid><description/></item><item><title>画廊</title><link>https://game1991.github.io/CodeImp/categories/%E7%94%BB%E5%BB%8A/</link><pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/categories/%E7%94%BB%E5%BB%8A/</guid><description/></item><item><title>短代码</title><link>https://game1991.github.io/CodeImp/categories/%E7%9F%AD%E4%BB%A3%E7%A0%81/</link><pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/categories/%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid><description/></item><item><title>Latex</title><link>https://game1991.github.io/CodeImp/categories/latex/</link><pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/categories/latex/</guid><description/></item><item><title>Math</title><link>https://game1991.github.io/CodeImp/categories/math/</link><pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/categories/math/</guid><description/></item><item><title>Python</title><link>https://game1991.github.io/CodeImp/categories/python/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0800</pubDate><guid>https://game1991.github.io/CodeImp/categories/python/</guid><description/></item><item><title>Go</title><link>https://game1991.github.io/CodeImp/categories/go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/categories/go/</guid><description>&lt;img src="https://game1991.github.io/CodeImp/categories/go/biplane.svg" alt="Featured image of post Go" /&gt;</description></item><item><title>发布日志</title><link>https://game1991.github.io/CodeImp/categories/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/categories/release-notes/</guid><description>&lt;img src="https://game1991.github.io/CodeImp/categories/release-notes/release-notes-cover.png" alt="Featured image of post 发布日志" /&gt;&lt;h1 id="-发布日志"&gt;📋 发布日志
+&lt;/h1&gt;&lt;p&gt;这里是&lt;strong&gt;代码无界限&lt;/strong&gt;网站的所有发布日志和更新记录。您可以在这里了解到网站的最新功能、改进和修复内容。&lt;/p&gt;
+&lt;h2 id="-关于发布日志"&gt;🎯 关于发布日志
+&lt;/h2&gt;&lt;p&gt;我们采用&lt;strong&gt;持续集成&lt;/strong&gt;和&lt;strong&gt;版本化管理&lt;/strong&gt;的方式来维护网站，每次重要的更新都会在这里记录下来，包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✨ &lt;strong&gt;新增功能&lt;/strong&gt; - 全新的功能特性&lt;/li&gt;
+&lt;li&gt;🔧 &lt;strong&gt;功能优化&lt;/strong&gt; - 对现有功能的改进&lt;/li&gt;
+&lt;li&gt;🐛 &lt;strong&gt;Bug修复&lt;/strong&gt; - 各种问题的修复&lt;/li&gt;
+&lt;li&gt;📊 &lt;strong&gt;性能提升&lt;/strong&gt; - 速度和体验优化&lt;/li&gt;
+&lt;li&gt;🔒 &lt;strong&gt;安全更新&lt;/strong&gt; - 安全性相关的更新&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-如何阅读"&gt;🔍 如何阅读
+&lt;/h2&gt;&lt;p&gt;每篇发布日志都包含以下信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 &lt;strong&gt;发布日期&lt;/strong&gt; - 更新的具体时间&lt;/li&gt;
+&lt;li&gt;🏷️ &lt;strong&gt;版本标签&lt;/strong&gt; - 便于追踪的版本号&lt;/li&gt;
+&lt;li&gt;📊 &lt;strong&gt;统计信息&lt;/strong&gt; - 代码变更的量化数据&lt;/li&gt;
+&lt;li&gt;📸 &lt;strong&gt;效果展示&lt;/strong&gt; - 修改前后的对比&lt;/li&gt;
+&lt;li&gt;📝 &lt;strong&gt;使用说明&lt;/strong&gt; - 如何使用新功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-参与互动"&gt;📞 参与互动
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;💬 有任何问题或建议，欢迎在文章下方留言&lt;/li&gt;
+&lt;li&gt;⭐ 支持我们的项目，给&lt;a class="link" href="https://github.com/game1991/CodeImp" target="_blank" rel="noopener"
+&gt;GitHub仓库&lt;/a&gt;点个Star&lt;/li&gt;
+&lt;li&gt;🐛 发现Bug，请提交&lt;a class="link" href="https://github.com/game1991/CodeImp/issues" target="_blank" rel="noopener"
+&gt;Issue报告&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;💡 提示&lt;/strong&gt;: 使用右侧的目录导航可以快速跳转到感兴趣的部分。如果您是第一次访问，建议从最新的发布日志开始阅读。&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 &lt;strong&gt;相关链接&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://game1991.github.io/CodeImp/post/" &gt;技术博客&lt;/a&gt; - 深度技术文章&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://game1991.github.io/CodeImp/projects/" &gt;项目展示&lt;/a&gt; - 项目作品集&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://game1991.github.io/CodeImp/about/" &gt;关于我们&lt;/a&gt; - 了解更多信息&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/game1991/CodeImp" target="_blank" rel="noopener"
+&gt;GitHub仓库&lt;/a&gt; - 源代码和贡献&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;</description></item><item><title>法律</title><link>https://game1991.github.io/CodeImp/categories/law/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/categories/law/</guid><description>&lt;img src="https://game1991.github.io/CodeImp/categories/law/law_cover.jpg" alt="Featured image of post 法律" /&gt;</description></item><item><title>生活日常</title><link>https://game1991.github.io/CodeImp/categories/life/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/categories/life/</guid><description/></item></channel></rss>

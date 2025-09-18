@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 代码无界限</title><link>https://game1991.github.io/CodeImp/post/</link><description>Recent content in Posts on 代码无界限</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 18 Sep 2025 19:25:06 +0800</lastBuildDate><atom:link href="https://game1991.github.io/CodeImp/post/index.xml" rel="self" type="application/rss+xml"/><item><title>你好，世界</title><link>https://game1991.github.io/CodeImp/2022/hello-world/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0800</pubDate><guid>https://game1991.github.io/CodeImp/2022/hello-world/</guid><description>&lt;img src="https://game1991.github.io/CodeImp/2022/hello-world/cover.jpg" alt="Featured image of post 你好，世界" /&gt;&lt;p&gt;欢迎使用 Hugo Theme Stack。这是你的第一篇文章。编辑或删除它，然后开始写作！&lt;/p&gt;
+&lt;p&gt;要了解更多关于这个主题的信息，请查看文档：&lt;a class="link" href="https://stack.jimmycai.com/" target="_blank" rel="noopener"
+&gt;Stack 文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;想要一个这样的网站？查看 &lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
+&gt;hugo-theme-stack-starter&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;图片来自 &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
+&gt;Pawel Czerwinski&lt;/a&gt; 在 &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+&gt;Unsplash&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;go：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;python：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="ch"&gt;#!/usr/bin/env python3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>发布日志 v2025.09.17</title><link>https://game1991.github.io/CodeImp/2025/release-notes-2025-09-17/</link><pubDate>Wed, 17 Sep 2025 18:45:00 +0800</pubDate><guid>https://game1991.github.io/CodeImp/2025/release-notes-2025-09-17/</guid><description>&lt;img src="https://game1991.github.io/post/release-notes/cover.svg" alt="Featured image of post 发布日志 v2025.09.17" /&gt;&lt;h1 id="-发布日志-v20250917"&gt;🚀 发布日志 v2025.09.17
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;📅 发布日期：2025年09月17日&lt;/p&gt;
+&lt;p&gt;🏷️ 版本标签：&lt;code&gt;2025.09.17&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;🎯 更新类型：重大功能更新 + Bug修复&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id="-更新概览"&gt;📋 更新概览
+&lt;/h2&gt;&lt;p&gt;本次更新主要解决了&lt;strong&gt;多语言环境下Hugo图片渲染失败&lt;/strong&gt;的核心问题，同时对网站的&lt;strong&gt;项目展示功能、多语言支持、开发配置&lt;/strong&gt;进行了全面优化。这是一次重要的技术升级，显著提升了网站的用户体验和开发效率。&lt;/p&gt;
+&lt;h2 id="-新增功能"&gt;✨ 新增功能
+&lt;/h2&gt;&lt;h3 id="-hugo图片渲染修复重大更新"&gt;🆕 Hugo图片渲染修复（重大更新）
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;问题描述&lt;/strong&gt;：在多语言环境下，使用相对路径的封面图片无法正常加载，返回404错误&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;具体表现&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;❌ http://127.0.0.1:1313/cover.jpg # 404错误
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;❌ 多语言环境图片加载失败
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;❌ 页面bundle资源解析错误
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;解决方案&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建自定义&lt;code&gt;layouts/partials/helper/image.html&lt;/code&gt;覆盖主题默认实现&lt;/li&gt;
+&lt;li&gt;实现智能路径解析算法，优先使用页面bundle资源&lt;/li&gt;
+&lt;li&gt;添加多语言路径处理逻辑，确保中英文版本都能正确加载&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;技术实现&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="cm"&gt;/* 首先尝试使用页面资源（最可靠的方式） */&lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;pageResourceImage&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Context&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Resources&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;GetMatch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;printf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;%s&amp;#34;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;imageValue&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;safeURL&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;pageResourceImage&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="cm"&gt;/* 如果找到页面资源，使用其相对路径 */&lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;correctPath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;pageResourceImage&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;RelPermalink&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="cm"&gt;/* 基于文件系统路径构建正确路径 */&lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;pageFilePath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Context&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;File&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;contentPath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;TrimPrefix&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;content/&amp;#34;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;pageFilePath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;pageDir&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;path&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Dir&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;contentPath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;correctPath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;path&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Join&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;pageDir&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="nx"&gt;imageValue&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;end&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;修复效果&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;✅ http://127.0.0.1:1313/post/arbitration/cover.jpg # 200正常
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;✅ http://127.0.0.1:1313/post/test/cover.jpg # 200正常
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;✅ 中英文版本图片加载正常
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;✅ 调试日志显示正确路径解析
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="-多语言日期格式化"&gt;🆕 多语言日期格式化
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;新增功能&lt;/strong&gt;：根据当前语言环境自动调整日期显示格式&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实现文件&lt;/strong&gt;：&lt;code&gt;layouts/partials/article/components/footer.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;格式对比&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;中文环境&lt;/strong&gt;：&lt;code&gt;2025-09-17 15:30:00&lt;/code&gt;（符合中文阅读习惯）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;英文环境&lt;/strong&gt;：&lt;code&gt;Sep 17, 2025 15:30:00&lt;/code&gt;（符合英文阅读习惯）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="-项目展示升级"&gt;🆕 项目展示升级
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;新增样式&lt;/strong&gt;：&lt;code&gt;assets/scss/custom.scss&lt;/code&gt;（+375行代码）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心特性&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📱 &lt;strong&gt;响应式网格布局&lt;/strong&gt;：2列→1列自适应&lt;/li&gt;
+&lt;li&gt;🎭 &lt;strong&gt;卡片悬停动画&lt;/strong&gt;：&lt;code&gt;translateY(-10px)&lt;/code&gt; + 阴影增强&lt;/li&gt;
+&lt;li&gt;🌈 &lt;strong&gt;现代化设计&lt;/strong&gt;：16px圆角 + 渐变阴影 + 边框&lt;/li&gt;
+&lt;li&gt;📐 &lt;strong&gt;Flexbox布局&lt;/strong&gt;：完美内容对齐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;样式代码示例&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-scss" data-lang="scss"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nc"&gt;.project-card&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="na"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="ni"&gt;flex&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="na"&gt;flex-direction&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="ni"&gt;column&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="na"&gt;background-color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;var&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;card-background&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="na"&gt;border-radius&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="na"&gt;box-shadow&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="nf"&gt;rgba&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="mf"&gt;.08&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="na"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="ni"&gt;all&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="mf"&gt;.4&lt;/span&gt;&lt;span class="kt"&gt;s&lt;/span&gt; &lt;span class="ni"&gt;ease&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="na"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nf"&gt;translateY&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="na"&gt;box-shadow&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="mi"&gt;24&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="nf"&gt;rgba&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="mf"&gt;.12&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="-功能优化"&gt;🔧 功能优化
+&lt;/h2&gt;&lt;h3 id="-文章原型优化"&gt;⚡ 文章原型优化
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;文件&lt;/strong&gt;：&lt;code&gt;archetypes/post.md&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优化内容&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ 添加&lt;code&gt;image&lt;/code&gt;字段支持，直接指定封面图片路径&lt;/li&gt;
+&lt;li&gt;✅ 简化原型结构，移除冗余的resources配置&lt;/li&gt;
+&lt;li&gt;✅ 优化字段命名规范化&lt;/li&gt;
+&lt;li&gt;✅ 添加实用的文章结构模板&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;优化对比&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c"&gt;# 优化前：复杂冗resources配置&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="nt"&gt;resources&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;- &lt;span class="nt"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;featured-image&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;src&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="c"&gt;# 优化后：简洁的image字段&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="nt"&gt;image&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;cover.jpg&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="-增强配置支持"&gt;⚡ 增强配置支持
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;文件&lt;/strong&gt;：&lt;code&gt;config/_default/config.toml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;新增配置项&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;build&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;writeStats&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt; &lt;span class="c"&gt;# 启用构建统计，优化性能&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;debug&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;logging&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt; &lt;span class="c"&gt;# 启用调试日志，便于开发&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;featuredImageField&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;image&amp;#34;&lt;/span&gt; &lt;span class="c"&gt;# 明确指定使用image字段&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="-开发环境优化"&gt;⚡ 开发环境优化
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;文件&lt;/strong&gt;：&lt;code&gt;.gitignore&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;新增忽略项&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;.claude # Claude配置文件
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;_vendor # Hugo模块缓存目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;*.log # 日志文件
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo_stats.json # Hugo构建统计文件
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="-bug修复"&gt;🐛 Bug修复
+&lt;/h2&gt;&lt;h3 id="-核心bughugo图片渲染失败"&gt;🔨 核心Bug：Hugo图片渲染失败
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;问题详情&lt;/strong&gt;：详见上面的【Hugo图片渲染修复】部分&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;修复结果&lt;/strong&gt;：✅ &lt;strong&gt;已完全解决&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="-次要bug日期格式不统一"&gt;🔨 次要Bug：日期格式不统一
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;修复状态&lt;/strong&gt;：✅ &lt;strong&gt;已优化&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="-开发环境问题"&gt;🔨 开发环境问题
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;修复状态&lt;/strong&gt;：✅ &lt;strong&gt;已完善&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="-文件变更详情"&gt;📁 文件变更详情
+&lt;/h2&gt;&lt;h3 id="新增文件"&gt;新增文件
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;layouts/partials/helper/image.html&lt;/code&gt; - Hugo图片渲染修复核心逻辑&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;layouts/partials/helper/multilingual-path.html&lt;/code&gt; - 多语言路径处理辅助函数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;archetypes/release-notes.md&lt;/code&gt; - 发布日志文章原型&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content/post/release-notes/v2025-09-17.md&lt;/code&gt; - 本次发布日志&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content/post/arbitration/&lt;/code&gt; - 仲裁法律文章目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content/post/test/&lt;/code&gt; - 测试内容目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content/projects/&lt;/code&gt; - 多个项目展示内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="修改文件"&gt;修改文件
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.gitignore&lt;/code&gt; - 新增开发环境忽略配置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;archetypes/post.md&lt;/code&gt; - 优化文章原型结构&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;assets/scss/custom.scss&lt;/code&gt; - 添加项目展示样式（+375行）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;config/_default/config.toml&lt;/code&gt; - 增强构建和调试配置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;layouts/partials/article/components/footer.html&lt;/code&gt; - 多语言日期格式化&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;layouts/partials/head/custom.html&lt;/code&gt; - 自定义头部内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-更新统计"&gt;📊 更新统计
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;新增代码行数&lt;/strong&gt;: ~469 行&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;修改文件数&lt;/strong&gt;: 9 个核心文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;新增内容文件&lt;/strong&gt;: 15+ 个&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;提交次数&lt;/strong&gt;: 多次连续提交&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;影响范围&lt;/strong&gt;: 全站功能升级&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-技术亮点"&gt;🎯 技术亮点
+&lt;/h2&gt;&lt;h3 id="-智能路径解析算法"&gt;🏆 智能路径解析算法
+&lt;/h3&gt;&lt;p&gt;实现了基于页面bundle + 文件系统路径的双重解析机制，确保在各种复杂环境下都能正确加载图片资源。&lt;/p&gt;
+&lt;h3 id="-多语言适配方案"&gt;🏆 多语言适配方案
+&lt;/h3&gt;&lt;p&gt;完美解决了Hugo多语言环境下的资源路径问题，为国际化网站开发提供了可靠方案。&lt;/p&gt;
+&lt;h3 id="-现代化ui设计"&gt;🏆 现代化UI设计
+&lt;/h3&gt;&lt;p&gt;采用CSS3最新特性，实现了流畅的交互动画和响应式布局，大幅提升了用户体验。&lt;/p&gt;
+&lt;h2 id="-效果展示"&gt;📸 效果展示
+&lt;/h2&gt;&lt;h3 id="修改前状态"&gt;修改前状态
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;❌ 图片路径：/cover.jpg（404错误）
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;❌ 日期格式：固定英文格式
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;❌ 项目展示：基础列表布局
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;❌ 开发环境：缺少调试支持
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="修改后效果"&gt;修改后效果
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;✅ 图片路径：/post/arbitration/cover.jpg（200正常）
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;✅ 日期格式：中英文智能适配
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;✅ 项目展示：现代化卡片+悬停动画
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;✅ 开发环境：完整调试+统计支持
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="调试日志"&gt;调试日志
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;WARN [Image Helper] Processing image: cover.jpg -&amp;gt; Final path: /post/arbitration/cover.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="-使用指南"&gt;📝 使用指南
+&lt;/h2&gt;&lt;h3 id="图片使用"&gt;图片使用
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="nt"&gt;image&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;cover.jpg&amp;#34;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c"&gt;# 相对路径，自动解析&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="多语言支持"&gt;多语言支持
+&lt;/h3&gt;&lt;p&gt;系统会根据当前语言环境自动：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;调整日期显示格式&lt;/li&gt;
+&lt;li&gt;处理图片资源路径&lt;/li&gt;
+&lt;li&gt;适配本地化内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="项目展示"&gt;项目展示
+&lt;/h3&gt;&lt;p&gt;新建项目时会自动应用现代化卡片样式，支持：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;悬停动画效果&lt;/li&gt;
+&lt;li&gt;响应式布局&lt;/li&gt;
+&lt;li&gt;优雅的视觉设计&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-后续计划"&gt;🔮 后续计划
+&lt;/h2&gt;&lt;h3 id="-短期目标"&gt;🎯 短期目标
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 完善项目展示页面功能&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 添加更多交互式组件&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 优化移动端用户体验&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="-长期愿景"&gt;🎯 长期愿景
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 构建完整的项目管理系统&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 集成评论和社交功能&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 开发个性化主题定制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-反馈与建议"&gt;📞 反馈与建议
+&lt;/h2&gt;&lt;p&gt;我们非常重视您的意见和建议！如果您在使用过程中遇到任何问题，或有新的功能需求，欢迎通过以下方式联系我们：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;💬 &lt;strong&gt;评论留言&lt;/strong&gt;：在本文下方留言区分享您的想法&lt;/li&gt;
+&lt;li&gt;🐛 &lt;strong&gt;问题报告&lt;/strong&gt;：&lt;a class="link" href="https://github.com/game1991/CodeImp/issues" target="_blank" rel="noopener"
+&gt;GitHub Issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📧 &lt;strong&gt;邮件联系&lt;/strong&gt;：通过网站联系方式发送邮件&lt;/li&gt;
+&lt;li&gt;⭐ &lt;strong&gt;项目支持&lt;/strong&gt;：给项目点个Star支持开发&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;💡 小贴士&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;关注&lt;code&gt;发布日志&lt;/code&gt;分类，及时获取最新功能更新&lt;/li&gt;
+&lt;li&gt;检查浏览器缓存，确保看到最新的样式效果&lt;/li&gt;
+&lt;li&gt;有问题随时反馈，我们会及时响应处理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 &lt;strong&gt;相关链接&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://game1991.github.io/CodeImp/categories/release-notes/" &gt;所有发布日志&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://game1991.github.io/CodeImp/post/" &gt;技术博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://game1991.github.io/CodeImp/projects/" &gt;项目展示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/game1991/CodeImp" target="_blank" rel="noopener"
+&gt;GitHub仓库&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;版本信息&lt;/strong&gt;: &lt;code&gt;v2025.09.17&lt;/code&gt; | &lt;strong&gt;最后更新&lt;/strong&gt;: 2025年09月17日&lt;/p&gt;
+&lt;p&gt;感谢您一直以来的支持和关注！🙏✨&lt;/p&gt;</description></item><item><title>国内仲裁财产保全与执行管辖法院的区别</title><link>https://game1991.github.io/CodeImp/2025/lawyer/</link><pubDate>Thu, 23 Jan 2025 10:27:43 +0800</pubDate><guid>https://game1991.github.io/CodeImp/2025/lawyer/</guid><description>&lt;img src="https://game1991.github.io/post/arbitration/cover.jpg" alt="Featured image of post 国内仲裁财产保全与执行管辖法院的区别" /&gt;&lt;h1 id="国内仲裁财产保全与执行管辖法院的区别"&gt;国内仲裁财产保全与执行管辖法院的区别
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;发布单位: 最高人民法院   发布时间: 2019-08-27&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a class="link" href="https://baoquan.court.gov.cn/#/home/particulars?id=11156690624444&amp;amp;form=knowledge" target="_blank" rel="noopener"
+&gt;国内仲裁财产保全与执行管辖法院的区别&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;国内仲裁过程中，当事人也可以申请财产保全。当事人提出保全申请的，首先要明确负责保全的管辖法院。对此，《最高人民法院关于人民法院执行工作若干问题的规定（试行）》第 11 条规定：在国内仲裁过程中，当事人申请财产保全，经仲裁机构提交人民法院的，由被申请人住所地或被申请保全的财产所在地的基层人民法院裁定并执行；申请证据保全的，由证据所在地的基层人民法院裁定并执行。按此规定，国内仲裁中的财产保全由基层法院负责执行。仲裁裁决生效后，债务人没有履行义务的，当事人也可以申请执行仲裁裁决。与申请保全一样，当事人也需要首先请明确负责执行的管辖法院。《最高人民法院关于适用〈中华人民共和国仲裁法〉若干问题的解释》第 29 条规定：当事人申请执行仲裁裁决案件，由被执行人住所地或者被执行的财产所在地的中级人民法院管辖。&lt;/p&gt;
+&lt;p&gt;所以，根据上述两个司法解释的规定，国内仲裁的&lt;strong&gt;财产保全&lt;/strong&gt;与&lt;strong&gt;执行的管辖法院&lt;/strong&gt;是不一致的，具体是指级别管辖不一致，&lt;strong&gt;前者是基层法院管辖&lt;/strong&gt;，&lt;strong&gt;后者是中级法院管辖&lt;/strong&gt;。之所以出现这种情况，是因为 2006 年开始实行的《仲裁法解释》对仲裁裁决执行的级别管辖作出了与 1998 年就开始实行的《执行工作规定》不一样的规定。《执行工作规定》第 10 条规定，仲裁机构作出的国内仲裁裁决、公证机关依法赋予强制执行效力的公证债权文书，由被执行人住所地或被执行的财产所在地人民法院执行。前款案件的级别管辖，参照各地法院受理诉讼案件的级别管辖的规定确定。相比而言，《执行工作规定》中仲裁裁决执行的级别管辖是按照受理诉讼案件级别管辖的一般规则来确定的，基层法院也对部分仲裁裁决执行案件具有管辖权。而《仲裁法解释》则是作出了直接确定中级法院为仲裁裁决执行管辖法院的特别规定，在级别管辖方面排除了基层法院。目前，国内仲裁裁决的执行已普遍由中法院管辖，这也就出现了国内仲裁的财产保全与执行管辖法院不一致的现象。此外，《执行工作规定》第 12 条规定：在涉外仲裁过程中，当事人申请财产保全，经仲裁机构提交人民法院的，由被申请人住所地或被申请保全的财产所在地的中级人民法院裁定并执行；申请证据保全的，由证据所在地的中级人民法院裁定并执行。涉外仲裁中的财产保全也是由中级法院管辖，所以在涉外仲裁的场合，上述级别管辖的差别并不存在，财产保全和执行都是由中级法院管辖。&lt;/p&gt;
+&lt;p&gt;对于这种级别管辖的差别，实践中可能会出现的问题是，如果按照上述司法解释的规定来操作，当事人在国内仲裁中申请财产保全，由基层法院负责采取保全措施。而此后当事人要申请执行仲裁裁决，又要向中级法院提出执行申请，就会出现采取保全措施的法院和最终负责执行的法院不一致的情况。这或多或少会给当事人和法院执行带来一些不便，而如果被保全财产在其他案件中被轮候查封，基层法院保全查封的效力与中级法院执行强制措施的效力就无法对应，更可能造成执行的不畅。因此，实践中一些仲裁机构在收到当事人的保全申请后，直接将保全申请提交被申请人住所地或被申请保全的财产所在地的中级法院，由中级法院采取保全措施，以保证保全与执行的统一。从实践角度考虑，国内仲裁案件的当事人、代理人应该注意到这个问题，在申请保全时，经由仲裁委或自己向被申请人住所地或被申请保全的财产所在地的基层法院、中级法院询问是否在国内仲裁财产保全的级别管辖方面有特别安排，以便提高财产保全的效率，也避免对日后执行的影响。&lt;/p&gt;</description></item><item><title>Go语言开发实践：从入门到实战</title><link>https://game1991.github.io/CodeImp/2025/go%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E6%88%98/</link><pubDate>Wed, 15 Jan 2025 01:38:18 +0800</pubDate><guid>https://game1991.github.io/CodeImp/2025/go%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E6%88%98/</guid><description>&lt;h2 id="前言"&gt;前言
+&lt;/h2&gt;&lt;p&gt;Go 语言因其简洁的语法、优秀的并发支持和强大的标准库，成为了现代后端开发的重要选择。本文将从实践角度出发，分享 Go 语言开发的经验和技巧。&lt;/p&gt;
+&lt;h2 id="开发环境搭建"&gt;开发环境搭建
+&lt;/h2&gt;&lt;h3 id="1-安装-go"&gt;1. 安装 Go
+&lt;/h3&gt;&lt;p&gt;首先需要从官网下载并安装 Go：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 验证安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;go version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="2-配置开发工具"&gt;2. 配置开发工具
+&lt;/h3&gt;&lt;p&gt;推荐使用 VSCode 作为开发工具，需要安装以下插件：&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="post-img-view"&gt;
+&lt;a data-fancybox="gallery" href="images/vscode-go.png"&gt;
+&lt;img src="images/vscode-go.png" alt="VSCode Go 插件" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id="项目架构设计"&gt;项目架构设计
+&lt;/h2&gt;&lt;p&gt;下面是一个典型的 Go 项目架构：&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="post-img-view"&gt;
+&lt;a data-fancybox="gallery" href="images/architecture.png"&gt;
+&lt;img src="images/architecture.png" alt="项目架构图" title="项目整体架构" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id="项目架构"&gt;项目架构
+&lt;/h2&gt;&lt;p&gt;下面是项目的大致结构：&lt;/p&gt;
+&lt;div class="mermaid"&gt;flowchart LR
+main[main.go] --&gt; config[config.go]
+main --&gt; router[router.go]
+main --&gt; middleware[middleware.go]
+main --&gt; controller[controller.go]
+main --&gt; model[model.go]
+main --&gt; service[service.go]
+main --&gt; dao[dao.go]
+main --&gt; util[util.go]
+main --&gt; constant[constant.go]
+main --&gt; error_code[error_code.go]
+main --&gt; config[config.go]
+config --&gt; logger[logger.go]
+config --&gt; database[database.go]
+config --&gt; redis[redis.go]
+config --&gt; rabbitmq[rabbitmq.go]
+config --&gt; jwt[jwt.go]
+config --&gt; swagger[swagger.go]
+router --&gt; middleware
+router --&gt; controller
+controller --&gt; service
+controller --&gt; model
+service --&gt; dao
+service --&gt; util
+service --&gt; constant
+service --&gt; error_code
+dao --&gt; database
+dao --&gt; redis
+dao --&gt; logger
+dao --&gt; constant
+util --&gt; logger
+util --&gt; constant
+util --&gt; error_code
+util --&gt; jwt
+util --&gt; database
+util --&gt; redis
+util --&gt; rabbitmq
+util --&gt; logger
+util --&gt; constant
+util --&gt; error_code&lt;/div&gt;
+&lt;h3 id="系统架构图"&gt;系统架构图
+&lt;/h3&gt;
+&lt;div class="mermaid"&gt;flowchart TB
+Client[客户端] --&gt; Gateway[网关层]
+Gateway --&gt; Auth[认证服务]
+Gateway --&gt; API[API服务]
+API --&gt; Cache[Redis缓存]
+API --&gt; DB[(数据库)]
+style Client fill:#f9f,stroke:#333,stroke-width:2px
+style Gateway fill:#bbf,stroke:#333,stroke-width:2px
+style API fill:#bfb,stroke:#333,stroke-width:2px&lt;/div&gt;
+&lt;h3 id="登录流程"&gt;登录流程
+&lt;/h3&gt;
+&lt;div class="mermaid"&gt;sequenceDiagram
+participant C as 客户端
+participant G as 网关
+participant A as 认证服务
+participant D as 数据库
+C-&gt;&gt;G: 1. 发送登录请求
+G-&gt;&gt;A: 2. 转发认证请求
+A-&gt;&gt;D: 3. 查询用户信息
+D--&gt;&gt;A: 4. 返回用户数据
+A-&gt;&gt;A: 5. 验证密码
+A--&gt;&gt;G: 6. 生成 Token
+G--&gt;&gt;C: 7. 返回 Token&lt;/div&gt;
+&lt;h3 id="开发时间线"&gt;开发时间线
+&lt;/h3&gt;
+&lt;div class="mermaid"&gt;gantt
+title Go项目开发计划
+dateFormat YYYY-MM-DD
+section 阶段1
+需求分析 :a1, 2025-01-15, 7d
+架构设计 :a2, after a1, 5d
+section 阶段2
+核心开发 :a3, after a2, 14d
+单元测试 :a4, after a3, 7d
+section 阶段3
+系统测试 :a5, after a4, 7d
+部署上线 :a6, after a5, 3d&lt;/div&gt;
+&lt;h3 id="数据模型"&gt;数据模型
+&lt;/h3&gt;
+&lt;div class="mermaid"&gt;classDiagram
+class User {
++string ID
++string Username
++string Email
++Login()
++Logout()
+}
+class Order {
++string OrderID
++float Amount
++Create()
++Cancel()
+}
+User "1" --&gt; "*" Order : 创建&lt;/div&gt;
+&lt;h2 id="代码实践"&gt;代码实践
+&lt;/h2&gt;&lt;h3 id="1-错误处理"&gt;1. 错误处理
+&lt;/h3&gt;&lt;p&gt;Go 语言推荐使用以下方式处理错误：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;!=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;nil&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Errorf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;failed to process: %w&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="2-并发编程"&gt;2. 并发编程
+&lt;/h3&gt;&lt;p&gt;Go 的 goroutine 和 channel 示例：&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="post-img-view"&gt;
+&lt;a data-fancybox="gallery" href="images/code.png"&gt;
+&lt;img src="images/code.png" alt="并发编程示例" title="Go并发编程示例" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;span class="lnt"&gt;18
+&lt;/span&gt;&lt;span class="lnt"&gt;19
+&lt;/span&gt;&lt;span class="lnt"&gt;20
+&lt;/span&gt;&lt;span class="lnt"&gt;21
+&lt;/span&gt;&lt;span class="lnt"&gt;22
+&lt;/span&gt;&lt;span class="lnt"&gt;23
+&lt;/span&gt;&lt;span class="lnt"&gt;24
+&lt;/span&gt;&lt;span class="lnt"&gt;25
+&lt;/span&gt;&lt;span class="lnt"&gt;26
+&lt;/span&gt;&lt;span class="lnt"&gt;27
+&lt;/span&gt;&lt;span class="lnt"&gt;28
+&lt;/span&gt;&lt;span class="lnt"&gt;29
+&lt;/span&gt;&lt;span class="lnt"&gt;30
+&lt;/span&gt;&lt;span class="lnt"&gt;31
+&lt;/span&gt;&lt;span class="lnt"&gt;32
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;time&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;worker&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;id&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;jobs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;-&lt;/span&gt;&lt;span class="kd"&gt;chan&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;results&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;chan&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;j&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;range&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;jobs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;worker:%d start job:%d\n&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;id&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;j&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;time&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;time&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Second&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;worker:%d finished job:%d\n&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;id&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;j&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;results&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;j&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;jobs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;make&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;chan&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;results&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;make&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;chan&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;go&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;worker&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;jobs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;results&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;go&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;worker&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;jobs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;results&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;jobs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;close&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;jobs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;-&lt;/span&gt;&lt;span class="nx"&gt;results&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="项目实战"&gt;项目实战
+&lt;/h2&gt;&lt;p&gt;让我们通过一个实际的项目来理解 Go 的应用：&lt;/p&gt;
+&lt;div class="mermaid"&gt;graph TD
+A[客户端] --&gt; B[API网关]
+B --&gt; C[服务层]
+C --&gt; D[数据库]
+C --&gt; E[缓存]&lt;/div&gt;
+&lt;h2 id="总结"&gt;总结
+&lt;/h2&gt;&lt;p&gt;Go 语言的开发实践中，需要注意：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;良好的项目结构设计&lt;/li&gt;
+&lt;li&gt;适当的错误处理&lt;/li&gt;
+&lt;li&gt;并发控制&lt;/li&gt;
+&lt;li&gt;性能优化&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="参考资料"&gt;参考资料
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a class="link" href="https://golang.org/doc/" target="_blank" rel="noopener"
+&gt;Go 官方文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://golang.org/doc/effective_go" target="_blank" rel="noopener"
+&gt;Effective Go&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Markdown 语法指南</title><link>https://game1991.github.io/CodeImp/2023/markdown-%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/</link><pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/2023/markdown-%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/</guid><description>&lt;p&gt;本文提供了可以在Hugo内容文件中使用的基本Markdown语法示例，同时展示了基本HTML元素在Hugo主题中是否装饰了CSS。&lt;/p&gt;
+&lt;h2 id="标题"&gt;标题
+&lt;/h2&gt;&lt;p&gt;以下HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;元素表示六个级别的节标题。&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;是最高的节级别，而&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;是最低的。&lt;/p&gt;
+&lt;h1 id="h1"&gt;H1
+&lt;/h1&gt;&lt;h2 id="h2"&gt;H2
+&lt;/h2&gt;&lt;h3 id="h3"&gt;H3
+&lt;/h3&gt;&lt;h4 id="h4"&gt;H4
+&lt;/h4&gt;&lt;h5 id="h5"&gt;H5
+&lt;/h5&gt;&lt;h6 id="h6"&gt;H6
+&lt;/h6&gt;&lt;h2 id="段落"&gt;段落
+&lt;/h2&gt;&lt;p&gt;Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p&gt;
+&lt;p&gt;Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.&lt;/p&gt;
+&lt;h2 id="引用"&gt;引用
+&lt;/h2&gt;&lt;p&gt;引用元素表示从另一个来源引用的内容，选项包括必须在&lt;code&gt;footer&lt;/code&gt;或&lt;code&gt;cite&lt;/code&gt;元素内的引用，以及可选的内联更改，例如注释和缩写。&lt;/p&gt;
+&lt;h3 id="无归属的引用"&gt;无归属的引用
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+&lt;strong&gt;注意&lt;/strong&gt;：您可以在引用中使用&lt;em&gt;Markdown语法&lt;/em&gt;。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id="有归属的引用"&gt;有归属的引用
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;不要通过共享内存进行交流，而是通过交流共享内存。&lt;br&gt;
+— &lt;cite&gt;Rob Pike&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id="表格"&gt;表格
+&lt;/h2&gt;&lt;p&gt;表格不是核心Markdown规范的一部分，但Hugo支持它们。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;姓名&lt;/th&gt;
+&lt;th&gt;年龄&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Bob&lt;/td&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alice&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="表格中的内联markdown"&gt;表格中的内联Markdown
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;斜体&lt;/th&gt;
+&lt;th&gt;粗体&lt;/th&gt;
+&lt;th&gt;代码&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;斜体&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;粗体&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;代码&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;th&gt;D&lt;/th&gt;
+&lt;th&gt;E&lt;/th&gt;
+&lt;th&gt;F&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+&lt;td&gt;Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex.&lt;/td&gt;
+&lt;td&gt;Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus&lt;/td&gt;
+&lt;td&gt;Proin sit amet velit nec enim imperdiet vehicula.&lt;/td&gt;
+&lt;td&gt;Ut bibendum vestibulum quam, eu egestas turpis gravida nec&lt;/td&gt;
+&lt;td&gt;Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="代码块"&gt;代码块
+&lt;/h2&gt;&lt;h3 id="使用反引号的代码块"&gt;使用反引号的代码块
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;html&lt;/span&gt; &lt;span class="na"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;meta&lt;/span&gt; &lt;span class="na"&gt;charset&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;示例HTML5文档&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;测试&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="用四个空格缩进的代码块"&gt;用四个空格缩进的代码块
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+&amp;lt;title&amp;gt;示例HTML5文档&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;测试&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="diff代码块"&gt;Diff代码块
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-diff" data-lang="diff"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;[dependencies.bevy]
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git = &amp;#34;https://github.com/bevyengine/bevy&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;rev = &amp;#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="gd"&gt;- features = [&amp;#34;dynamic&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="gd"&gt;&lt;/span&gt;&lt;span class="gi"&gt;+ features = [&amp;#34;jpeg&amp;#34;, &amp;#34;dynamic&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="单行代码块"&gt;单行代码块
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;一个段落&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="列表类型"&gt;列表类型
+&lt;/h2&gt;&lt;h3 id="有序列表"&gt;有序列表
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;第一个项目&lt;/li&gt;
+&lt;li&gt;第二个项目&lt;/li&gt;
+&lt;li&gt;第三个项目&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="无序列表"&gt;无序列表
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;列表项&lt;/li&gt;
+&lt;li&gt;另一个项目&lt;/li&gt;
+&lt;li&gt;还有另一个项目&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="嵌套列表"&gt;嵌套列表
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;水果
+&lt;ul&gt;
+&lt;li&gt;苹果&lt;/li&gt;
+&lt;li&gt;橙子&lt;/li&gt;
+&lt;li&gt;香蕉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;乳制品
+&lt;ul&gt;
+&lt;li&gt;牛奶&lt;/li&gt;
+&lt;li&gt;奶酪&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="其他元素--abbr-sub-sup-kbd-mark"&gt;其他元素 — abbr, sub, sup, kbd, mark
+&lt;/h2&gt;&lt;p&gt;&lt;abbr title="图形交换格式"&gt;GIF&lt;/abbr&gt;是一种位图图像格式。&lt;/p&gt;
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+&lt;p&gt;X&lt;sup&gt;n&lt;/sup&gt; + Y&lt;sup&gt;n&lt;/sup&gt; = Z&lt;sup&gt;n&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;按 &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;ALT&lt;/kbd&gt; + &lt;kbd&gt;Delete&lt;/kbd&gt; 结束会话。&lt;/p&gt;
+&lt;p&gt;大多数&lt;mark&gt;蝾螈&lt;/mark&gt;是夜行性的，捕食昆虫、蠕虫和其他小生物。&lt;/p&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;上面的引用摘自Rob Pike在2015年11月18日的&lt;a class="link" href="https://www.youtube.com/watch?v=PAAkCSZUG1c" target="_blank" rel="noopener"
+&gt;Gopherfest&lt;/a&gt;演讲。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description></item><item><title>图片画廊</title><link>https://game1991.github.io/CodeImp/2023/%E5%9B%BE%E7%89%87%E7%94%BB%E5%BB%8A/</link><pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/2023/%E5%9B%BE%E7%89%87%E7%94%BB%E5%BB%8A/</guid><description>&lt;img src="https://game1991.github.io/CodeImp/2023/%E5%9B%BE%E7%89%87%E7%94%BB%E5%BB%8A/2.jpg" alt="Featured image of post 图片画廊" /&gt;&lt;p&gt;Hugo主题Stack支持使用Markdown创建互动图片画廊。它由&lt;a class="link" href="https://photoswipe.com/" target="_blank" rel="noopener"
+&gt;PhotoSwipe&lt;/a&gt;提供支持，其语法灵感来自&lt;a class="link" href="https://typlog.com/" target="_blank" rel="noopener"
+&gt;Typlog&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;要使用此功能，图像必须与Markdown文件位于同一目录，因为它使用Hugo的页面捆绑功能来读取图像的尺寸。&lt;strong&gt;不支持外部图像。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="语法"&gt;语法
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;![&lt;span class="nt"&gt;图片 1&lt;/span&gt;](&lt;span class="na"&gt;1.jpg&lt;/span&gt;) ![&lt;span class="nt"&gt;图片 2&lt;/span&gt;](&lt;span class="na"&gt;2.jpg&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="结果"&gt;结果
+&lt;/h2&gt;&lt;p&gt;
+&lt;div class="post-img-view"&gt;
+&lt;a data-fancybox="gallery" href="1.jpg"&gt;
+&lt;img src="1.jpg" alt="图片 1" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="post-img-view"&gt;
+&lt;a data-fancybox="gallery" href="2.jpg"&gt;
+&lt;img src="2.jpg" alt="图片 2" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;图片由&lt;a class="link" href="https://unsplash.com/@mymind" target="_blank" rel="noopener"
+&gt;mymind&lt;/a&gt;和&lt;a class="link" href="https://unsplash.com/@lukechesser" target="_blank" rel="noopener"
+&gt;Luke Chesser&lt;/a&gt;在&lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+&gt;Unsplash&lt;/a&gt;上提供。&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title>短代码</title><link>https://game1991.github.io/CodeImp/2023/%E7%9F%AD%E4%BB%A3%E7%A0%81/</link><pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/2023/%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid><description>&lt;img src="https://game1991.github.io/CodeImp/2023/%E7%9F%AD%E4%BB%A3%E7%A0%81/cover.jpg" alt="Featured image of post 短代码" /&gt;&lt;p&gt;有关更多详细信息，请查看&lt;a class="link" href="https://stack.jimmycai.com/writing/shortcodes" target="_blank" rel="noopener"
+&gt;文档&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id="bilibili-视频"&gt;Bilibili 视频
+&lt;/h2&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1d4411N7zD"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="腾讯视频"&gt;腾讯视频
+&lt;/h2&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe src="https://v.qq.com/txp/iframe/player.html?vid=g0014r3khdw&amp;auto=0"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="youtube-视频"&gt;YouTube 视频
+&lt;/h2&gt;&lt;div class="video-wrapper"&gt;
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/0qwALOOvUik"
+allowfullscreen
+title="YouTube Video"
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="通用视频文件"&gt;通用视频文件
+&lt;/h2&gt;&lt;div class="video-wrapper"&gt;
+&lt;video
+controls
+src="https://www.w3schools.com/tags/movie.mp4"
+&gt;
+&lt;p&gt;
+Your browser doesn't support HTML5 video. Here is a
+&lt;a href="https://www.w3schools.com/tags/movie.mp4"&gt;link to the video&lt;/a&gt; instead.
+&lt;/p&gt;
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;h2 id="gist"&gt;Gist
+&lt;/h2&gt;&lt;script src="https://gist.github.com/CaiJimmy/e2751a943de10b2a5b3a8a6c2120cb86.js"&gt;&lt;/script&gt;
+&lt;h2 id="gitlab"&gt;GitLab
+&lt;/h2&gt;&lt;script
+type="application/javascript"
+src="https://gitlab.com/-/snippets/2589724.js"
+&gt;&lt;/script&gt;
+&lt;h2 id="引用"&gt;引用
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class="cite"&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;一位著名人物, &lt;/span&gt;&lt;a href="https://en.wikipedia.org/wiki/Book"&gt;&lt;cite&gt;他们所著的书&lt;/cite&gt;&lt;/a&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;图片由&lt;a class="link" href="https://unsplash.com/@codioful" target="_blank" rel="noopener"
+&gt;Codioful&lt;/a&gt;在&lt;a class="link" href="https://unsplash.com/photos/WDSN62Qdxuk" target="_blank" rel="noopener"
+&gt;Unsplash&lt;/a&gt;上提供。&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title>数学排版</title><link>https://game1991.github.io/CodeImp/2023/%E6%95%B0%E5%AD%A6%E6%8E%92%E7%89%88/</link><pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/2023/%E6%95%B0%E5%AD%A6%E6%8E%92%E7%89%88/</guid><description>&lt;p&gt;Stack内置支持使用&lt;a class="link" href="https://katex.org/" target="_blank" rel="noopener"
+&gt;KaTeX&lt;/a&gt;进行数学排版。&lt;/p&gt;
+&lt;p&gt;**默认情况下未全局启用，**但您可以通过在前言中添加&lt;code&gt;math: true&lt;/code&gt;来为单个文章启用它。或者，您可以通过在&lt;code&gt;config.toml&lt;/code&gt;的&lt;code&gt;params.article&lt;/code&gt;部分中添加&lt;code&gt;math = true&lt;/code&gt;来全局启用它。&lt;/p&gt;
+&lt;h2 id="行内数学"&gt;行内数学
+&lt;/h2&gt;&lt;p&gt;这是一个行内数学表达式：$
+varphi = rac{1+ ext{sqrt}5}{2}= 1.6180339887…$&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;varphi = rac{1+ ext{sqrt}5}{2}= 1.6180339887…$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="块数学"&gt;块数学
+&lt;/h2&gt;&lt;p&gt;$$&lt;/p&gt;
+&lt;p&gt;varphi = 1+ rac{1} {1+ rac{1} {1+ rac{1} {1+ ext{cdots}} } }
+$$&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;varphi = 1+ rac{1} {1+ rac{1} {1+ rac{1} {1+ ext{cdots}} } }
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;$$
+f(x) = ext{integral}_{- ext{infinity}}^{ ext{infinity}} ext{hat f}( ext{xi})e^{2 ext{pi} i ext{xi} x} ext{d} ext{xi}
+$$&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; f(x) = ext{integral}_{- ext{infinity}}^{ ext{infinity}} ext{hat f}( ext{xi})e^{2 ext{pi} i ext{xi} x} ext{d} ext{xi}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title/><link>https://game1991.github.io/CodeImp/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/1/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-CN"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;发布日志封面图片生成器 - PNG版本&lt;/title&gt;
+&lt;style&gt;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+background: #f5f5f5;
+color: #333;
+line-height: 1.6;
+}
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+.header {
+text-align: center;
+margin-bottom: 30px;
+padding: 20px;
+background: white;
+border-radius: 10px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.header h1 {
+color: #667eea;
+margin-bottom: 10px;
+}
+.header p {
+color: #666;
+}
+.controls {
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+margin-bottom: 30px;
+}
+.control-group {
+display: flex;
+gap: 20px;
+align-items: center;
+flex-wrap: wrap;
+margin-bottom: 15px;
+}
+.control-group label {
+font-weight: 500;
+min-width: 100px;
+}
+.control-group input, .control-group select {
+padding: 8px 12px;
+border: 2px solid #e0e0e0;
+border-radius: 5px;
+font-size: 14px;
+transition: border-color 0.3s ease;
+}
+.control-group input:focus, .control-group select:focus {
+outline: none;
+border-color: #667eea;
+}
+.button-group {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+}
+.btn {
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 14px;
+font-weight: 500;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: inline-flex;
+align-items: center;
+gap: 8px;
+}
+.btn-primary {
+background: #667eea;
+color: white;
+}
+.btn-primary:hover {
+background: #5a67d8;
+transform: translateY(-1px);
+}
+.btn-secondary {
+background: #48bb78;
+color: white;
+}
+.btn-secondary:hover {
+background: #38a169;
+transform: translateY(-1px);
+}
+.btn-info {
+background: #4299e1;
+color: white;
+}
+.btn-info:hover {
+background: #3182ce;
+}
+.preview-section {
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+margin-bottom: 30px;
+}
+.preview-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+flex-wrap: wrap;
+gap: 10px;
+}
+.preview-title {
+font-size: 18px;
+font-weight: 600;
+color: #333;
+}
+.preview-info {
+font-size: 12px;
+color: #666;
+}
+.preview-container {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 400px;
+background: #f8f9fa;
+border-radius: 8px;
+border: 2px dashed #dee2e6;
+}
+.preview-canvas {
+max-width: 100%;
+max-height: 400px;
+border: 2px solid #667eea;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.instructions {
+background: #e6fffa;
+border: 1px solid #4fd1c5;
+border-radius: 8px;
+padding: 20px;
+margin-bottom: 20px;
+}
+.instructions h3 {
+color: #234e52;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.instructions ul {
+margin-left: 20px;
+color: #234e52;
+}
+.instructions li {
+margin-bottom: 8px;
+}
+.color-preview {
+width: 32px;
+height: 32px;
+cursor: pointer;
+vertical-align: middle;
+/* 不加任何 border/background/display/padding，保证原生色块 */
+}
+.status-message {
+padding: 10px 15px;
+border-radius: 5px;
+margin: 10px 0;
+display: none;
+}
+.status-success {
+background: #f0fff4;
+border: 1px solid #68d391;
+color: #22543d;
+}
+.status-error {
+background: #fed7d7;
+border: 1px solid #fc8181;
+color: #742a2a;
+}
+.loading {
+display: inline-block;
+width: 32px;
+height: 32px;
+border-radius: 4px;
+border: 2px solid #e0e0e0;
+cursor: pointer;
+background: none;
+-webkit-appearance: auto;
+appearance: auto;
+display: inline-block;
+padding: 0;
+box-sizing: border-box;
+vertical-align: middle;
+margin-right: 8px;
+transition: border-color 0.2s;
+}
+.color-preview:focus {
+border-color: #667eea;
+outline: 2px solid #667eea;
+}
+.color-value {
+font-size: 13px;
+color: #555;
+margin-right: 16px;
+min-width: 70px;
+display: inline-block;
+vertical-align: middle;
+font-family: 'Consolas', 'Menlo', 'Monaco', monospace;
+}
+@media (max-width: 768px) {
+.control-group {
+flex-direction: column;
+align-items: stretch;
+}
+.button-group {
+justify-content: center;
+}
+.preview-header {
+flex-direction: column;
+text-align: center;
+}
+}
+.button-group-center {
+justify-content: center;
+}
+.button-group-margin-top {
+margin-top: 18px;
+}
+.preview-placeholder {
+text-align: center;
+color: #666;
+}
+.preview-center-text {
+text-align: center;
+color: #666;
+}
+.button-group-margin-top {
+margin-top: 18px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="container"&gt;
+&lt;!-- 头部 --&gt;
+&lt;div class="header"&gt;
+&lt;h1&gt;🎨 发布日志封面图片生成器&lt;/h1&gt;
+&lt;p&gt;生成专业的PNG格式封面图片，完美适配您的发布日志&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- 使用说明 --&gt;
+&lt;div class="instructions"&gt;
+&lt;h3&gt;📋 使用说明&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;调整下方的参数来自定义封面样式&lt;/li&gt;
+&lt;li&gt;点击"生成预览"查看效果&lt;/li&gt;
+&lt;li&gt;满意后点击"下载PNG图片"保存&lt;/li&gt;
+&lt;li&gt;将生成的图片上传到您的发布日志目录&lt;/li&gt;
+&lt;li&gt;更新文章的 front matter 中的 image 字段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- 控制面板 --&gt;
+&lt;div class="controls"&gt;
+&lt;table class="param-table"&gt;
+&lt;tr&gt;
+&lt;td class="param-label"&gt;主标题:&lt;/td&gt;
+&lt;td&gt;&lt;input type="text" id="mainTitle" value="发布日志" placeholder="输入主标题"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="param-label"&gt;副标题:&lt;/td&gt;
+&lt;td&gt;&lt;input type="text" id="subTitle" value="Release Notes" placeholder="输入副标题"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="param-label"&gt;版本号:&lt;/td&gt;
+&lt;td&gt;&lt;input type="text" id="version" value="v2025.09.17" placeholder="输入版本号"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="param-label"&gt;背景颜色:&lt;/td&gt;
+&lt;td&gt;
+&lt;input type="color" id="bgColor1" value="#667eea" class="color-preview" title="选择主背景颜色" onchange="updateColorValue('bgColor1');generateAndPreview();"&gt;
+&lt;span class="color-value" id="bgColor1-value"&gt;#667eea&lt;/span&gt;
+&lt;input type="color" id="bgColor2" value="#764ba2" class="color-preview" title="选择次背景颜色" onchange="updateColorValue('bgColor2');generateAndPreview();"&gt;
+&lt;span class="color-value" id="bgColor2-value"&gt;#764ba2&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="param-label"&gt;版本号颜色:&lt;/td&gt;
+&lt;td&gt;
+&lt;input type="color" id="versionColor" value="#ffd700" class="color-preview" title="选择版本号颜色" onchange="updateColorValue('versionColor');generateAndPreview();"&gt;
+&lt;span class="color-value" id="versionColor-value"&gt;#ffd700&lt;/span&gt;
+&lt;div class="button-group button-group-margin-top"&gt;
+&lt;div class="button-group button-group-margin-top"&gt;
+&lt;/table&gt;
+&lt;/table&gt;
+&lt;div class="button-group button-group-margin-top"&gt;
+&lt;button class="btn btn-primary" id="btn-preview"&gt;
+🎨 生成预览
+&lt;/button&gt;
+&lt;button class="btn btn-secondary" id="btn-download"&gt;
+💾 下载PNG图片
+&lt;/button&gt;
+&lt;button class="btn btn-info" id="btn-reset"&gt;
+🔄 重置默认
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- 预览区域 --&gt;
+&lt;div class="preview-section"&gt;
+&lt;div id="preview-placeholder" class="preview-placeholder"&gt;
+&lt;div class="preview-center-text"&gt;
+&lt;p&gt;👆 点击“生成预览”查看封面效果&lt;/p&gt;
+&lt;p&gt;封面将在这里显示，您可以右键保存或点击下载按钮&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- 技术说明 --&gt;
+&lt;div class="instructions"&gt;
+&lt;h3&gt;🛠️ 技术说明&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 HTML5 Canvas API 生成高质量图片&lt;/li&gt;
+&lt;li&gt;支持自定义颜色、文字和样式&lt;/li&gt;
+&lt;li&gt;生成的图片为 PNG 格式，质量无损&lt;/li&gt;
+&lt;li&gt;完美适配 Hugo 主题的封面图片要求&lt;/li&gt;
+&lt;li&gt;支持多语言和国际化内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="button-group button-group-center"&gt;
+&lt;!-- 快速操作 --&gt;
+&lt;div class="instructions"&gt;
+&lt;h3&gt;⚡ 快速操作&lt;/h3&gt;
+&lt;div class="button-group button-group-center"&gt;
+&lt;button class="btn btn-primary" onclick="showSVGOption()"&gt;
+📄 使用SVG版本
+&lt;/button&gt;
+&lt;button class="btn btn-info" onclick="showUsageGuide()"&gt;
+📖 查看使用指南
+&lt;/button&gt;
+&lt;button class="btn btn-secondary" onclick="window.print()"&gt;
+🖨️ 打印当前页面
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- 引入封面生成器脚本 --&gt;
+&lt;script src="cover-generator.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+// 额外的功能函数
+function showStatus(message, type = 'success') {
+const statusEl = document.getElementById('statusMessage');
+statusEl.textContent = message;
+statusEl.className = `status-message status-${type}`;
+statusEl.style.display = 'block';
+setTimeout(() =&gt; {
+statusEl.style.display = 'none';
+}, 5000);
+}
+function generateAndPreview() {
+showStatus('正在生成封面图片...', 'success');
+try {
+// 获取用户输入
+const mainTitle = document.getElementById('mainTitle').value;
+const subTitle = document.getElementById('subTitle').value;
+const version = document.getElementById('version').value;
+const bgColor1 = document.getElementById('bgColor1').value;
+const bgColor2 = document.getElementById('bgColor2').value;
+const versionColor = document.getElementById('versionColor').value;
+// 更新生成器配置
+if (window.CoverGenerator) {
+window.CoverGenerator.config.colors.background = [bgColor1, bgColor2];
+window.CoverGenerator.config.colors.version = versionColor;
+// 生成 canvas
+const canvas = window.CoverGenerator.generate(mainTitle, subTitle, version);
+// 替换预览区域内容
+const previewSection = document.querySelector('.preview-section');
+let placeholder = document.getElementById('preview-placeholder');
+if (placeholder) {
+placeholder.innerHTML = '';
+placeholder.appendChild(canvas);
+canvas.classList.add('preview-canvas');
+} else if (previewSection) {
+previewSection.innerHTML = '';
+previewSection.appendChild(canvas);
+canvas.classList.add('preview-canvas');
+}
+showStatus('封面生成成功！', 'success');
+} else {
+showStatus('封面生成器加载失败，请刷新页面重试', 'error');
+}
+} catch (error) {
+showStatus('生成失败: ' + error.message, 'error');
+console.error('封面生成错误:', error);
+}
+}
+function downloadImage() {
+showStatus('正在准备下载...', 'success');
+try {
+if (window.CoverGenerator) {
+window.CoverGenerator.download();
+showStatus('图片下载成功！', 'success');
+} else {
+showStatus('下载功能暂时不可用，请先生成预览', 'error');
+}
+} catch (error) {
+showStatus('下载失败: ' + error.message, 'error');
+console.error('下载错误:', error);
+}
+}
+function resetToDefault() {
+document.getElementById('mainTitle').value = '发布日志';
+document.getElementById('subTitle').value = 'Release Notes';
+document.getElementById('version').value = 'v2025.09.17';
+document.getElementById('bgColor1').value = '#667eea';
+document.getElementById('bgColor2').value = '#764ba2';
+document.getElementById('versionColor').value = '#ffd700';
+// 同步更新 CoverGenerator.config
+if (window.CoverGenerator) {
+window.CoverGenerator.config.colors.background = ['#667eea', '#764ba2'];
+window.CoverGenerator.config.colors.version = '#ffd700';
+}
+showStatus('已重置为默认设置', 'success');
+generateAndPreview();
+}
+function showSVGOption() {
+alert('SVG版本特点：\n\n' +
+'✅ 矢量图形，无限缩放不失真\n' +
+'✅ 文件大小更小（约3KB）\n' +
+'✅ 支持CSS动画和交互\n' +
+'✅ 现代浏览器原生支持\n\n' +
+'文件位置: cover.svg\n' +
+'当前状态: ✅ 已可用');
+}
+function showUsageGuide() {
+alert('使用步骤：\n\n' +
+'1. 调整参数自定义封面\n' +
+'2. 点击"生成预览"查看效果\n' +
+'3. 点击"下载PNG图片"保存\n' +
+'4. 将图片上传到发布日志目录\n' +
+'5. 更新文章的 image 字段\n\n' +
+'建议尺寸: 1200×630px\n' +
+'推荐格式: PNG 或 SVG');
+}
+// 页面加载完成后的初始化
+document.addEventListener('DOMContentLoaded', function() {
+// 添加颜色选择器的实时预览
+const colorInputs = document.querySelectorAll('input[type="color"]');
+colorInputs.forEach(input =&gt; {
+input.addEventListener('change', function() {
+// 可以在这里添加实时预览逻辑
+console.log('颜色已更新:', this.value);
+});
+});
+// 添加输入框的实时验证
+const textInputs = document.querySelectorAll('input[type="text"]');
+textInputs.forEach(input =&gt; {
+input.addEventListener('input', function() {
+// 防止输入过长的文字
+if (this.value.length &gt; 50) {
+this.value = this.value.substring(0, 50);
+showStatus('文字长度不能超过50个字符', 'error');
+}
+});
+});
+// 显示欢迎消息
+setTimeout(() =&gt; {
+showStatus('欢迎使用封面图片生成器！', 'success');
+}, 1000);
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;script&gt;
+// 实时更新颜色值显示
+function updateColorValue(id) {
+var input = document.getElementById(id);
+var valueSpan = document.getElementById(id + '-value');
+if (input &amp;&amp; valueSpan) {
+valueSpan.textContent = input.value;
+}
+}
+function getFormValues() {
+return {
+mainTitle: document.getElementById('mainTitle').value,
+subTitle: document.getElementById('subTitle').value,
+version: document.getElementById('version').value,
+bgColor1: document.getElementById('bgColor1').value,
+bgColor2: document.getElementById('bgColor2').value,
+versionColor: document.getElementById('versionColor').value
+};
+}
+function generateAndPreview() {
+const vals = getFormValues();
+updateColorValue('bgColor1');
+updateColorValue('bgColor2');
+updateColorValue('versionColor');
+if (window.CoverGenerator) {
+window.CoverGenerator.config.colors.background = [vals.bgColor1, vals.bgColor2];
+window.CoverGenerator.config.colors.version = vals.versionColor;
+// 生成 canvas
+const canvas = window.CoverGenerator.generate(vals.mainTitle, vals.subTitle, vals.version);
+// 替换预览区域内容
+const previewSection = document.querySelector('.preview-section');
+let placeholder = document.getElementById('preview-placeholder');
+if (placeholder) {
+placeholder.innerHTML = '';
+placeholder.appendChild(canvas);
+canvas.classList.add('preview-canvas');
+} else if (previewSection) {
+previewSection.innerHTML = '';
+previewSection.appendChild(canvas);
+canvas.classList.add('preview-canvas');
+}
+}
+}
+function downloadImage() {
+const vals = getFormValues();
+if (window.CoverGenerator) {
+window.CoverGenerator.config.colors.background = [vals.bgColor1, vals.bgColor2];
+window.CoverGenerator.config.colors.version = vals.versionColor;
+const canvas = window.CoverGenerator.generate(vals.mainTitle, vals.subTitle, vals.version);
+const link = document.createElement('a');
+link.download = 'release-notes-cover.png';
+link.href = canvas.toDataURL('image/png', 1.0);
+link.click();
+}
+}
+function resetToDefault() {
+document.getElementById('mainTitle').value = '发布日志';
+document.getElementById('subTitle').value = 'Release Notes';
+document.getElementById('version').value = 'v2025.09.17';
+document.getElementById('bgColor1').value = '#667eea';
+document.getElementById('bgColor2').value = '#764ba2';
+document.getElementById('versionColor').value = '#ffd700';
+updateColorValue('bgColor1');
+updateColorValue('bgColor2');
+updateColorValue('versionColor');
+generateAndPreview();
+}
+document.addEventListener('DOMContentLoaded', function() {
+updateColorValue('bgColor1');
+updateColorValue('bgColor2');
+updateColorValue('versionColor');
+document.getElementById('btn-preview').onclick = generateAndPreview;
+document.getElementById('btn-download').onclick = downloadImage;
+document.getElementById('btn-reset').onclick = resetToDefault;
+generateAndPreview();
+});
+&lt;/script&gt;
+&lt;/html&gt;</description></item></channel></rss>

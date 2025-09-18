@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>画廊 on 代码无界限</title><link>https://game1991.github.io/CodeImp/categories/%E7%94%BB%E5%BB%8A/</link><description>Recent content in 画廊 on 代码无界限</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 20 Dec 2024 16:56:12 +0800</lastBuildDate><atom:link href="https://game1991.github.io/CodeImp/categories/%E7%94%BB%E5%BB%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>图片画廊</title><link>https://game1991.github.io/CodeImp/2023/%E5%9B%BE%E7%89%87%E7%94%BB%E5%BB%8A/</link><pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/2023/%E5%9B%BE%E7%89%87%E7%94%BB%E5%BB%8A/</guid><description>&lt;img src="https://game1991.github.io/CodeImp/2023/%E5%9B%BE%E7%89%87%E7%94%BB%E5%BB%8A/2.jpg" alt="Featured image of post 图片画廊" /&gt;&lt;p&gt;Hugo主题Stack支持使用Markdown创建互动图片画廊。它由&lt;a class="link" href="https://photoswipe.com/" target="_blank" rel="noopener"
+&gt;PhotoSwipe&lt;/a&gt;提供支持，其语法灵感来自&lt;a class="link" href="https://typlog.com/" target="_blank" rel="noopener"
+&gt;Typlog&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;要使用此功能，图像必须与Markdown文件位于同一目录，因为它使用Hugo的页面捆绑功能来读取图像的尺寸。&lt;strong&gt;不支持外部图像。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="语法"&gt;语法
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;![&lt;span class="nt"&gt;图片 1&lt;/span&gt;](&lt;span class="na"&gt;1.jpg&lt;/span&gt;) ![&lt;span class="nt"&gt;图片 2&lt;/span&gt;](&lt;span class="na"&gt;2.jpg&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="结果"&gt;结果
+&lt;/h2&gt;&lt;p&gt;
+&lt;div class="post-img-view"&gt;
+&lt;a data-fancybox="gallery" href="1.jpg"&gt;
+&lt;img src="1.jpg" alt="图片 1" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="post-img-view"&gt;
+&lt;a data-fancybox="gallery" href="2.jpg"&gt;
+&lt;img src="2.jpg" alt="图片 2" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;图片由&lt;a class="link" href="https://unsplash.com/@mymind" target="_blank" rel="noopener"
+&gt;mymind&lt;/a&gt;和&lt;a class="link" href="https://unsplash.com/@lukechesser" target="_blank" rel="noopener"
+&gt;Luke Chesser&lt;/a&gt;在&lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+&gt;Unsplash&lt;/a&gt;上提供。&lt;/p&gt;&lt;/blockquote&gt;</description></item></channel></rss>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on CodeImp</title><link>https://game1991.github.io/CodeImp/en/projects/</link><description>Recent content in Projects on CodeImp</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://game1991.github.io/CodeImp/en/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Blog Project</title><link>https://game1991.github.io/CodeImp/en/projects/hugo-blog-project/hugo-blog-project/</link><pubDate>Wed, 15 Jan 2025 23:39:46 +0800</pubDate><guid>https://game1991.github.io/CodeImp/en/projects/hugo-blog-project/hugo-blog-project/</guid><description>&lt;h1 id="project-description"&gt;Project Description
+&lt;/h1&gt;&lt;h2 id="background"&gt;Background
+&lt;/h2&gt;&lt;p&gt;A personal technical blog is an important way for programmers to record learning and share knowledge. This project aims to build a modern, easy-to-maintain technical blog system.&lt;/p&gt;
+&lt;h2 id="features"&gt;Features
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Generate static websites quickly using Hugo&lt;/li&gt;
+&lt;li&gt;Support bilingual (Chinese and English) blogs&lt;/li&gt;
+&lt;li&gt;Responsive design&lt;/li&gt;
+&lt;li&gt;Code highlighting&lt;/li&gt;
+&lt;li&gt;Automated deployment&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="technical-highlights"&gt;Technical Highlights
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Static website generation&lt;/li&gt;
+&lt;li&gt;GitHub Actions continuous integration&lt;/li&gt;
+&lt;li&gt;Markdown writing&lt;/li&gt;
+&lt;li&gt;Multilingual support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="architecture-design"&gt;Architecture Design
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo-blog/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├── content/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ├── post/ # Blog articles
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ └── projects/ # Project records
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├── archetypes/ # Content templates
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├── static/ # Static resources
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└── config.toml # Site configuration
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="future-planning"&gt;Future Planning
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Add comment system&lt;/li&gt;
+&lt;li&gt;Optimize SEO&lt;/li&gt;
+&lt;li&gt;Add more language support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="project-screenshots"&gt;Project Screenshots
+&lt;/h2&gt;&lt;p&gt;
+&lt;div class="post-img-view"&gt;
+&lt;a data-fancybox="gallery" href="screenshot.png"&gt;
+&lt;img src="screenshot.png" alt="Blog Preview" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id="installation-and-usage"&gt;Installation and Usage
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;span class="lnt"&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Clone repository&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git clone https://github.com/yourusername/hugo-blog.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Install Hugo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install hugo &lt;span class="c1"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;choco install hugo &lt;span class="c1"&gt;# Windows&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Start local service&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="license"&gt;License
+&lt;/h2&gt;&lt;p&gt;MIT License&lt;/p&gt;</description></item></channel></rss>

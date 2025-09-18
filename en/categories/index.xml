@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on CodeImp</title><link>https://game1991.github.io/CodeImp/en/categories/</link><description>Recent content in Categories on CodeImp</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://game1991.github.io/CodeImp/en/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown Syntax</title><link>https://game1991.github.io/CodeImp/en/categories/markdown-syntax/</link><pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/categories/markdown-syntax/</guid><description/></item><item><title>Gallery</title><link>https://game1991.github.io/CodeImp/en/categories/gallery/</link><pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/categories/gallery/</guid><description/></item><item><title>Shortcodes</title><link>https://game1991.github.io/CodeImp/en/categories/shortcodes/</link><pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/categories/shortcodes/</guid><description/></item><item><title>LaTeX Typesetting</title><link>https://game1991.github.io/CodeImp/en/categories/latex-typesetting/</link><pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/categories/latex-typesetting/</guid><description/></item><item><title>Math Formulas</title><link>https://game1991.github.io/CodeImp/en/categories/math-formulas/</link><pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/categories/math-formulas/</guid><description/></item><item><title>Go</title><link>https://game1991.github.io/CodeImp/en/categories/go/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/categories/go/</guid><description/></item><item><title>Python</title><link>https://game1991.github.io/CodeImp/en/categories/python/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/categories/python/</guid><description/></item><item><title>Daily Life</title><link>https://game1991.github.io/CodeImp/en/categories/life/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/categories/life/</guid><description/></item><item><title>Release Notes</title><link>https://game1991.github.io/CodeImp/en/categories/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/en/categories/release-notes/</guid><description>&lt;img src="https://game1991.github.io/CodeImp/categories/release-notes/release-notes-cover.png" alt="Featured image of post Release Notes" /&gt;&lt;h1 id="-release-notes"&gt;📋 Release Notes
+&lt;/h1&gt;&lt;p&gt;This page contains all release notes and update records for the &lt;strong&gt;Code Unlimited&lt;/strong&gt; website. Here you can find the latest features, improvements, and fixes.&lt;/p&gt;
+&lt;h2 id="-about-release-notes"&gt;🎯 About Release Notes
+&lt;/h2&gt;&lt;p&gt;We use &lt;strong&gt;continuous integration&lt;/strong&gt; and &lt;strong&gt;version management&lt;/strong&gt; to maintain the site. Every important update is recorded here, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✨ &lt;strong&gt;New Features&lt;/strong&gt; - Brand new functionalities&lt;/li&gt;
+&lt;li&gt;🔧 &lt;strong&gt;Improvements&lt;/strong&gt; - Enhancements to existing features&lt;/li&gt;
+&lt;li&gt;🐛 &lt;strong&gt;Bug Fixes&lt;/strong&gt; - Various issue resolutions&lt;/li&gt;
+&lt;li&gt;📊 &lt;strong&gt;Performance Boosts&lt;/strong&gt; - Speed and experience optimizations&lt;/li&gt;
+&lt;li&gt;🔒 &lt;strong&gt;Security Updates&lt;/strong&gt; - Security-related changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-how-to-read"&gt;🔍 How to Read
+&lt;/h2&gt;&lt;p&gt;Each release note includes the following information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 &lt;strong&gt;Release Date&lt;/strong&gt; - The specific date of the update&lt;/li&gt;
+&lt;li&gt;🏷️ &lt;strong&gt;Version Tag&lt;/strong&gt; - Easy-to-track version number&lt;/li&gt;
+&lt;li&gt;📊 &lt;strong&gt;Statistics&lt;/strong&gt; - Quantitative data on code changes&lt;/li&gt;
+&lt;li&gt;📸 &lt;strong&gt;Showcase&lt;/strong&gt; - Before and after comparisons&lt;/li&gt;
+&lt;li&gt;📝 &lt;strong&gt;Usage Guide&lt;/strong&gt; - How to use new features&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="-get-involved"&gt;📞 Get Involved
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;💬 For any questions or suggestions, feel free to comment below the articles&lt;/li&gt;
+&lt;li&gt;⭐ Support our project by starring the &lt;a class="link" href="https://github.com/game1991/CodeImp" target="_blank" rel="noopener"
+&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐛 Found a bug? Please submit an &lt;a class="link" href="https://github.com/game1991/CodeImp/issues" target="_blank" rel="noopener"
+&gt;Issue report&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;💡 Tip&lt;/strong&gt;: Use the table of contents on the right to quickly jump to sections of interest. If this is your first visit, we recommend starting with the latest release notes.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 &lt;strong&gt;Related Links&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://game1991.github.io/CodeImp/post/" &gt;Tech Blog&lt;/a&gt; - In-depth technical articles&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://game1991.github.io/CodeImp/projects/" &gt;Project Showcase&lt;/a&gt; - Project portfolio&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://game1991.github.io/CodeImp/about/" &gt;About Us&lt;/a&gt; - Learn more&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://github.com/game1991/CodeImp" target="_blank" rel="noopener"
+&gt;GitHub Repository&lt;/a&gt; - Source code and contributions&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;</description></item></channel></rss>

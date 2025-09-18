@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Latex on 代码无界限</title><link>https://game1991.github.io/CodeImp/categories/latex/</link><description>Recent content in Latex on 代码无界限</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 26 Dec 2024 19:23:23 +0800</lastBuildDate><atom:link href="https://game1991.github.io/CodeImp/categories/latex/index.xml" rel="self" type="application/rss+xml"/><item><title>数学排版</title><link>https://game1991.github.io/CodeImp/2023/%E6%95%B0%E5%AD%A6%E6%8E%92%E7%89%88/</link><pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/2023/%E6%95%B0%E5%AD%A6%E6%8E%92%E7%89%88/</guid><description>&lt;p&gt;Stack内置支持使用&lt;a class="link" href="https://katex.org/" target="_blank" rel="noopener"
+&gt;KaTeX&lt;/a&gt;进行数学排版。&lt;/p&gt;
+&lt;p&gt;**默认情况下未全局启用，**但您可以通过在前言中添加&lt;code&gt;math: true&lt;/code&gt;来为单个文章启用它。或者，您可以通过在&lt;code&gt;config.toml&lt;/code&gt;的&lt;code&gt;params.article&lt;/code&gt;部分中添加&lt;code&gt;math = true&lt;/code&gt;来全局启用它。&lt;/p&gt;
+&lt;h2 id="行内数学"&gt;行内数学
+&lt;/h2&gt;&lt;p&gt;这是一个行内数学表达式：$
+varphi = rac{1+ ext{sqrt}5}{2}= 1.6180339887…$&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;varphi = rac{1+ ext{sqrt}5}{2}= 1.6180339887…$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="块数学"&gt;块数学
+&lt;/h2&gt;&lt;p&gt;$$&lt;/p&gt;
+&lt;p&gt;varphi = 1+ rac{1} {1+ rac{1} {1+ rac{1} {1+ ext{cdots}} } }
+$$&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;varphi = 1+ rac{1} {1+ rac{1} {1+ rac{1} {1+ ext{cdots}} } }
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;$$
+f(x) = ext{integral}_{- ext{infinity}}^{ ext{infinity}} ext{hat f}( ext{xi})e^{2 ext{pi} i ext{xi} x} ext{d} ext{xi}
+$$&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; f(x) = ext{integral}_{- ext{infinity}}^{ ext{infinity}} ext{hat f}( ext{xi})e^{2 ext{pi} i ext{xi} x} ext{d} ext{xi}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;$$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>

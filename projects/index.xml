@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>项目 on 代码无界限</title><link>https://game1991.github.io/CodeImp/projects/</link><description>Recent content in 项目 on 代码无界限</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://game1991.github.io/CodeImp/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 项目展示系统</title><link>https://game1991.github.io/CodeImp/projects/hugo-project-showcase/</link><pubDate>Thu, 23 Jan 2025 11:23:48 +0800</pubDate><guid>https://game1991.github.io/CodeImp/projects/hugo-project-showcase/</guid><description>&lt;h1 id="项目详细描述"&gt;项目详细描述
+&lt;/h1&gt;&lt;h2 id="背景"&gt;背景
+&lt;/h2&gt;&lt;p&gt;背景介绍：为什么要开发这个项目？解决了什么问题？&lt;/p&gt;
+&lt;h2 id="功能特性"&gt;功能特性
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;特性 1&lt;/li&gt;
+&lt;li&gt;特性 2&lt;/li&gt;
+&lt;li&gt;特性 3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="技术亮点"&gt;技术亮点
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;技术难点 1&lt;/li&gt;
+&lt;li&gt;技术难点 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="架构设计"&gt;架构设计
+&lt;/h2&gt;&lt;p&gt;[可以插入架构图]&lt;/p&gt;
+&lt;h2 id="未来规划"&gt;未来规划
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;计划 1&lt;/li&gt;
+&lt;li&gt;计划 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="项目截图"&gt;项目截图
+&lt;/h2&gt;&lt;p&gt;
+&lt;div class="post-img-view"&gt;
+&lt;a data-fancybox="gallery" href="screenshot.png"&gt;
+&lt;img src="screenshot.png" alt="项目截图" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id="安装与使用"&gt;安装与使用
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装命令&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 运行命令&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="许可证"&gt;许可证
+&lt;/h2&gt;&lt;p&gt;MIT 许可证&lt;/p&gt;
+&lt;h2 id="项目背景"&gt;项目背景
+&lt;/h2&gt;&lt;p&gt;在个人博客和项目展示中，传统的项目列表往往缺乏吸引力和信息深度。本项目旨在为Hugo用户提供一个现代、美观且信息丰富的项目展示系统。&lt;/p&gt;
+&lt;h2 id="主要特性"&gt;主要特性
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;响应式设计，适配多种设备&lt;/li&gt;
+&lt;li&gt;可自定义的项目元数据&lt;/li&gt;
+&lt;li&gt;美观的项目卡片和详情页&lt;/li&gt;
+&lt;li&gt;支持多种项目状态标签&lt;/li&gt;
+&lt;li&gt;技术栈可视化展示&lt;/li&gt;
+&lt;li&gt;项目指标追踪&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装与使用-1"&gt;安装与使用
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;克隆项目模板&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git clone https://github.com/yourusername/hugo-project-showcase.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start="2"&gt;
+&lt;li&gt;安装Hugo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Windows&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;choco install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start="3"&gt;
+&lt;li&gt;创建新项目&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo new projects/your-project-name.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="贡献指南"&gt;贡献指南
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Fork 仓库&lt;/li&gt;
+&lt;li&gt;创建特性分支 (&lt;code&gt;git checkout -b feature/AmazingFeature&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;提交更改 (&lt;code&gt;git commit -m '添加了一些惊人的特性'&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;推送到分支 (&lt;code&gt;git push origin feature/AmazingFeature&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;创建 Pull Request&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="许可证-1"&gt;许可证
+&lt;/h2&gt;&lt;p&gt;MIT 许可证 - 随意使用、修改和分享&lt;/p&gt;</description></item><item><title>Hugo 博客项目</title><link>https://game1991.github.io/CodeImp/projects/hugo-blog-project/hugo-blog-project/</link><pubDate>Thu, 16 Jan 2025 16:25:41 +0800</pubDate><guid>https://game1991.github.io/CodeImp/projects/hugo-blog-project/hugo-blog-project/</guid><description>&lt;h2 id="项目简介"&gt;项目简介
+&lt;/h2&gt;&lt;p&gt;这是一个使用Hugo搭建的个人博客项目。&lt;/p&gt;
+&lt;h2 id="背景"&gt;背景
+&lt;/h2&gt;&lt;p&gt;个人技术博客是程序员记录学习和分享知识的重要方式。本项目旨在构建一个现代化、易于维护的技术博客系统。&lt;/p&gt;
+&lt;h2 id="功能特性"&gt;功能特性
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;使用Hugo快速生成静态网站&lt;/li&gt;
+&lt;li&gt;支持中英文双语博客&lt;/li&gt;
+&lt;li&gt;响应式设计&lt;/li&gt;
+&lt;li&gt;代码高亮显示&lt;/li&gt;
+&lt;li&gt;自动化部署&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="技术亮点"&gt;技术亮点
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;静态网站生成&lt;/li&gt;
+&lt;li&gt;GitHub Actions持续集成&lt;/li&gt;
+&lt;li&gt;Markdown写作&lt;/li&gt;
+&lt;li&gt;多语言支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="架构设计"&gt;架构设计
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo-blog/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├── content/
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ ├── post/ # 博客文章
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;│ └── projects/ # 项目记录
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├── archetypes/ # 内容模板
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;├── static/ # 静态资源
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;└── config.toml # 站点配置
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="未来规划"&gt;未来规划
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;增加评论系统&lt;/li&gt;
+&lt;li&gt;优化SEO&lt;/li&gt;
+&lt;li&gt;添加更多语言支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="项目截图"&gt;项目截图
+&lt;/h2&gt;&lt;p&gt;
+&lt;div class="post-img-view"&gt;
+&lt;a data-fancybox="gallery" href="screenshot.png"&gt;
+&lt;img src="screenshot.png" alt="博客预览" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id="安装与使用"&gt;安装与使用
+&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;span class="lnt"&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 克隆仓库&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git clone https://github.com/yourusername/hugo-blog.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装Hugo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;brew install hugo &lt;span class="c1"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;choco install hugo &lt;span class="c1"&gt;# Windows&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 启动本地服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="许可证"&gt;许可证
+&lt;/h2&gt;&lt;p&gt;MIT 许可证&lt;/p&gt;</description></item><item><title>微服务架构聊天应用</title><link>https://game1991.github.io/CodeImp/projects/microservices-chat/microservices-chat/</link><pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/projects/microservices-chat/microservices-chat/</guid><description>&lt;h2 id="项目介绍"&gt;项目介绍
+&lt;/h2&gt;&lt;p&gt;一个使用微服务架构设计的高可扩展性聊天应用。项目旨在探索现代分布式系统的架构模式。&lt;/p&gt;
+&lt;h2 id="主要特点"&gt;主要特点
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;微服务解耦&lt;/li&gt;
+&lt;li&gt;服务发现&lt;/li&gt;
+&lt;li&gt;负载均衡&lt;/li&gt;
+&lt;li&gt;实时消息传递&lt;/li&gt;
+&lt;li&gt;容器编排&lt;/li&gt;
+&lt;li&gt;水平扩展&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>企业数据可视化仪表盘</title><link>https://game1991.github.io/CodeImp/projects/data-visualization-dashboard/data-visualization-dashboard/</link><pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/projects/data-visualization-dashboard/data-visualization-dashboard/</guid><description>&lt;h2 id="项目介绍"&gt;项目介绍
+&lt;/h2&gt;&lt;p&gt;一个企业级数据可视化仪表盘，通过图表和交互式组件展示复杂的业务数据和趋势。&lt;/p&gt;
+&lt;h2 id="主要特点"&gt;主要特点
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;实时数据更新&lt;/li&gt;
+&lt;li&gt;多种图表类型&lt;/li&gt;
+&lt;li&gt;响应式设计&lt;/li&gt;
+&lt;li&gt;数据筛选和钻取&lt;/li&gt;
+&lt;li&gt;性能优化&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>现代化电子商务平台</title><link>https://game1991.github.io/CodeImp/projects/fullstack-ecommerce/fullstack-ecommerce/</link><pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/projects/fullstack-ecommerce/fullstack-ecommerce/</guid><description>&lt;h2 id="项目介绍"&gt;项目介绍
+&lt;/h2&gt;&lt;p&gt;一个现代化的电子商务平台，提供完整的在线购物体验。项目涵盖了从商品展示到支付的全流程。&lt;/p&gt;
+&lt;h2 id="主要特点"&gt;主要特点
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;响应式前端界面&lt;/li&gt;
+&lt;li&gt;商品分类和搜索&lt;/li&gt;
+&lt;li&gt;购物车和结账流程&lt;/li&gt;
+&lt;li&gt;支付集成&lt;/li&gt;
+&lt;li&gt;用户认证和授权&lt;/li&gt;
+&lt;li&gt;后台管理系统&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>个性化推荐系统</title><link>https://game1991.github.io/CodeImp/projects/ml-recommendation/ml-recommendation/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/projects/ml-recommendation/ml-recommendation/</guid><description>&lt;h2 id="项目介绍"&gt;项目介绍
+&lt;/h2&gt;&lt;p&gt;这是一个使用机器学习技术构建的个性化电影推荐系统。通过分析用户历史评分和电影特征，系统能够为用户推荐最匹配的电影。&lt;/p&gt;
+&lt;h2 id="主要特点"&gt;主要特点
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;协同过滤算法&lt;/li&gt;
+&lt;li&gt;数据预处理和特征工程&lt;/li&gt;
+&lt;li&gt;模型训练和评估&lt;/li&gt;
+&lt;li&gt;实时推荐&lt;/li&gt;
+&lt;li&gt;可视化分析&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>个人技术博客</title><link>https://game1991.github.io/CodeImp/projects/hugo-blog/hugo-blog/</link><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate><guid>https://game1991.github.io/CodeImp/projects/hugo-blog/hugo-blog/</guid><description>&lt;h2 id="项目介绍"&gt;项目介绍
+&lt;/h2&gt;&lt;p&gt;这是一个使用 Hugo 静态站点生成器和 Stack 主题构建的个人技术博客。项目旨在创建一个简洁、现代且易于维护的博客平台，用于记录技术学习和个人成长。&lt;/p&gt;
+&lt;h2 id="主要特点"&gt;主要特点
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;响应式设计&lt;/li&gt;
+&lt;li&gt;支持中英文双语&lt;/li&gt;
+&lt;li&gt;自定义主题和样式&lt;/li&gt;
+&lt;li&gt;集成评论系统&lt;/li&gt;
+&lt;li&gt;SEO 优化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="技术亮点"&gt;技术亮点
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;使用 Hugo 生成静态站点，提高性能和安全性&lt;/li&gt;
+&lt;li&gt;自定义 SCSS 样式，实现独特的视觉效果&lt;/li&gt;
+&lt;li&gt;支持 Markdown 写作，专注于内容创作&lt;/li&gt;
+&lt;li&gt;通过 GitHub Pages 实现免费托管和持续集成&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="技术亮点-1"&gt;技术亮点
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;使用 Hugo 生成静态站点，提高性能和安全性&lt;/li&gt;
+&lt;li&gt;自定义 SCSS 样式，实现独特的视觉效果&lt;/li&gt;
+&lt;li&gt;支持 Markdown 写作，专注于内容创作&lt;/li&gt;
+&lt;li&gt;通过 GitHub Pages 实现免费托管和持续集成&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="技术亮点-2"&gt;技术亮点
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;使用 Hugo 生成静态站点，提高性能和安全性&lt;/li&gt;
+&lt;li&gt;自定义 SCSS 样式，实现独特的视觉效果&lt;/li&gt;
+&lt;li&gt;支持 Markdown 写作，专注于内容创作&lt;/li&gt;
+&lt;li&gt;通过 GitHub Pages 实现免费托管和持续集成&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>
