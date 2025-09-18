@@ -1,0 +1,164 @@
+{{ define "main" }}
+<div class="projects-container">
+    <header class="page-header">
+        <h1>{{ .Title }}</h1>
+        {{ with .Content }}
+        <div class="page-description">
+            {{ . }}
+        </div>
+        {{ end }}
+    </header>
+
+    <div class="project-controls">
+        <div class="project-filters">
+            {{ $types := slice }}
+            {{ range .Pages }}
+                {{ $types = .Params.types | default (slice "全部") | append $types }}
+            {{ end }}
+            {{ $uniqueTypes := uniq $types }}
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="*">全部项目</button>
+                {{ range $uniqueTypes }}
+                    {{ if and (ne . "全部") (ne . "") }}
+                    <button class="filter-btn" data-filter=".type-{{ . | urlize }}">
+                        {{ . }}
+                    </button>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+
+        <div class="project-search">
+            <input type="text" id="project-search-input" placeholder="搜索项目..." aria-label="搜索项目">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+    </div>
+
+    <div class="project-grid isotope two-column-grid">
+        {{ range .Paginator.Pages }}
+        <div class="project-card {{ with .Params.types }}{{ range . }}type-{{ . | urlize }} {{ end }}{{ end }}"
+             data-title="{{ .Title }}"
+             data-description="{{ .Params.description }}"
+             data-technologies="{{ with .Params.technologies }}{{ delimit . ", " | htmlEscape }}{{ end }}">
+            {{ with .Params.cover }}
+            <div class="project-cover">
+                <img src="{{ . }}" alt="{{ $.Title }} Cover" loading="lazy">
+            </div>
+            {{ end }}
+
+            <div class="project-card-content">
+                <div class="project-header">
+                    <h2 class="project-title">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
+                    
+                    {{ with .Params.status }}
+                    <span class="project-status {{ . | urlize }}">
+                        {{ . }}
+                    </span>
+                    {{ end }}
+                </div>
+                
+                {{ with .Params.description }}
+                <p class="project-description">{{ . }}</p>
+                {{ end }}
+
+                <div class="project-meta">
+                    {{ with .Params.technologies }}
+                    <div class="project-technologies">
+                        <strong>技术栈：</strong>
+                        {{ delimit . ", " }}
+                    </div>
+                    {{ end }}
+
+                    <div class="project-links">
+                        {{ with .Params.github }}
+                        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="github-link" title="GitHub仓库">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        {{ end }}
+                        
+                        {{ with .Params.demo }}
+                        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="demo-link" title="在线演示">
+                            <i class="fas fa-link"></i>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <div class="project-complexity">
+                    {{ $complexity := .Params.complexity | default 2 }}
+                    <div class="complexity-label">难度：</div>
+                    <div class="complexity-indicator">
+                        {{ range seq $complexity }}
+                            <span class="complexity-dot filled"></span>
+                        {{ end }}
+                        {{ range seq (sub 5 $complexity) }}
+                            <span class="complexity-dot"></span>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <div class="project-footer">
+                    {{ with .Params.types }}
+                    <div class="project-types">
+                        {{ range . }}
+                        <span class="project-type-tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                    
+                    <div class="project-date">
+                        {{ .PublishDate.Format "2006-01-02" }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+
+    {{ partial "pagination.html" . }}
+</div>
+
+<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var grid = document.querySelector('.project-grid');
+    var iso = new Isotope(grid, {
+        itemSelector: '.project-card',
+        layoutMode: 'fitRows'  
+    });
+
+    var filterButtons = document.querySelectorAll('.filter-btn');
+    filterButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var filterValue = this.getAttribute('data-filter');
+            iso.arrange({ filter: filterValue });
+            
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    var searchInput = document.getElementById('project-search-input');
+    searchInput.addEventListener('input', function() {
+        var searchValue = this.value.toLowerCase();
+        
+        iso.arrange({
+            filter: function(itemElem) {
+                var title = itemElem.getAttribute('data-title').toLowerCase();
+                var description = itemElem.getAttribute('data-description').toLowerCase();
+                var technologies = itemElem.getAttribute('data-technologies') || '';
+                
+                return title.includes(searchValue) || 
+                       description.includes(searchValue) || 
+                       technologies.includes(searchValue);
+            }
+        });
+    });
+});
+</script>
+{{ end }}

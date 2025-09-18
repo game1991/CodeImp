@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布日志封面图片生成器 - PNG版本</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+        }
+
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .control-group {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .control-group label {
+            font-weight: 500;
+            min-width: 100px;
+        }
+
+        .control-group input, .control-group select {
+            padding: 8px 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .control-group input:focus, .control-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5a67d8;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #48bb78;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #38a169;
+            transform: translateY(-1px);
+        }
+
+        .btn-info {
+            background: #4299e1;
+            color: white;
+        }
+
+        .btn-info:hover {
+            background: #3182ce;
+        }
+
+        .preview-section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .preview-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .preview-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .preview-info {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .preview-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 2px dashed #dee2e6;
+        }
+
+        .preview-canvas {
+            max-width: 100%;
+            max-height: 400px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .instructions {
+            background: #e6fffa;
+            border: 1px solid #4fd1c5;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .instructions h3 {
+            color: #234e52;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .instructions ul {
+            margin-left: 20px;
+            color: #234e52;
+        }
+
+        .instructions li {
+            margin-bottom: 8px;
+        }
+
+        .color-preview {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            vertical-align: middle;
+            /* 不加任何 border/background/display/padding，保证原生色块 */
+        }
+
+        .status-message {
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: none;
+        }
+
+        .status-success {
+            background: #f0fff4;
+            border: 1px solid #68d391;
+            color: #22543d;
+        }
+
+        .status-error {
+            background: #fed7d7;
+            border: 1px solid #fc8181;
+            color: #742a2a;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border-radius: 4px;
+            border: 2px solid #e0e0e0;
+            cursor: pointer;
+            background: none;
+            -webkit-appearance: auto;
+            appearance: auto;
+            display: inline-block;
+            padding: 0;
+            box-sizing: border-box;
+            vertical-align: middle;
+            margin-right: 8px;
+            transition: border-color 0.2s;
+        }
+        .color-preview:focus {
+            border-color: #667eea;
+            outline: 2px solid #667eea;
+        }
+        .color-value {
+            font-size: 13px;
+            color: #555;
+            margin-right: 16px;
+            min-width: 70px;
+            display: inline-block;
+            vertical-align: middle;
+            font-family: 'Consolas', 'Menlo', 'Monaco', monospace;
+        }
+
+        @media (max-width: 768px) {
+            .control-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .button-group {
+                justify-content: center;
+            }
+
+            .preview-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .button-group-center {
+            justify-content: center;
+        }
+
+        .button-group-margin-top {
+            margin-top: 18px;
+        }
+
+        .preview-placeholder {
+            text-align: center;
+            color: #666;
+        }
+        .preview-center-text {
+            text-align: center;
+            color: #666;
+        }
+        .button-group-margin-top {
+            margin-top: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <h1>🎨 发布日志封面图片生成器</h1>
+            <p>生成专业的PNG格式封面图片，完美适配您的发布日志</p>
+        </div>
+
+        <!-- 使用说明 -->
+        <div class="instructions">
+            <h3>📋 使用说明</h3>
+            <ul>
+                <li>调整下方的参数来自定义封面样式</li>
+                <li>点击"生成预览"查看效果</li>
+                <li>满意后点击"下载PNG图片"保存</li>
+                <li>将生成的图片上传到您的发布日志目录</li>
+                <li>更新文章的 front matter 中的 image 字段</li>
+            </ul>
+        </div>
+
+        <!-- 控制面板 -->
+        <div class="controls">
+
+            <table class="param-table">
+                <tr>
+                    <td class="param-label">主标题:</td>
+                    <td><input type="text" id="mainTitle" value="发布日志" placeholder="输入主标题"></td>
+                </tr>
+                <tr>
+                    <td class="param-label">副标题:</td>
+                    <td><input type="text" id="subTitle" value="Release Notes" placeholder="输入副标题"></td>
+                </tr>
+                <tr>
+                    <td class="param-label">版本号:</td>
+                    <td><input type="text" id="version" value="v2025.09.17" placeholder="输入版本号"></td>
+                </tr>
+                <tr>
+                    <td class="param-label">背景颜色:</td>
+                    <td>
+                        <input type="color" id="bgColor1" value="#667eea" class="color-preview" title="选择主背景颜色" onchange="updateColorValue('bgColor1');generateAndPreview();">
+                        <span class="color-value" id="bgColor1-value">#667eea</span>
+                        <input type="color" id="bgColor2" value="#764ba2" class="color-preview" title="选择次背景颜色" onchange="updateColorValue('bgColor2');generateAndPreview();">
+                        <span class="color-value" id="bgColor2-value">#764ba2</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="param-label">版本号颜色:</td>
+                    <td>
+                        <input type="color" id="versionColor" value="#ffd700" class="color-preview" title="选择版本号颜色" onchange="updateColorValue('versionColor');generateAndPreview();">
+                        <span class="color-value" id="versionColor-value">#ffd700</span>
+    <div class="button-group button-group-margin-top">
+    <div class="button-group button-group-margin-top">
+            </table>
+    </table>
+    <div class="button-group button-group-margin-top">
+        <button class="btn btn-primary" id="btn-preview">
+            🎨 生成预览
+        </button>
+        <button class="btn btn-secondary" id="btn-download">
+            💾 下载PNG图片
+        </button>
+        <button class="btn btn-info" id="btn-reset">
+            🔄 重置默认
+        </button>
+    </div>
+
+        <!-- 预览区域 -->
+        <div class="preview-section">
+            <div id="preview-placeholder" class="preview-placeholder">
+                <div class="preview-center-text">
+                    <p>👆 点击“生成预览”查看封面效果</p>
+                    <p>封面将在这里显示，您可以右键保存或点击下载按钮</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 技术说明 -->
+        <div class="instructions">
+            <h3>🛠️ 技术说明</h3>
+            <ul>
+                <li>使用 HTML5 Canvas API 生成高质量图片</li>
+                <li>支持自定义颜色、文字和样式</li>
+                <li>生成的图片为 PNG 格式，质量无损</li>
+                <li>完美适配 Hugo 主题的封面图片要求</li>
+                <li>支持多语言和国际化内容</li>
+            </ul>
+        </div>
+            <div class="button-group button-group-center">
+        <!-- 快速操作 -->
+        <div class="instructions">
+            <h3>⚡ 快速操作</h3>
+            <div class="button-group button-group-center">
+                <button class="btn btn-primary" onclick="showSVGOption()">
+                    📄 使用SVG版本
+                </button>
+                <button class="btn btn-info" onclick="showUsageGuide()">
+                    📖 查看使用指南
+                </button>
+                <button class="btn btn-secondary" onclick="window.print()">
+                    🖨️ 打印当前页面
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入封面生成器脚本 -->
+    <script src="cover-generator.js"></script>
+
+    <script>
+        // 额外的功能函数
+        function showStatus(message, type = 'success') {
+            const statusEl = document.getElementById('statusMessage');
+            statusEl.textContent = message;
+            statusEl.className = `status-message status-${type}`;
+            statusEl.style.display = 'block';
+
+            setTimeout(() => {
+                statusEl.style.display = 'none';
+            }, 5000);
+        }
+
+    function generateAndPreview() {
+            showStatus('正在生成封面图片...', 'success');
+            try {
+                // 获取用户输入
+                const mainTitle = document.getElementById('mainTitle').value;
+                const subTitle = document.getElementById('subTitle').value;
+                const version = document.getElementById('version').value;
+                const bgColor1 = document.getElementById('bgColor1').value;
+                const bgColor2 = document.getElementById('bgColor2').value;
+                const versionColor = document.getElementById('versionColor').value;
+
+                // 更新生成器配置
+                if (window.CoverGenerator) {
+                    window.CoverGenerator.config.colors.background = [bgColor1, bgColor2];
+                    window.CoverGenerator.config.colors.version = versionColor;
+                    // 生成 canvas
+                    const canvas = window.CoverGenerator.generate(mainTitle, subTitle, version);
+                    // 替换预览区域内容
+                    const previewSection = document.querySelector('.preview-section');
+                    let placeholder = document.getElementById('preview-placeholder');
+                    if (placeholder) {
+                        placeholder.innerHTML = '';
+                        placeholder.appendChild(canvas);
+                        canvas.classList.add('preview-canvas');
+                    } else if (previewSection) {
+                        previewSection.innerHTML = '';
+                        previewSection.appendChild(canvas);
+                        canvas.classList.add('preview-canvas');
+                    }
+                    showStatus('封面生成成功！', 'success');
+                } else {
+                    showStatus('封面生成器加载失败，请刷新页面重试', 'error');
+                }
+            } catch (error) {
+                showStatus('生成失败: ' + error.message, 'error');
+                console.error('封面生成错误:', error);
+            }
+        }
+
+        function downloadImage() {
+            showStatus('正在准备下载...', 'success');
+
+            try {
+                if (window.CoverGenerator) {
+                    window.CoverGenerator.download();
+                    showStatus('图片下载成功！', 'success');
+                } else {
+                    showStatus('下载功能暂时不可用，请先生成预览', 'error');
+                }
+            } catch (error) {
+                showStatus('下载失败: ' + error.message, 'error');
+                console.error('下载错误:', error);
+            }
+        }
+
+    function resetToDefault() {
+            document.getElementById('mainTitle').value = '发布日志';
+            document.getElementById('subTitle').value = 'Release Notes';
+            document.getElementById('version').value = 'v2025.09.17';
+            document.getElementById('bgColor1').value = '#667eea';
+            document.getElementById('bgColor2').value = '#764ba2';
+            document.getElementById('versionColor').value = '#ffd700';
+            // 同步更新 CoverGenerator.config
+            if (window.CoverGenerator) {
+                window.CoverGenerator.config.colors.background = ['#667eea', '#764ba2'];
+                window.CoverGenerator.config.colors.version = '#ffd700';
+            }
+            showStatus('已重置为默认设置', 'success');
+            generateAndPreview();
+        }
+
+        function showSVGOption() {
+            alert('SVG版本特点：\n\n' +
+                  '✅ 矢量图形，无限缩放不失真\n' +
+                  '✅ 文件大小更小（约3KB）\n' +
+                  '✅ 支持CSS动画和交互\n' +
+                  '✅ 现代浏览器原生支持\n\n' +
+                  '文件位置: cover.svg\n' +
+                  '当前状态: ✅ 已可用');
+        }
+
+        function showUsageGuide() {
+            alert('使用步骤：\n\n' +
+                  '1. 调整参数自定义封面\n' +
+                  '2. 点击"生成预览"查看效果\n' +
+                  '3. 点击"下载PNG图片"保存\n' +
+                  '4. 将图片上传到发布日志目录\n' +
+                  '5. 更新文章的 image 字段\n\n' +
+                  '建议尺寸: 1200×630px\n' +
+                  '推荐格式: PNG 或 SVG');
+        }
+
+        // 页面加载完成后的初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 添加颜色选择器的实时预览
+            const colorInputs = document.querySelectorAll('input[type="color"]');
+            colorInputs.forEach(input => {
+                input.addEventListener('change', function() {
+                    // 可以在这里添加实时预览逻辑
+                    console.log('颜色已更新:', this.value);
+                });
+            });
+
+            // 添加输入框的实时验证
+            const textInputs = document.querySelectorAll('input[type="text"]');
+            textInputs.forEach(input => {
+                input.addEventListener('input', function() {
+                    // 防止输入过长的文字
+                    if (this.value.length > 50) {
+                        this.value = this.value.substring(0, 50);
+                        showStatus('文字长度不能超过50个字符', 'error');
+                    }
+                });
+            });
+
+            // 显示欢迎消息
+            setTimeout(() => {
+                showStatus('欢迎使用封面图片生成器！', 'success');
+            }, 1000);
+        });
+    </script>
+</body>
+<script>
+// 实时更新颜色值显示
+function updateColorValue(id) {
+    var input = document.getElementById(id);
+    var valueSpan = document.getElementById(id + '-value');
+    if (input && valueSpan) {
+        valueSpan.textContent = input.value;
+    }
+}
+
+function getFormValues() {
+    return {
+        mainTitle: document.getElementById('mainTitle').value,
+        subTitle: document.getElementById('subTitle').value,
+        version: document.getElementById('version').value,
+        bgColor1: document.getElementById('bgColor1').value,
+        bgColor2: document.getElementById('bgColor2').value,
+        versionColor: document.getElementById('versionColor').value
+    };
+}
+
+function generateAndPreview() {
+    const vals = getFormValues();
+    updateColorValue('bgColor1');
+    updateColorValue('bgColor2');
+    updateColorValue('versionColor');
+    if (window.CoverGenerator) {
+        window.CoverGenerator.config.colors.background = [vals.bgColor1, vals.bgColor2];
+        window.CoverGenerator.config.colors.version = vals.versionColor;
+        // 生成 canvas
+        const canvas = window.CoverGenerator.generate(vals.mainTitle, vals.subTitle, vals.version);
+        // 替换预览区域内容
+        const previewSection = document.querySelector('.preview-section');
+        let placeholder = document.getElementById('preview-placeholder');
+        if (placeholder) {
+            placeholder.innerHTML = '';
+            placeholder.appendChild(canvas);
+            canvas.classList.add('preview-canvas');
+        } else if (previewSection) {
+            previewSection.innerHTML = '';
+            previewSection.appendChild(canvas);
+            canvas.classList.add('preview-canvas');
+        }
+    }
+}
+
+function downloadImage() {
+    const vals = getFormValues();
+    if (window.CoverGenerator) {
+        window.CoverGenerator.config.colors.background = [vals.bgColor1, vals.bgColor2];
+        window.CoverGenerator.config.colors.version = vals.versionColor;
+        const canvas = window.CoverGenerator.generate(vals.mainTitle, vals.subTitle, vals.version);
+        const link = document.createElement('a');
+        link.download = 'release-notes-cover.png';
+        link.href = canvas.toDataURL('image/png', 1.0);
+        link.click();
+    }
+}
+
+function resetToDefault() {
+    document.getElementById('mainTitle').value = '发布日志';
+    document.getElementById('subTitle').value = 'Release Notes';
+    document.getElementById('version').value = 'v2025.09.17';
+    document.getElementById('bgColor1').value = '#667eea';
+    document.getElementById('bgColor2').value = '#764ba2';
+    document.getElementById('versionColor').value = '#ffd700';
+    updateColorValue('bgColor1');
+    updateColorValue('bgColor2');
+    updateColorValue('versionColor');
+    generateAndPreview();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    updateColorValue('bgColor1');
+    updateColorValue('bgColor2');
+    updateColorValue('versionColor');
+    document.getElementById('btn-preview').onclick = generateAndPreview;
+    document.getElementById('btn-download').onclick = downloadImage;
+    document.getElementById('btn-reset').onclick = resetToDefault;
+    generateAndPreview();
+});
+</script>
+</html>

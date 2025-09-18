@@ -1,49 +1,43 @@
 ---
-title: "{{ replace .Name \"-\" \" \" | title }}"
-description: "" # 文章描述，显示在列表页面和 SEO 中
+title: "{{ replace .Name "-" " " | title }}"
+description: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
-
-# 文章资源
-resources:
-  - name: "featured-image" # 封面图片
-    src: ""
-  - name: "featured-image-preview" # 预览图片
-    src: ""
+slug: ""
+image: ""  # 封面图片路径
 
 # 分类与标签
 categories: []
 tags: []
 
 # 文章设置
-lightgallery: true # 是否使用 lightgallery 显示图片
-comment: true      # 是否开启评论
-toc: true         # 是否显示目录
-math: false       # 是否启用数学公式
-mermaid: false    # 是否启用 mermaid 图表
-reward: false     # 是否启用打赏
+comment: true
+toc: true
+reward: false
+lightgallery: false
+math: false
+mermaid: false
 
-# 作者信息
+# 作者信息（可选）
 author: ""
-authorLink: ""
-authorEmail: ""
+authoremail: ""
+authorlink: ""
 
-# 许可协议
+# 许可证（可选）
 license: "CC BY-NC-SA 4.0"
-licenseLink: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-
-# SEO
-keywords: []      # SEO 关键词
-weight: 0         # 文章权重，用于排序
-aliases: []       # URL 别名
+licenselink: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 ---
 
 <!--more-->
 
-## 前言
+## 文章摘要
+
+在这里写下文章的简要介绍。
 
 ## 正文
+
+开始撰写您的文章内容。
 
 ## 总结
 

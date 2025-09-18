@@ -884,7 +884,7 @@ section.runtime-info {
     cursor: pointer;
     margin: 0;
     padding: 0;
-    user-select: none;
+    //user-select: none;
     text-decoration: none; // 移除链接下划线
     transition: color 0.2s ease;
 
@@ -1284,5 +1284,376 @@ section.runtime-info {
 @keyframes launch {
     to {
         transform: translateY(-150vh);
+    }
+}
+
+/* 项目列表页面样式 */
+.projects-container {
+    .project-grid.two-column-grid,
+    .project-grid.isotope.two-column-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--card-background);
+        border-radius: 16px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s ease;
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        margin-bottom: 1.5rem;
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .project-cover {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.4s ease;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.5));
+                opacity: 0;
+                transition: opacity 0.4s ease;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .project-card-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            .project-title {
+                margin: 0;
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: var(--text-primary);
+            }
+
+            .project-status {
+                font-size: 0.75rem;
+                padding: 0.25rem 0.5rem;
+                border-radius: 4px;
+                text-transform: uppercase;
+                font-weight: 500;
+
+                &.developing {
+                    background-color: rgba(#f0ad4e, 0.1);
+                    color: #f0ad4e;
+                }
+
+                &.completed {
+                    background-color: rgba(#5cb85c, 0.1);
+                    color: #5cb85c;
+                }
+
+                &.planning {
+                    background-color: rgba(#5bc0de, 0.1);
+                    color: #5bc0de;
+                }
+            }
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            .project-technologies {
+                font-size: 0.875rem;
+                color: var(--text-secondary);
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+
+                .tech-tag {
+                    background-color: var(--bg-tertiary);
+                    color: var(--text-secondary);
+                    padding: 0.25rem 0.5rem;
+                    border-radius: 4px;
+                    font-size: 0.7rem;
+                }
+            }
+
+            .project-links {
+                display: flex;
+                gap: 0.75rem;
+
+                a {
+                    color: var(--text-secondary);
+                    transition: color 0.3s ease;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.25rem;
+
+                    &:hover {
+                        color: var(--accent);
+                    }
+
+                    i {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .project-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            background-color: var(--bg-tertiary);
+
+            .project-types {
+                display: flex;
+                gap: 0.5rem;
+
+                .project-type-tag {
+                    font-size: 0.7rem;
+                    padding: 0.25rem 0.5rem;
+                    background-color: var(--accent-soft);
+                    color: var(--accent);
+                    border-radius: 4px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .project-date {
+                font-size: 0.75rem;
+                color: var(--text-tertiary);
+            }
+        }
+    }
+}
+
+// 项目详情页样式
+.project-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h1 {
+            margin: 0;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 10px;
+
+            .project-type, .project-status {
+                font-size: 0.8em;
+                padding: 3px 8px;
+                border-radius: 4px;
+            }
+
+            .project-type {
+                background-color: #e0e0e0;
+            }
+
+            .project-status {
+                &.开发中 { background-color: #ffc107; color: #000; }
+                &.已完成 { background-color: #4caf50; color: #fff; }
+                &.已上线 { background-color: #2196f3; color: #fff; }
+                &.维护中 { background-color: #9c27b0; color: #fff; }
+            }
+        }
+    }
+
+    .project-summary, .project-tech-stack, .project-metrics, .project-content, .project-links {
+        margin-bottom: 30px;
+    }
+
+    .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        .tech-section {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+
+            h3 {
+                margin-top: 0;
+                border-bottom: 2px solid #e0e0e0;
+                padding-bottom: 10px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    padding: 5px 0;
+                    border-bottom: 1px solid #e0e0e0;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+
+        .metric {
+            background-color: #f5f5f5;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+
+            .metric-label {
+                display: block;
+                color: #666;
+                margin-bottom: 5px;
+                font-size: 0.9em;
+            }
+
+            .metric-value {
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+// 项目列表页样式
+.projects-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+
+        .project-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            transition: box-shadow 0.3s ease;
+
+            &:hover {
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+
+            h2 {
+                margin-top: 0;
+                
+                a {
+                    color: #333;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #1976d2;
+                    }
+                }
+            }
+
+            .project-card-meta {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+
+                .project-type, .project-status {
+                    font-size: 0.8em;
+                    padding: 3px 8px;
+                    border-radius: 4px;
+                }
+
+                .project-type {
+                    background-color: #e0e0e0;
+                }
+
+                .project-status {
+                    &.开发中 { background-color: #ffc107; color: #000; }
+                    &.已完成 { background-color: #4caf50; color: #fff; }
+                    &.已上线 { background-color: #2196f3; color: #fff; }
+                    &.维护中 { background-color: #9c27b0; color: #fff; }
+                }
+            }
+
+            .project-summary {
+                color: #666;
+                margin-bottom: 15px;
+            }
+
+            .project-card-metrics {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.9em;
+                color: #666;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+        }
     }
 }

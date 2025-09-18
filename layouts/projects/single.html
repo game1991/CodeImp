@@ -1,0 +1,94 @@
+{{ define "main" }}
+<div class="project-detail">
+    <div class="project-header">
+        <h1>{{ .Title }}</h1>
+        <div class="project-meta">
+            <span class="project-type">{{ .Params.project.type }}</span>
+            <span class="project-status {{ lower .Params.project.status }}">
+                {{ .Params.project.status }}
+            </span>
+        </div>
+    </div>
+
+    <div class="project-summary">
+        <h2>项目概述</h2>
+        <p>{{ .Params.summary }}</p>
+    </div>
+
+    <div class="project-tech-stack">
+        <h2>技术栈</h2>
+        <div class="tech-grid">
+            <div class="tech-section">
+                <h3>编程语言</h3>
+                <ul>
+                    {{ range .Params.tech.languages }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="tech-section">
+                <h3>框架</h3>
+                <ul>
+                    {{ range .Params.tech.frameworks }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="tech-section">
+                <h3>数据库</h3>
+                <ul>
+                    {{ range .Params.tech.databases }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="tech-section">
+                <h3>基础设施</h3>
+                <ul>
+                    {{ range .Params.tech.infrastructure }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-metrics">
+        <h2>项目指标</h2>
+        <div class="metrics-grid">
+            <div class="metric">
+                <span class="metric-label">Stars</span>
+                <span class="metric-value">{{ .Params.metrics.stars }}</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">贡献者</span>
+                <span class="metric-value">{{ .Params.metrics.contributors }}</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">最后更新</span>
+                <span class="metric-value">{{ .Date.Format "2006-01-02" }}</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">版本</span>
+                <span class="metric-value">{{ .Params.metrics.version }}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <h2>详细介绍</h2>
+        {{ .Content }}
+    </div>
+
+    {{ if .Params.links }}
+    <div class="project-links">
+        <h2>相关链接</h2>
+        <ul>
+            {{ range .Params.links }}
+            <li><a href="{{ .url }}" target="_blank">{{ .name }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

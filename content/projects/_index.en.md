@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+layout: "projects"
 license: false
 menu:
   main:

@@ -19,5 +19,14 @@ hasCJKLanguage=true
 # Change it to your Disqus shortname before using
 disqusShortname="TechSphere"
 
+[build]
+  writeStats = true
+  
+[debug]
+  logging = true
+
 [pagination]
   pagerSize=5
+
+[params]
+  featuredImageField = "image"  # 明确指定使用 image 字段

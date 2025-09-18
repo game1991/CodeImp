@@ -1,3 +1,9 @@
 public
 resources
 .hugo_build.lock
+
+.claude
+_vendor
+CLAUDE.md
+*.log
+hugo_stats.json

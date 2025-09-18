@@ -1,85 +1,45 @@
 ---
-title: '{{ replace .Name "-" " " | title }}'
-date: { { .Date } }
-draft: false
+title: "{{ replace .Name "-" " " | title }}"
+description: ""
+date: {{ .Date }}
+lastmod: {{ .Date }}
+draft: true
+slug: ""
+image: ""  # 项目封面图片路径
 
-# 项目摘要
-summary: "简短的项目描述，用于快速了解项目核心"
+# 项目信息
+link: ""  # 项目链接
+repository: ""  # 代码仓库地址
 
-# 项目元数据
-project:
-  name: "完整项目名称"
-  type: "Web/Mobile/Desktop/Library"
-  status: "开发中/已完成/已上线/维护中"
+# 技术栈
+technologies:
+  - ""
 
-# 技术栈与架构
-tech:
-  languages: ["Go", "JavaScript"]
-  frameworks: ["Vue", "Gin"]
-  databases: ["PostgreSQL"]
-  infrastructure: ["Docker", "Kubernetes"]
-  deployment: ["AWS", "GitHub Actions"]
+# 项目标签
+categories: []
+tags: []
 
-# 项目指标
-metrics:
-  stars: 0
-  contributors: 1
-  last_updated: { { .Date } }
-  version: "0.1.0"
+# 项目设置
+comment: true
+toc: true
+lightgallery: false
 
-# 链接
-links:
-  homepage:
-    url: ""
-    external: true
-  github:
-    url: ""
-    external: true
-  demo:
-    url: ""
-    external: true
-  documentation:
-    url: ""
-    external: true
+# 作者信息（可选）
+author: ""
+authoremail: ""
+authorlink: ""
+
+# 许可证（可选）
+license: "MIT"
+licenselink: "https://opensource.org/licenses/MIT"
 ---
 
-# 项目详细描述
+## 项目介绍
 
-## 背景
+## 功能特点
 
-背景介绍：为什么要开发这个项目？解决了什么问题？
-
-## 功能特性
-
-1. 特性 1
-2. 特性 2
-3. 特性 3
-
-## 技术亮点
-
-- 技术难点 1
-- 技术难点 2
-
-## 架构设计
-
-[可以插入架构图]
-
-## 未来规划
-
-- 计划 1
-- 计划 2
-
-## 项目截图
-
-![项目截图](screenshot.png)
+## 技术实现
 
 ## 安装与使用
 
-```bash
-# 安装命令
-# 运行命令
-```
-
-## 许可证
-
-MIT 许可证
+## 贡献指南

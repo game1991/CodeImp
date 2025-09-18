@@ -1,0 +1,24 @@
+{{/* 多语言路径处理辅助函数 */}}
+{{ $path := .path }}
+{{ $page := .page }}
+{{ $result := $path }}
+
+{{/* 获取当前页面语言 */}}
+{{ $currentLang := $page.Lang }}
+{{ $defaultLang := $page.Site.Language.Lang }}
+
+{{/* 处理多语言路径 */}}
+{{ if and (ne $currentLang $defaultLang) (not (strings.HasPrefix $path "/")) }}
+    {{/* 对于非默认语言，确保路径包含语言前缀 */}}
+    {{ $result = printf "/%s/%s" $currentLang $path }}
+{{ else if strings.HasPrefix $path "/" }}
+    {{/* 如果路径已经是绝对路径，检查是否需要添加语言前缀 */}}
+    {{ if and (ne $currentLang $defaultLang) (not (strings.HasPrefix $path (printf "/%s/" $currentLang))) }}
+        {{ $result = printf "/%s%s" $currentLang $path }}
+    {{ end }}
+{{ end }}
+
+{{/* 清理路径中的重复斜杠 */}}
+{{ $result = replaceRE "/+/" "/" $result }}
+
+{{ return $result }}
